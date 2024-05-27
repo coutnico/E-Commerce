@@ -80,7 +80,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a href="viewArticulos.aspx">
-                    <img src="https://img.icons8.com/glassmorphism/48/shop.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                    <img src="https://img.icons8.com/glassmorphism/480/shop.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2 shadow">
                 </a>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">

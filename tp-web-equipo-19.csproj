@@ -167,6 +167,7 @@
     <Content Include="Views\viewCarrito.aspx" />
     <Content Include="Views\viewAdmin_ModifyArt.aspx" />
     <Content Include="Views\viewDetallada.aspx" />
+    <Content Include="Views\viewLogin.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -290,6 +291,13 @@
     </Compile>
     <Compile Include="Views\viewDetallada.aspx.designer.cs">
       <DependentUpon>viewDetallada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewLogin.aspx.cs">
+      <DependentUpon>viewLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewLogin.aspx.designer.cs">
+      <DependentUpon>viewLogin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
