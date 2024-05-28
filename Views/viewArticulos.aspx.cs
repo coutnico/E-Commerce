@@ -84,5 +84,10 @@ namespace tp_web_equipo_19.Views
             reapeter_articulos.DataSource = listaFiltrada;
             reapeter_articulos.DataBind();
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewLogin.aspx");
+        }
     }
 }

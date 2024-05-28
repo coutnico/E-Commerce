@@ -42,7 +42,7 @@
                 </div>
                 <div class="card-body text-center">
                     <p class="card-text">Disfruta de ofertas y compra sin limites</p>
-                    <asp:Button Text="Ingresar a tu cuenta" runat="server" CssClass="btn btn-success fw-semibold" />
+                    <asp:Button Text="Ingresar a tu cuenta" runat="server" CssClass="btn btn-success fw-semibold" ID="btnLogin" OnClick="btnLogin_Click" />
                 </div>
             </div>
         </div>
