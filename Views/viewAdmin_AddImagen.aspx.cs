@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using E_Commerce_Models;
+using E_Commerce_Negocio;
 
 namespace tp_web_equipo_19.Views
 {

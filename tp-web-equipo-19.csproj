@@ -160,16 +160,15 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
-    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\viewAdmin_AddArt.aspx" />
     <Content Include="Views\viewAdmin_AddCat.aspx" />
     <Content Include="Views\viewAdmin_AddImagen.aspx" />
     <Content Include="Views\viewAdmin_AddMarca.aspx" />
+    <Content Include="Views\viewAdmin_ModifyArt.aspx" />
     <Content Include="Views\viewAdmin_ModifyCat.aspx" />
     <Content Include="Views\viewAdmin_ModifyMarca.aspx" />
     <Content Include="Views\viewArticulos.aspx" />
-    <Content Include="Views\viewAdmin_AddArt.aspx" />
     <Content Include="Views\viewCarrito.aspx" />
-    <Content Include="Views\viewAdmin_ModifyArt.aspx" />
     <Content Include="Views\viewDetallada.aspx" />
     <Content Include="Views\viewLogin.aspx" />
     <Content Include="Web.config" />
@@ -182,16 +181,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ArticuloNegocio.cs" />
-    <Compile Include="Models\Carrito.cs" />
-    <Compile Include="Models\ConexionDB.cs" />
-    <Compile Include="Models\CategoriaNegocio.cs" />
-    <Compile Include="Models\Categoria.cs" />
-    <Compile Include="Models\Imagen_Negocio.cs" />
-    <Compile Include="Models\Imagen.cs" />
-    <Compile Include="Models\Marca_Negocio.cs" />
-    <Compile Include="Models\Marca.cs" />
-    <Compile Include="Models\Articulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -219,12 +208,12 @@
     <Compile Include="Admin_Master.Master.designer.cs">
       <DependentUpon>Admin_Master.Master</DependentUpon>
     </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    <Compile Include="Views\viewAdmin_AddArt.aspx.cs">
+      <DependentUpon>viewAdmin_AddArt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    <Compile Include="Views\viewAdmin_AddArt.aspx.designer.cs">
+      <DependentUpon>viewAdmin_AddArt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\viewAdmin_AddCat.aspx.cs">
       <DependentUpon>viewAdmin_AddCat.aspx</DependentUpon>
@@ -247,6 +236,13 @@
     <Compile Include="Views\viewAdmin_AddMarca.aspx.designer.cs">
       <DependentUpon>viewAdmin_AddMarca.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewAdmin_ModifyArt.aspx.cs">
+      <DependentUpon>viewAdmin_ModifyArt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewAdmin_ModifyArt.aspx.designer.cs">
+      <DependentUpon>viewAdmin_ModifyArt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewAdmin_ModifyCat.aspx.cs">
       <DependentUpon>viewAdmin_ModifyCat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,26 +264,12 @@
     <Compile Include="Views\viewArticulos.aspx.designer.cs">
       <DependentUpon>viewArticulos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\viewAdmin_AddArt.aspx.cs">
-      <DependentUpon>viewAdmin_AddArt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\viewAdmin_AddArt.aspx.designer.cs">
-      <DependentUpon>viewAdmin_AddArt.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Views\viewCarrito.aspx.cs">
       <DependentUpon>viewCarrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\viewCarrito.aspx.designer.cs">
       <DependentUpon>viewCarrito.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\viewAdmin_ModifyArt.aspx.cs">
-      <DependentUpon>viewAdmin_ModifyArt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\viewAdmin_ModifyArt.aspx.designer.cs">
-      <DependentUpon>viewAdmin_ModifyArt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\viewDetallada.aspx.cs">
       <DependentUpon>viewDetallada.aspx</DependentUpon>
@@ -306,6 +288,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -346,6 +330,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E-Commerce_Models\E-Commerce_Models.csproj">
+      <Project>{375e48bb-34b5-45d2-bb9a-7bd1c752a0f5}</Project>
+      <Name>E-Commerce_Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-Commerce_Views\E-Commerce_Negocio.csproj">
+      <Project>{b78b5243-7085-4ac8-8fba-f0198c263745}</Project>
+      <Name>E-Commerce_Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

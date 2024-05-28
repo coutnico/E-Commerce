@@ -6,7 +6,8 @@ using System.Web;
 using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using tp_web_equipo_19.Models;
+using E_Commerce_Models;
+using E_Commerce_Negocio;
 using System.Globalization; // Necesito para poder convertir el punto en coma.
 
 namespace tp_web_equipo_19.Views

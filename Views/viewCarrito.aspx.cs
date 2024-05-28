@@ -5,7 +5,8 @@ using System.Security.Principal;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using tp_web_equipo_19.Models;
+using E_Commerce_Models;
+using E_Commerce_Negocio;
 
 namespace tp_web_equipo_19.Views
 {
