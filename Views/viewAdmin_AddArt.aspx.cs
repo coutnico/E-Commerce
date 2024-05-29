@@ -156,6 +156,10 @@ namespace tp_web_equipo_19.Views
             // Creo y agrego el nuevo TextBox
             TextBox newTextBox = new TextBox();
             newTextBox.ID = textBoxId;
+            newTextBox.CssClass = "form-control m-lg-1 rounded"; // coloco clase al nuevo textbox.
+            newTextBox.Attributes["Style"] = "max-width: 500px;";
+            newTextBox.Attributes["PlaceHolder"] = "Escriba la URL de la imagen " + cantidad_img + " del Articulo...";
+
             // txtImagenUrl_Dinamico.Controls.Add(newTextBox);
 
             HtmlGenericControl div = new HtmlGenericControl("div");
