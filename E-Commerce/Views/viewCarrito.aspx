@@ -4,7 +4,7 @@
     <div class="container ">
 
 
-        <%if (tp_web_equipo_19.Models.Carrito.ArticulosFiltrados.Count == 0)
+        <%if (E_Commerce_Models.Carrito.ArticulosFiltrados.Count == 0)
             {  %>
         <div class="row mt-3 shadow">
             <div class="text-center">
@@ -46,8 +46,8 @@
 
 
         <div class="text-end border border-3 m-3 bg-black shadow">
-            <% tp_web_equipo_19.Models.Carrito.Total = 0;
-                tp_web_equipo_19.Models.Carrito.CargarTotalActual();
+            <% E_Commerce_Models.Carrito.Total = 0;
+                E_Commerce_Models.Carrito.CargarTotalActual();
                 this.CargarLabel();
 
             %>
