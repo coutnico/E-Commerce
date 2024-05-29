@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce_Models", "..\E-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce_Controller", "..\E-Commerce_Controller\E-Commerce_Controller.csproj", "{A8230823-FCBA-4AE7-9BC1-1B7DF6DB0B43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce_Negocio", "..\E-Commerce_Views\E-Commerce_Negocio.csproj", "{B78B5243-7085-4AC8-8FBA-F0198C263745}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce_Negocio", "..\E-Commerce_Negocio\E-Commerce_Negocio.csproj", "{B78B5243-7085-4AC8-8FBA-F0198C263745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

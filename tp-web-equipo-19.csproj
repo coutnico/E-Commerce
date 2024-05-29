@@ -336,7 +336,7 @@
       <Project>{375e48bb-34b5-45d2-bb9a-7bd1c752a0f5}</Project>
       <Name>E-Commerce_Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\E-Commerce_Views\E-Commerce_Negocio.csproj">
+    <ProjectReference Include="..\E-Commerce_Negocio\E-Commerce_Negocio.csproj">
       <Project>{b78b5243-7085-4ac8-8fba-f0198c263745}</Project>
       <Name>E-Commerce_Negocio</Name>
     </ProjectReference>
