@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="tp_web_equipo_19.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            background: rgb(90,208,109);
+            background: linear-gradient(90deg, rgba(90,208,109,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(146,226,158,1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <%--<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
+            <div class="container-fluid">
+                <img src="https://img.icons8.com/glassmorphism/48/shop.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold fs-5" aria-current="page" href="#">MERCADO CERRADO</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar productos, marcas y más…" aria-label="Search" style="width: 300px">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#">
+                                <img class="mt-2" src="https://img.icons8.com/pulsar-gradient/48/shopping-cart-loaded.png" alt="Carrito de compras" width="40" height="40" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>--%>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+            <div class="container-fluid">
+                <a href="viewArticulos.aspx">
+                    <img src="https://img.icons8.com/glassmorphism/480/shop.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2 shadow">
+                </a>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-bold fs-5" aria-current="page" href="viewArticulos.aspx">MERCADO CERRADO</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="align-content-center"><a class="navbar-brand" href="viewAdmin_AddArt.aspx">Modo Admin</a></li>
+                        <li class="nav-item">
+                            <asp:Label runat="server" CssClass="text-success fw-bold fs-5 " ID="lblContadorCarrito">0</asp:Label>
+                            <a href="viewCarrito.aspx">
+                                <img class="mt-2" src="https://img.icons8.com/pulsar-gradient/48/shopping-cart-loaded.png" alt="Carrito de compras" width="40" height="40" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="content container-fluid pt-4">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <footer class="bg-dark text-white py-3 mt-auto">
+                <div class="container text-center text-md-center">
+                    <div class="row">
+                        <div class="col-md-4 mt-4">
+                            <h5 class="text-uppercase text-success fw-bolder">Integrantes</h5>
+                            <h6 class="text-light fw-semibold">Nicolas Rodriguez</h6>
+                            <h6 class="text-light fw-semibold">Mariano Fernandez</h6>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <h5 class="text-uppercase text-success fw-bolder">Materia</h5>
+                            <h6 class="text-light fw-semibold">Programacion 3</h6>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <h5 class="text-uppercase text-success fw-bolder">Fecha</h5>
+                            <h6 class="text-light fw-semibold">19/05/2024</h6>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
