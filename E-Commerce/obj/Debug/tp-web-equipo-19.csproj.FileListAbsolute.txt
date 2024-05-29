@@ -1,0 +1,550 @@
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.dll.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.pdb
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.exe.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.rsp
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.exe.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.rsp
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.AppContext.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Console.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.Compression.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Net.Http.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.ValueTuple.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.exe.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.rsp
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\VBCSCompiler.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Antlr3.Runtime.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Newtonsoft.Json.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\System.Web.Optimization.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\WebGrease.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\System.Web.Optimization.xml
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Newtonsoft.Json.xml
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Antlr3.Runtime.pdb
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.dll.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\tp-web-equipo-19.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csc.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\csi.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.AppContext.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Console.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.Compression.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Net.Http.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.ValueTuple.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\vbc.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Antlr3.Runtime.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Newtonsoft.Json.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\System.Web.Optimization.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\WebGrease.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\System.Web.Optimization.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Newtonsoft.Json.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Antlr3.Runtime.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.CopyComplete
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\tp-web-equipo-19.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Antlr3.Runtime.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\AspNet.ScriptManager.jQuery.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\System.Web.Optimization.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\WebGrease.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\System.Web.Optimization.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Newtonsoft.Json.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Antlr3.Runtime.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csi.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csi.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\csi.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.AppContext.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Collections.Immutable.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Console.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Globalization.Calendars.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.IO.Compression.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.IO.FileSystem.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Net.Http.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Net.Sockets.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Reflection.Metadata.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.ValueTuple.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Xml.XPath.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\vbc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\vbc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\vbc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\VBCSCompiler.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\tp-web-equipo-19\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP WEB\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\tp-web-equipo-19.dll.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\tp-web-equipo-19.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\tp-web-equipo-19.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csc.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csc.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csc.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csi.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csi.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\csi.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.AppContext.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Console.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.IO.Compression.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Net.Http.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Net.Sockets.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.ValueTuple.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\vbc.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\vbc.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\vbc.rsp
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\VBCSCompiler.exe
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Antlr3.Runtime.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Newtonsoft.Json.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\System.Web.Optimization.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\WebGrease.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\System.Web.Optimization.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Newtonsoft.Json.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Antlr3.Runtime.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.CopyComplete
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\tp-web-equipo-19.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csi.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csi.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\csi.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.AppContext.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Console.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.IO.Compression.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Net.Http.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Net.Sockets.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.ValueTuple.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Xml.XPath.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\vbc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\vbc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\vbc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\VBCSCompiler.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Antlr3.Runtime.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\AspNet.ScriptManager.jQuery.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\System.Web.Optimization.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\WebGrease.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\System.Web.Optimization.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Newtonsoft.Json.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Antlr3.Runtime.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Models.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Negocio.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Controller.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Models.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Models.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Negocio.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Negocio.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Controller.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\bin\E-Commerce_Controller.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\tp-web-equipo-19.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csi.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csi.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\csi.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.AppContext.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Collections.Immutable.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Console.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Globalization.Calendars.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.IO.Compression.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.IO.FileSystem.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Net.Http.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Net.Sockets.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Reflection.Metadata.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.ValueTuple.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Xml.XPath.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\vbc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\vbc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\vbc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\VBCSCompiler.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\roslyn\VBCSCompiler.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Antlr3.Runtime.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\AspNet.ScriptManager.jQuery.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Models.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Negocio.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.Web.Infrastructure.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\System.Web.Optimization.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\WebGrease.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Controller.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Models.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Models.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Negocio.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Negocio.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\System.Web.Optimization.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Newtonsoft.Json.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Antlr3.Runtime.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Controller.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\bin\E-Commerce_Controller.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce_View\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\tp-web-equipo-19.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csi.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csi.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\csi.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.AppContext.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Console.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.IO.Compression.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Net.Http.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Net.Sockets.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.ValueTuple.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Xml.XPath.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\vbc.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\vbc.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\vbc.rsp
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\VBCSCompiler.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Antlr3.Runtime.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\AspNet.ScriptManager.jQuery.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Models.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Negocio.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\System.Web.Optimization.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\WebGrease.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Controller.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Models.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Models.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Negocio.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Negocio.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\System.Web.Optimization.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Newtonsoft.Json.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Antlr3.Runtime.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Controller.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\bin\E-Commerce_Controller.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce_new\E-Commerce\obj\Debug\tp-web-equipo-19.pdb
