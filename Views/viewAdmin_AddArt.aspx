@@ -60,7 +60,7 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">Categoria:</span>
-                <asp:DropDownList ID="listCat" runat="server" CssClass="btn btn-secondary dropdown-toggle  m-lg-1 rounded"></asp:DropDownList>
+                <asp:DropDownList ID="listCat" runat="server" CssClass="form-select rounded" Style="max-width: 500px;"></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="rfvListaCat" runat="server" ControlToValidate="listCat"
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
@@ -71,7 +71,7 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">Marca:</span>
-                <asp:DropDownList ID="listMarca" runat="server" CssClass="btn btn-secondary dropdown-toggle  m-lg-1 rounded"></asp:DropDownList>
+                <asp:DropDownList ID="listMarca" runat="server" CssClass="form-select rounded" Style="max-width: 500px;"></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="rfvListaMarca" runat="server" ControlToValidate="listMarca"
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
