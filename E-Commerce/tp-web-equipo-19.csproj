@@ -126,6 +126,10 @@
     <None Include="Resources\Banner2.png" />
     <None Include="Resources\Banner3.jpg" />
     <None Include="Resources\BannerMovimiento.gif" />
+    <None Include="Resources\Closemarket.png" />
+    <None Include="Resources\LogoClosemarket.png" />
+    <None Include="Resources\NombreClosemarket.png" />
+    <None Include="Resources\username.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

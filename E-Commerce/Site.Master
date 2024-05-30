@@ -20,7 +20,7 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow-x:hidden;
+            overflow-x: hidden;
         }
 
         .wrapper {
@@ -31,8 +31,23 @@
 
         .content {
             flex: 1;
-            background: rgb(90,208,109);
-            background: linear-gradient(90deg, rgba(90,208,109,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(146,226,158,1) 100%);
+            background: rgb(7,178,11);
+            background: linear-gradient(222deg, rgba(7,178,11,1) 21%, rgba(128,240,146,1) 40%, rgba(255,255,255,1) 50%, rgba(128,240,146,1) 59%, rgba(7,178,11,1) 82%);
+        }
+
+        .texto-c {
+            -webkit-background-clip: text;
+            color: white;
+            -webkit-text-fill-color: transparent;
+            background-color: #FFF; /* White background for better contrast */
+            /* Define the gradient with green shades and white */
+            background-image: -webkit-linear-gradient(left, #2CED4B 0%, /* White at 0% */
+            #52EF6B 25%, /* Light green at 25% */
+            #52EF6B 50%, /* Medium green at 50% */
+            #A9EEB4 75%, /* Dark green at 75% */
+            #ffffff 100% /* Darkest green at 100% */
+            );
+            margin-right: 200px
         }
     </style>
 </head>
@@ -80,28 +95,31 @@
                 </div>
             </div>
         </nav>--%>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+        <nav class="navbar navbar-expand-lg justify-content-between" style="background-color: #222222">
             <div class="container-fluid">
-                <a href="viewArticulos.aspx">
-                    <img src="https://img.icons8.com/glassmorphism/480/shop.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2 shadow">
-                </a>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light fw-bold fs-5" aria-current="page" href="viewArticulos.aspx">MERCADO CERRADO</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav">
-                        <li class="align-content-center"><a class="navbar-brand" href="viewAdmin_AddArt.aspx">Modo Admin</a></li>
-                        <li class="nav-item">
-                            <asp:Label runat="server" CssClass="text-success fw-bold fs-5 " ID="lblContadorCarrito">0</asp:Label>
-                            <a href="viewCarrito.aspx">
-                                <img class="mt-2" src="https://img.icons8.com/pulsar-gradient/48/shopping-cart-loaded.png" alt="Carrito de compras" width="40" height="40" />
-                            </a>
-                        </li>
-                    </ul>
+                <div class="d-flex align-items-center">
+                    <a href="viewArticulos.aspx">
+                        <img src="..\Resources\LogoClosemarket.png" alt="Logo" width="120" height="120" class="d-inline-block align-text-top me-2 ">
+                    </a>
+                    <a href="viewArticulos.aspx">
+                        <img src="..\Resources\NombreClosemarket.png" alt="Nombre" width="200" height="120" class="d-inline-block align-text-top ">
+                    </a>
                 </div>
+                <p class="texto-c fw-semibold fst-italic text-center" style="font-size: 60px">!BIENVENIDO!</p>
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <%--<a class="navbar-brand" href="viewAdmin_AddArt.aspx">Modo Admin</a>--%>
+                    </li>
+                    <li class="nav-item">
+                        <a href="viewLogin.aspx">
+                            <img src="..\Resources\username.png" alt="Nombre" width="50" height="50" class=" me-4 " style="">
+                        </a>
+                        <asp:Label runat="server" CssClass="text-success fw-bold fs-4 " ID="lblContadorCarrito">0</asp:Label>
+                        <a href="viewCarrito.aspx">
+                            <img class="mt-2" src="https://img.icons8.com/pulsar-gradient/48/shopping-cart-loaded.png" alt="Carrito de compras" width="50" height="50" />
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="wrapper">

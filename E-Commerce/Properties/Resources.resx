@@ -133,4 +133,13 @@
   <data name="ErrorImagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ErrorImagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LogoClosemarket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoClosemarket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NombreClosemarket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NombreClosemarket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="username" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\username.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
