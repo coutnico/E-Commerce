@@ -32,7 +32,7 @@
 
         <%-- Agregar articulo --%>
 
-        <div class="container-fluid">
+        <div class="container-fluid w-50">
             <div class="input-group mb-3 mt-3 ">
                 <span class="input-group-text">Codigo</span>
                 <asp:TextBox ID="txtCodigo" runat="server" type="nonull" CssClass="form-control m-lg-1 rounded" Style="max-width: 500px;" placeholder="Escriba el Codigo del Articulo...">  </asp:TextBox>
@@ -60,7 +60,7 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">Categoria:</span>
-                <asp:DropDownList ID="listCat" runat="server" CssClass="form-select rounded" Style="max-width: 500px;"></asp:DropDownList>
+                <asp:DropDownList ID="listCat" runat="server" CssClass="form-select  m-lg-1  rounded" Style="max-width: 500px;"></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="rfvListaCat" runat="server" ControlToValidate="listCat"
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
@@ -71,7 +71,7 @@
 
             <div class="input-group mb-3">
                 <span class="input-group-text">Marca:</span>
-                <asp:DropDownList ID="listMarca" runat="server" CssClass="form-select rounded" Style="max-width: 500px;"></asp:DropDownList>
+                <asp:DropDownList ID="listMarca" runat="server" CssClass="form-select  m-lg-1  rounded" Style="max-width: 500px;"></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="rfvListaMarca" runat="server" ControlToValidate="listMarca"
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
@@ -108,12 +108,12 @@
         </div>
 
 
-        </div>
+        
 
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" class="btn btn-outline-success" type="submit" />
         <script> </script>
 
-
+            </div>
     </form>
 
 </body>
