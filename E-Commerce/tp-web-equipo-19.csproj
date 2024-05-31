@@ -127,9 +127,10 @@
     <None Include="Resources\Banner3.jpg" />
     <None Include="Resources\BannerMovimiento.gif" />
     <None Include="Resources\Closemarket.png" />
-    <None Include="Resources\LogoClosemarket.png" />
-    <None Include="Resources\NombreClosemarket.png" />
     <None Include="Resources\username.png" />
+    <None Include="Resources\NombreClosemarket.png" />
+    <None Include="Resources\LogoClosemarket.png" />
+    <None Include="Resources\Verificacion.gif" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -175,6 +176,7 @@
     <Content Include="Views\viewCarrito.aspx" />
     <Content Include="Views\viewDetallada.aspx" />
     <Content Include="Views\viewLogin.aspx" />
+    <Content Include="Views\viewProfile.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -288,6 +290,13 @@
     </Compile>
     <Compile Include="Views\viewLogin.aspx.designer.cs">
       <DependentUpon>viewLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewProfile.aspx.cs">
+      <DependentUpon>viewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewProfile.aspx.designer.cs">
+      <DependentUpon>viewProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
