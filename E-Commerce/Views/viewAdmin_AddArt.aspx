@@ -11,7 +11,7 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <title>Agregar Articulo</title>
 </head>
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-10">
     <%-- Form. necesito el formulario para poder utilizar los controles se servidor aspnet. --%>
     <form runat="server">
 
@@ -22,9 +22,6 @@
                 <a class="navbar-brand" href="viewAdmin_ModifyArt.aspx">Modificar Articulo</a>
                 <div class="mx-auto text-center">
 
-
-
-
                     <h2 class=" text-white ">AGREGAR ARTICULO </h2>
                 </div>
             </div>
@@ -32,7 +29,7 @@
 
         <%-- Agregar articulo --%>
 
-        <div class="container-fluid w-50">
+        <div class="container-fluid w-50 ">
             <div class="input-group mb-3 mt-3 ">
                 <span class="input-group-text">Codigo</span>
                 <asp:TextBox ID="txtCodigo" runat="server" type="nonull" CssClass="form-control m-lg-1 rounded" Style="max-width: 500px;" placeholder="Escriba el Codigo del Articulo...">  </asp:TextBox>

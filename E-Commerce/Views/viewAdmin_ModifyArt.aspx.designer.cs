@@ -132,6 +132,42 @@ namespace tp_web_equipo_19.Views
         protected global::System.Web.UI.WebControls.TextBox txtImagenUrl;
 
         /// <summary>
+        /// addImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton addImage;
+
+        /// <summary>
+        /// deleteImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton deleteImage;
+
+        /// <summary>
+        /// lbl_Cantidad_imagenes_agregadas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Cantidad_imagenes_agregadas;
+
+        /// <summary>
+        /// txtImagenUrl_Dinamico control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder txtImagenUrl_Dinamico;
+
+        /// <summary>
         /// txtPrecio control.
         /// </summary>
         /// <remarks>

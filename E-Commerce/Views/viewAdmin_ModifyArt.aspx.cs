@@ -185,5 +185,15 @@ namespace tp_web_equipo_19.Views
 
 
         }
+
+        protected void addImage_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void deleteImage_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

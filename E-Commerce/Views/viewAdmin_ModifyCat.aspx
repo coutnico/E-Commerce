@@ -9,7 +9,7 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <title>Modificar/Eliminar Articulo</title>
 </head>
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-10">
     <%-- Form. necesito el formulario para poder utilizar los controles se servidor aspnet. --%>
    <form runat="server">
 

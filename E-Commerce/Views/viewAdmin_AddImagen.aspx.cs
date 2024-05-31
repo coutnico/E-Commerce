@@ -15,5 +15,10 @@ namespace tp_web_equipo_19.Views
         {
 
         }
+
+        protected void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

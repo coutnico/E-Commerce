@@ -7,46 +7,46 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <title>Agregar Imagen</title>
 </head>
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-10">
     <%-- Form. necesito el formulario para poder utilizar los controles se servidor aspnet. --%>
-   <form runat="server">
+    <form runat="server">
 
-<%-- Navegacion --%>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="viewArticulos.aspx">Inicio</a>
-    <a class="navbar-brand" href="viewAdmin_ModifyImagen.aspx">Modificar Imagen</a>
-      <div class="mx-auto text-center">
-
-
-     <h2 class=" text-white "> AGREGAR IMAGEN </h2>
-</nav>
-
-<%-- Agregar Imagen --%>
+        <%-- Navegacion --%>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="viewArticulos.aspx">Inicio</a>
+                <a class="navbar-brand" href="viewAdmin_ModifyImagen.aspx">Modificar Imagen</a>
+                <div class="mx-auto text-center">
 
 
-<div style="margin-top: 1%"  > 
+                    <h2 class=" text-white ">AGREGAR IMAGEN </h2>
+        </nav>
 
-        <div  style="display: flex; margin-top: 1%;"> 
-             <p class="fs-5" > ID (Nuevo): </p>
-           <p class="fs-5" style="margin-left:10px">  <asp:Label ID="lblID_Nuevo" runat="server" Text=""> </asp:Label>  </p>  
+        <%-- Agregar Imagen --%>
+
+        <div class="container-fluid w-50 ">
+            <div class="input-group mb-3 mt-3 ">
+                <span class="input-group-text">ID (Nuevo):</span>
+                <asp:Label ID="lblID_Nuevo" runat="server" CssClass="form-control m-lg-1 rounded" Text=""> </asp:Label>
+            </div>
+
+            <div class="input-group mb-3 mt-3 ">
+                <span class="input-group-text">Descripcion: </span>
+                <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control m-lg-1 rounded">  </asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDescripcion"
+                    ErrorMessage="La descripcion es obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
+                <%--Campo obligatorio--%>
+            </div>
+
+                    <asp:Button ID="btnAgregarImagen" runat="server" Text="Agregar" OnClick="btnAgregarImagen_Click" class="btn btn-outline-success" type="submit" />
         </div>
 
 
-        <div  style="display: flex; margin-top: 1%;"> 
-             <p class="fs-5" > Descripcion: </p>
-             <asp:TextBox ID="txtDescripcion" runat="server">  </asp:TextBox> 
-             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDescripcion"
-               ErrorMessage="La descripcion es obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>  <%--Campo obligatorio--%>
-        </div>        
-</div>
 
-             
-     <asp:Button ID="btnAgregarMarca" runat="server" Text="Agregar" OnClick="btnAgregarMarca_Click" />
 
-     <script> </script>
+        <script> </script>
 
-</form>
-   
+    </form>
+
 </body>
 </html>
