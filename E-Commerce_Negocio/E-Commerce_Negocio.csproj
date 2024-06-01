@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="CategoriaNegocio.cs" />
+    <Compile Include="Usuario_Negocio.cs" />
     <Compile Include="Imagen_Negocio.cs" />
     <Compile Include="ManagerUser.cs" />
     <Compile Include="Marca_Negocio.cs" />
