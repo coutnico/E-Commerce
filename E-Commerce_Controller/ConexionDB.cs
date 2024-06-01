@@ -60,6 +60,30 @@ namespace E_Commerce_Controller
                 CerrarConexion();
             }
         }
+
+        public void AgregarParametro(string nombreParametro_sql, object valorParametro)
+        {
+            try { 
+            AbrirConexion();
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue(nombreParametro_sql, valorParametro);
+
+            }
+            catch  (Exception ex)
+            {
+                CerrarConexion();
+                throw ex;
+              
+
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+
+
+        }
+
     }
 
 }

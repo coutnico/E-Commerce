@@ -177,6 +177,7 @@
     <Content Include="Views\viewDetallada.aspx" />
     <Content Include="Views\viewLogin.aspx" />
     <Content Include="Views\viewProfile.aspx" />
+    <Content Include="Views\viewError.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -297,6 +298,13 @@
     </Compile>
     <Compile Include="Views\viewProfile.aspx.designer.cs">
       <DependentUpon>viewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewError.aspx.cs">
+      <DependentUpon>viewError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewError.aspx.designer.cs">
+      <DependentUpon>viewError.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

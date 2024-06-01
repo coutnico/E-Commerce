@@ -15,13 +15,13 @@ namespace tp_web_equipo_19.Views
     {
 
         /// <summary>
-        /// Label1 control.
+        /// lblposback control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblposback;
 
         /// <summary>
         /// txtIDMarcaBuscado control.
