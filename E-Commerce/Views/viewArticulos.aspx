@@ -13,15 +13,15 @@
             text-shadow: 2px 2px 5px #ccc;
         }
     </style>
-    <div class="d-flex align-items-center justify-content-center">
+    <div class="d-flex align-items-center justify-content-center" style="margin-right: 2.1rem !important;">
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide shadow-lg border border-2 border-light" style="width: 80%" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide shadow-lg border border-2 border-light rounded-3" style="width: 80%" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner" style="height: 300px">
+            <div class="carousel-inner rounded-3" style="height: 300px">
                 <div class="carousel-item active">
                     <img src="..\Resources\BannerMovimiento.gif" class="img-fluid w-100" alt="..." style="max-height: 300px">
                     <div class="carousel-caption d-none d-md-block">
@@ -122,7 +122,7 @@
 
     <div class="row  justify-content-center align-items-center mt-4">
         <div class="d-flex justify-content-start align-items-start mb-2 mt-3" style="margin-left: 355px">
-            <asp:TextBox runat="server" ID="txtBuscador" OnTextChanged="txtBuscador_TextChanged" CssClass="form-control me-3 bg-black bg-opacity-25 text-light fw-semibold place-light border border-2 border-light" type="search" placeholder="Buscar nombre de producto" aria-label="Search" Style="width: 300px"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtBuscador" OnTextChanged="txtBuscador_TextChanged" CssClass="form-control me-3 ms-3 bg-black bg-opacity-25 text-light fw-semibold place-light border border-2 border-light" type="search" placeholder="Buscar nombre de producto" aria-label="Search" Style="width: 300px"></asp:TextBox>
             <button class="btn text-light border border-2 border-light fw-semibold bg-success bg-opacity-50" type="submit">Buscar</button>
         </div>
 
@@ -131,9 +131,9 @@
                 <ItemTemplate>
                     <div class="col-md-3 me-1 py-3 ">
                         <div class="border border-4 border-dark border-opacity-100 rounded-3 h-100">
-                            <div class="row g-0 h-100 bg-black bg-opacity-50">
+                            <div class="row g-0 h-100 bg-black bg-opacity-50 rounded-1">
                                 <div class="col-md-6 text-center">
-                                    <img class="img-fluid rounded-3" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
+                                    <img class="img-fluid rounded-" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
                                 </div>
                                 <div class="col-md-6 d-flex flex-column">
                                     <div class="d-flex justify-content-between">
@@ -143,7 +143,7 @@
                                     <div class=" flex-grow-1 position-relative d-flex align-items-start ">
                                     </div>
                                     <div class="card-footer text-body-secondary justify-content-between d-flex">
-                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start fst-italic" />
+                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start fw-semibold" />
                                         <p class="card-text fs-4 fw-semibold text-shadow text-dark"><%# "$" + Eval("Precio") %></p>
                                     </div>
                                 </div>
