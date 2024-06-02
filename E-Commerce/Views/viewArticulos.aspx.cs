@@ -43,7 +43,7 @@ namespace tp_web_equipo_19.Views
             master.Contador = Carrito.ContadorArticulos.ToString();
 
 
-            string valor = ((Button)sender).CommandArgument;
+            string valor = ((ImageButton)sender).CommandArgument;
 
             foreach (var articulo in lista_articulos)
             {

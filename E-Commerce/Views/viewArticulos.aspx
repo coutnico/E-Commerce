@@ -143,7 +143,7 @@
                                     <div class=" flex-grow-1 position-relative d-flex align-items-start ">
                                     </div>
                                     <div class="card-footer text-body-secondary justify-content-between d-flex">
-                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start" />
+                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start fst-italic" />
                                         <p class="card-text fs-4 fw-semibold text-shadow text-dark"><%# "$" + Eval("Precio") %></p>
                                     </div>
                                 </div>
