@@ -2,14 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        .place-light{
-
-        }
-        .place-light::placeholder{
-            color:white;
+        .place-light {
         }
 
+            .place-light::placeholder {
+                color: white;
+            }
 
+        .text-shadow {
+            text-shadow: 2px 2px 5px #ccc;
+        }
     </style>
     <div class="d-flex align-items-center justify-content-center">
 
@@ -119,34 +121,30 @@
 
 
     <div class="row  justify-content-center align-items-center mt-4">
-        <div class="d-flex justify-content-start align-items-start mb-2 mt-3" style="margin-left:355px">
-            <asp:TextBox runat="server" ID="txtBuscador" OnTextChanged="txtBuscador_TextChanged" CssClass="form-control me-3 bg-black bg-opacity-25 text-light fw-semibold place-light border border-2 border-light" type="search" placeholder="Buscar nombre de producto" aria-label="Search"  Style="width: 300px"></asp:TextBox>
+        <div class="d-flex justify-content-start align-items-start mb-2 mt-3" style="margin-left: 355px">
+            <asp:TextBox runat="server" ID="txtBuscador" OnTextChanged="txtBuscador_TextChanged" CssClass="form-control me-3 bg-black bg-opacity-25 text-light fw-semibold place-light border border-2 border-light" type="search" placeholder="Buscar nombre de producto" aria-label="Search" Style="width: 300px"></asp:TextBox>
             <button class="btn text-light border border-2 border-light fw-semibold bg-success bg-opacity-50" type="submit">Buscar</button>
         </div>
 
         <div class="row  align-items-center justify-content-center">
             <asp:Repeater ID="reapeter_articulos" runat="server">
                 <ItemTemplate>
-                    <div class="col-md-3 me-1 py-3">
-                        <div class="border border-3 border-dark border-opacity-100 rounded-4 h-100">
-                            <div class="row g-0 h-100">
+                    <div class="col-md-3 me-1 py-3 ">
+                        <div class="border border-4 border-dark border-opacity-100 rounded-3 h-100">
+                            <div class="row g-0 h-100 bg-black bg-opacity-50">
                                 <div class="col-md-6 text-center">
-                                    <img class="img-fluid rounded-3" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 100%;" />
+                                    <img class="img-fluid rounded-3" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
                                 </div>
                                 <div class="col-md-6 d-flex flex-column">
-                                    <div class="text-start flex-grow-1">
-                                        <b runat="server" id="txtNombre" class="card-text fw-semibold fs-5"><%# Eval("Nombre") %></b>
-                                        <br />
-                                        <p class="card-title badge text-bg-dark text-light text-wrap fs-5"><%# Eval("Marca") %></p>
-                                        <br />
-                                        <p class="card-title badge text-bg-dark text-light text-wrap fs-5"><%# Eval("Categoria") != null ? Eval("Categoria") : "Categoria" %></p>
+                                    <div class="d-flex justify-content-between">
+                                        <p runat="server" id="txtNombre" class="card-text fw-semibold fs-4 text-light ms-1 text-shadow"><%# Eval("Nombre") %></p>
+                                        <asp:ImageButton ID="btnAgregarCarrito" ImageUrl="https://img.icons8.com/color/480/add-shopping-cart--v1.png" Width="40" Height="40" OnClick="btnAgregarCarrito_Click" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Agregar al carrito" runat="server" />
                                     </div>
-                                    <div class="list-group list-group-flush text-start flex-grow-1">
-                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="mt-1 rounded-3 border border-2 border-dark fs-6 fw-bolder" />
-                                        <asp:Button ID="btnAgregarCarrito" OnClick="btnAgregarCarrito_Click" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Agregar al carrito" runat="server" CssClass="mt-2 mb-1 list-group-item rounded-3 border border-2 border-primary fs-6 fw-bolder" />
+                                    <div class=" flex-grow-1 position-relative d-flex align-items-start ">
                                     </div>
-                                    <div class="card-footer text-body-secondary text-end bg-success bg-opacity-50">
-                                        <p class="card-text fs-4 fw-semibold text-white"><%# "$" + Eval("Precio") %></p>
+                                    <div class="card-footer text-body-secondary justify-content-between d-flex">
+                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start" />
+                                        <p class="card-text fs-4 fw-semibold text-shadow text-dark"><%# "$" + Eval("Precio") %></p>
                                     </div>
                                 </div>
                             </div>
