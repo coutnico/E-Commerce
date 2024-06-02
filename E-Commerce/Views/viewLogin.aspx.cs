@@ -27,20 +27,20 @@ namespace tp_web_equipo_19.Views
                 if(usuario_Negocio.loguear(usuario))
                 {
                     Session.Add("usuario", usuario);
-                    Response.Redirect("viewProfile.aspx");
+                    Response.Redirect("viewProfile.aspx",false); // Para evitar que genere el th. ex.
 
                 }
                 else
                 {
-                    Session.Add("Errror", "user o pass incorrecto");
-                    Response.Redirect("viewError.aspx");
+                    Session.Add("Error", "user o pass incorrecto");
+                    Response.Redirect("viewError.aspx",false);
                 }                  
             }
 
             catch (Exception ex)
             {
-                Session.Add("Errror", "user o pass incorrecto");
-                Response.Redirect("viewError.aspx");
+                Session.Add("Error", "user o pass incorrecto");
+                Response.Redirect("viewError.aspx", false);
 
             }
 
