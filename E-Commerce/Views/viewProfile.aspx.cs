@@ -12,18 +12,19 @@ namespace tp_web_equipo_19.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
 
-            if (usuario == null ) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
+            if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
             {
                 Session.Add("error", "Debes loguearte para ingresar");
-                Response.Redirect("viewError.aspx", false);
+                Response.Redirect("viewLogin.aspx", false);
 
             }
             else
             {
                 lblUsuario.Text = usuario.User;
                 lblCorreoElectronico.Text = "Correo Electronico";
+
 
 
             }
@@ -33,6 +34,20 @@ namespace tp_web_equipo_19.Views
         protected void btnFotoPerfil_Click(object sender, ImageClickEventArgs e)
         {
 
+        }
+
+        public bool tipoUser_profile()
+        {
+            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+
+            if (usuario != null)
+            {
+                if (usuario.tipoUsuario == TipoUsuario.ADMIN)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

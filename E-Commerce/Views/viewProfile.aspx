@@ -21,7 +21,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <img src="https://img.icons8.com/color/480/verified-account--v1.png" style="background-color: transparent; width:200px ; height:200px; margin-left:82px" alt="Alternate Text"   />
+            <img src="https://img.icons8.com/color/480/verified-account--v1.png" style="background-color: transparent; width: 200px; height: 200px; margin-left: 82px" alt="Alternate Text" />
             <p>
                 ¡Protege tu cuenta en solo unos minutos! Activar la verificación en dos pasos es fácil y te brinda una capa extra de seguridad.<br>
                 <br>
@@ -31,7 +31,7 @@
                 <br>
                 ¡No esperes más! Activa la verificación en dos pasos y mantén tu cuenta segura.
             </p>
-            <div class ="text-center mt-4">
+            <div class="text-center mt-4">
                 <button class="btn btn-light fw-bolder">Ir a verificacion</button>
             </div>
         </div>
@@ -47,9 +47,22 @@
                     <br />
                     <asp:Label ID="lblCorreoElectronico" Text="" runat="server" CssClass="fs-6 text-secondary fst-italic " />
                     <div>
-                        <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="BtnLogin" />
-                        <asp:Button Text="Mis compras" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="BtnRegistarme" />
+                        <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatos" />
+                        <asp:Button Text="Mis compras" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisCompras" />
                     </div>
+                    <div class="mt-3">
+                        <% if (tipoUser_profile())
+                            {  %>
+                        <h6>Sos Administrador, puedes ingresar a los ajustes avanzados mediante el siguiente boton: </h6>
+                        <asp:Button Text="Avanzado" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnAdmin" />
+                        <% }
+                        else
+                        {  %>
+                        <h4>Sos Usuario </h4>
+                        <% } %>
+                    </div>
+
+
                 </div>
             </div>
         </div>

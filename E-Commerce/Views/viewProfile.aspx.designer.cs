@@ -42,21 +42,30 @@ namespace tp_web_equipo_19.Views
         protected global::System.Web.UI.WebControls.Label lblCorreoElectronico;
 
         /// <summary>
-        /// BtnLogin control.
+        /// btnEditarDatos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogin;
+        protected global::System.Web.UI.WebControls.Button btnEditarDatos;
 
         /// <summary>
-        /// BtnRegistarme control.
+        /// btnMisCompras control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnRegistarme;
+        protected global::System.Web.UI.WebControls.Button btnMisCompras;
+
+        /// <summary>
+        /// btnAdmin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdmin;
     }
 }
