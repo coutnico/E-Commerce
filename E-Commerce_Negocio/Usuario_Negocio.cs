@@ -32,7 +32,7 @@ namespace E_Commerce_Negocio
                while (reader.Read())
                 {
                     usuario.Id = Convert.ToInt32(reader["Id"]);
-                    usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 1 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+                    usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
 
                     return true;
                 }
