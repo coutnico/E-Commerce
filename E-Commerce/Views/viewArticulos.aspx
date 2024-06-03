@@ -13,7 +13,7 @@
             text-shadow: 2px 2px 5px #ccc;
         }
     </style>
-    <div class="d-flex align-items-center justify-content-center" style="margin-right: 2.1rem !important;">
+    <div class="d-flex align-items-center justify-content-center" style="margin-right: 0.5rem !important;">
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide shadow-lg border border-2 border-light rounded-3" style="width: 80%" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
@@ -129,11 +129,12 @@
         <div class="row  align-items-center justify-content-center">
             <asp:Repeater ID="reapeter_articulos" runat="server">
                 <ItemTemplate>
-                    <div class="col-md-3 me-1 py-3 ">
+                    <div class="col-md-3 me-1 py-3">
                         <div class="border border-4 border-dark border-opacity-100 rounded-3 h-100">
                             <div class="row g-0 h-100 bg-black bg-opacity-50 rounded-1">
                                 <div class="col-md-6 text-center">
-                                    <img class="img-fluid rounded-" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
+                                    <img class="img-fluid w-100" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
+                                    <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
                                 </div>
                                 <div class="col-md-6 d-flex flex-column">
                                     <div class="d-flex justify-content-between">
@@ -142,9 +143,8 @@
                                     </div>
                                     <div class=" flex-grow-1 position-relative d-flex align-items-start ">
                                     </div>
-                                    <div class="card-footer text-body-secondary justify-content-between d-flex">
-                                        <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow text-start fw-semibold" />
-                                        <p class="card-text fs-4 fw-semibold text-shadow text-dark"><%# "$" + Eval("Precio") %></p>
+                                    <div class="card-footer text-body-secondary">
+                                        <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("Precio") %></p>
                                     </div>
                                 </div>
                             </div>
