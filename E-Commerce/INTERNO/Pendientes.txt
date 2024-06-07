@@ -1,0 +1,23 @@
+﻿07/06/2024 -- Primera Revision
+
+- Armar los ABM's frontend.
+
+- Agregar para sumar y restar articulos en el carrito.
+
+- Creacion de usuarios (y modificacion por adm)
+
+- Agregar en el modelo de dominio del word, el LOGIN. Actualizar
+
+- Codigo backend y frontend --> Regristro, modificacion contraseña y Cerrar Sesion
+
+- ABM desde lado usuario (de sus articulos cargados). Ahora tenemos como que el admin hace el ABM. A cada producto cargado (en bd) hay que agregarle una nueva columna que sea IDUsuario, para saber quien lo cargo.
+
+- El administrador debe poder modificar medios de pago (abm), habilitar publicidad o posicionarlo entre los primeros (aquellos usuarios que "paguen mktg")
+
+- Agregar seccion para colocar consultas en cada producto. Tambien calificacion segun comentarios de compradores. Comunicacion interna entre comprador y vendedor
+
+- Envio de notificaciones tanto internas como por correo por comentarios, ventas y demas.
+
+- Generacion de reportes ventas por usuario (ventas, q prod y demas).
+
+
