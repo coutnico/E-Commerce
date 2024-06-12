@@ -49,6 +49,7 @@
                     <div>
                         <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatos" />
                         <asp:Button Text="Mis compras" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisCompras" />
+                        <asp:Button Text="Mis ventas" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisVentas" OnClick="btnMisVentas_Click" />
                     </div>
                     <div class="mt-3">
                         <% if (tipoUser_profile())

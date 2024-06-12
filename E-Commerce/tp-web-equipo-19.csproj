@@ -179,6 +179,7 @@
     <Content Include="Views\viewLogin.aspx" />
     <Content Include="Views\viewProfile.aspx" />
     <Content Include="Views\viewError.aspx" />
+    <Content Include="Views\viewUsuarioPublicaciones.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="Views\viewError.aspx.designer.cs">
       <DependentUpon>viewError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewUsuarioPublicaciones.aspx.cs">
+      <DependentUpon>viewUsuarioPublicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewUsuarioPublicaciones.aspx.designer.cs">
+      <DependentUpon>viewUsuarioPublicaciones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
