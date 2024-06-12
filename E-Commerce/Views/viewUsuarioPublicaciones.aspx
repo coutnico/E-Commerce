@@ -5,19 +5,22 @@
 
     <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
+            <div class="card mb-3 mx-auto  " style="max-width: 80%;">
+                <div class="row g-0 ">
                     <div class="col-md-4">
-                        <asp:Image ID="imgProductosUsuario" class="img-fluid rounded-start" runat="server"  src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" />
-                    <asp:Button runat="server" ID="BtnVerDetallePublicacion" OnClick="BtnVerDetallePublicacion" CommandArgument='<%# Eval("ID") %>' CommandName="IDPublicacion" Text="Ver Detalle" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
-                        </div>
+                        <img class="img-fluid rounded-start" id="imgProductosUsuario" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" style="max-width: 100%; height: 200px;" />
+                    </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <asp:Label ID="Label1"  class="card-title" runat="server" Text="lblNombre"> <%# Eval("Nombre") %> </asp:Label>
+                            <asp:Label ID="lblNombre" class="card-title" runat="server" Text=""> <%# Eval("Nombre") %> </asp:Label>
                             <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("Precio") %></p>
-        
                             <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>
                         </div>
+                        <div class="text-end">
+                            <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
+                        </div>
+
+
                     </div>
                 </div>
             </div>

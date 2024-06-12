@@ -14,8 +14,6 @@ namespace tp_web_equipo_19.Views
         private List<Articulo> lista_articulos;
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
             Articulo articulo = new Articulo();
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
@@ -29,6 +27,19 @@ namespace tp_web_equipo_19.Views
                 reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
             }
 
+        }
+
+        protected void BtnVerPublicacion_Click(object sender, EventArgs e)
+        {
+            string id = ((Button)sender).CommandArgument;
+
+            // Session.Clear();
+            Session.Remove("IDArticulo"); // para que no me deslogue y borre resto de variables guardadas en sesion.
+            Session.Add("IDArticulo", id);
+          
+
+
+            Response.Redirect("viewUsuarioVerPublicacion.aspx", false);
         }
     }
 }

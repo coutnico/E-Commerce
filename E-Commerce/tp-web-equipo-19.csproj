@@ -180,6 +180,7 @@
     <Content Include="Views\viewProfile.aspx" />
     <Content Include="Views\viewError.aspx" />
     <Content Include="Views\viewUsuarioPublicaciones.aspx" />
+    <Content Include="Views\viewUsuarioVerPublicacion.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -314,6 +315,13 @@
     </Compile>
     <Compile Include="Views\viewUsuarioPublicaciones.aspx.designer.cs">
       <DependentUpon>viewUsuarioPublicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewUsuarioVerPublicacion.aspx.cs">
+      <DependentUpon>viewUsuarioVerPublicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewUsuarioVerPublicacion.aspx.designer.cs">
+      <DependentUpon>viewUsuarioVerPublicacion.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
