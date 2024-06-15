@@ -21,6 +21,15 @@ namespace tp_web_equipo_19.Views
             lista_articulos = articuloNegocio.ListarArticulos();
 
 
+            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+
+            if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
+            {
+                Session.Add("error", "Debes loguearte para ingresar");
+                Response.Redirect("viewLogin.aspx", false);
+
+            }
+
             if (!IsPostBack)
             {
                 reapeterProductosUsuario.DataSource = lista_articulos;

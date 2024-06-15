@@ -133,7 +133,7 @@ namespace E_Commerce_Negocio
 
             // SQL usa ' para el query. y c# com dobles para separar cadenas
             //     UPDATE ARTICULOS SET Codigo = ' " + NO220 + "', Nombre = '" + nanbaa + "', Descripcion = '" + desce + "', IdMarca =" + 2 +", IdCategoria =" + 3 + ", Precio =" + 10.2 + "where Id =" + 1
-            conexionDB_Obj.EjecutarComando("UPDATE ARTICULOS SET Codigo = ' " + articulo_obj.Codigo + "', Nombre = '" + articulo_obj.Nombre + "', Descripcion = '" + articulo_obj.Descripcion + "', IdMarca = " + articulo_obj.IDMarca + ", IdCategoria = " + articulo_obj.IDCategoria + ", Precio =" + articulo_obj.Precio.ToString(CultureInfo.InvariantCulture) + "where Id = " + ID_a_modificar);
+            conexionDB_Obj.EjecutarComando("UPDATE ARTICULOS SET Codigo = '" + articulo_obj.Codigo + "', Nombre = '" + articulo_obj.Nombre + "', Descripcion = '" + articulo_obj.Descripcion + "', IdMarca = " + articulo_obj.IDMarca + ", IdCategoria = " + articulo_obj.IDCategoria + ", Precio =" + articulo_obj.Precio.ToString(CultureInfo.InvariantCulture) + "where Id = " + ID_a_modificar);
             //  conexionDB_Obj.EjecutarComando("UPDATE ARTICULOS SET Codigo = '" + articulo_obj.Codigo + "', Nombre = '" + articulo_obj.Nombre + "', Descripcion = '" + articulo_obj.Descripcion + "', IdMarca = " + articulo_obj.IDMarca + ", IdCategoria = " + articulo_obj.IDCategoria + ", Precio = " + articulo_obj.Precio + " WHERE Id = " + ID_a_modificar);
 
             string txt_articulo_actualizado = "Acticulo Actualizado";
