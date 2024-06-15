@@ -61,7 +61,8 @@ namespace tp_web_equipo_19.Views
         {
             string id = ((Button)sender).CommandArgument;
 
-            Session.Clear();
+            //Session.Clear();
+            Session.Remove("IDArticulo"); // para que no me deslogue y borre resto de variables guardadas en sesion.
             Session.Add("IdArticulo", id);
 
             Response.Redirect("viewDetallada.aspx");
