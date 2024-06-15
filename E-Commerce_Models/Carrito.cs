@@ -1,6 +1,7 @@
 ﻿using Antlr.Runtime.Tree;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.DynamicData;
@@ -66,6 +67,18 @@ namespace E_Commerce_Models
             }
 
 
+        }
+
+        public static int GetCantidadTotalArticulos()
+        {
+            int cantidadTotal = 0;
+
+            foreach (Articulo articulo in ArticulosAgregados)
+            {
+                cantidadTotal++;
+            }
+
+            return cantidadTotal;
         }
 
         public static void CargarTotalActual()
