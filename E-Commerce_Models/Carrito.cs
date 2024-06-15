@@ -27,6 +27,7 @@ namespace E_Commerce_Models
         public static List<ArticuloCarrito> ArticulosFiltrados { get; set; }
         public static List<int> ArticulosFiltradosCantidad { get; set; }
         public static decimal Total { get; set; }
+        public static int CantidadTotal { get; private set; }
 
         static Carrito()
         {
@@ -50,7 +51,7 @@ namespace E_Commerce_Models
 
             for (int i = 0; i < ArticulosFiltrados.Count; i++)
             {
-              
+
                 ArticuloCarrito articulo = ArticulosFiltrados[i];
                 if (articulo.ID == id)
                 {
@@ -69,16 +70,14 @@ namespace E_Commerce_Models
 
         }
 
-        public static int GetCantidadTotalArticulos()
+        public static void GetCantidadTotalArticulos()
         {
-            int cantidadTotal = 0;
-
+            CantidadTotal = 0;
             foreach (Articulo articulo in ArticulosAgregados)
             {
-                cantidadTotal++;
+                CantidadTotal++;
             }
 
-            return cantidadTotal;
         }
 
         public static void CargarTotalActual()

@@ -31,6 +31,11 @@ namespace tp_web_equipo_19.Views
             lblTotal.Text = "Total: $" + Carrito.Total.ToString();
         }
 
+        public void CargarLabelArticulos() 
+        {
+            lblCantProductos.Text = $"Productos ({Carrito.CantidadTotal})";
+        }
+
         protected void ibEliminar_Click(object sender, ImageClickEventArgs e)
         {
             string seleccion = ((ImageButton)sender).CommandArgument;
