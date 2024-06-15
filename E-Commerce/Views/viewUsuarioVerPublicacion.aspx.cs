@@ -20,6 +20,55 @@ namespace tp_web_equipo_19.Views
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
 
+           ////////-------------- Genero lista por def.
+
+            //Cargo lista cat y marca
+            Marca marca = new Marca();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+
+            List<Marca> marca_list = marcaNegocio.ListarMarcas();
+
+            if (!IsPostBack)
+            {
+                //lblposback.Text = "PRIMER POSBACK";
+                try
+                {
+                    listMarca.DataSource = marca_list;
+                    listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
+                    listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
+                    listMarca.DataBind();
+                }
+                catch (Exception ex)
+                {
+
+                }
+            } // else { lblposback.Text = "SEGUNDO POSBACK"; }
+
+
+            Categoria categoria = new Categoria();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
+            List<Categoria> categoria_list = categoriaNegocio.ListarCategorias();
+
+            if (!IsPostBack)
+            {
+                try
+                {
+
+                    listCat.DataSource = categoria_list;
+                    listCat.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
+                    listCat.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
+                    listCat.DataBind();
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+
+
+            ////////-------------- Valores por sesion 
+
             int id = Convert.ToInt32(Session["IdArticulo"]);
 
             if (!IsPostBack)
@@ -37,8 +86,10 @@ namespace tp_web_equipo_19.Views
                 NombreProducto.InnerText = articulo.Nombre;
                 CantidadImagenes.InnerText = "Cantidad de imagenes: " + imagenes.Count.ToString();
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
-                txtMarca.Text = articulo.Marca;
-                txtCategoria.Text = articulo.Categoria;
+                listMarca.SelectedValue = Convert.ToString(articulo.IDMarca);
+                listCat.SelectedValue = Convert.ToString(articulo.IDCategoria);
+                //txtMarca.Text = articulo.Marca;
+                //txtCategoria.Text = articulo.Categoria;
                 DescripcionArticulo.Text = articulo.Descripcion;
                 PrecioProducto.Text = "$" + articulo.Precio.ToString();
 

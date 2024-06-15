@@ -10,8 +10,24 @@
             <h2 id="NombreProducto" class="mb-3 fw-bolder text-success" runat="server"></h2>
             <asp:TextBox ID="PrecioProducto" CssClass="text-dark text-opacity-75 rounded rounded-3 bg-success bg-opacity-50 fs-4 text-center mb-3" runat="server" TextMode="SingleLine"></asp:TextBox>
             <asp:TextBox ID="DescripcionArticulo" CssClass="text-break pt-2 mb-3" runat="server" TextMode="MultiLine" Rows="4"></asp:TextBox>
-            <asp:TextBox ID="txtCategoria" CssClass="fw-semibold text-dark text-opacity-75 pt-2 mb-3" runat="server" TextMode="SingleLine" Text="Categoria: "></asp:TextBox>
-            <asp:TextBox ID="txtMarca" CssClass="fw-semibold text-dark text-opacity-75 pt-2 mb-3" runat="server" TextMode="SingleLine" Text="Marca: "></asp:TextBox>
+
+
+  
+
+
+                  <asp:DropDownList ID="listCat" runat="server" CssClass="form-select  m-lg-1  rounded"></asp:DropDownList>
+               <asp:RequiredFieldValidator ID="rfvListaCat" runat="server" ControlToValidate="listCat"
+ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>  <%--Campo obligatorio--%>
+
+
+                  <asp:DropDownList ID="listMarca" runat="server" CssClass="form-select  m-lg-1  rounded"></asp:DropDownList>
+                           <asp:RequiredFieldValidator ID="rfvListaMarca" runat="server" ControlToValidate="listMarca"
+ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>  <%--Campo obligatorio--%>
+
+
+       <%--     <asp:TextBox ID="txtCategoria" CssClass="fw-semibold text-dark text-opacity-75 pt-2 mb-3" runat="server" TextMode="SingleLine" Text="Categoria: "></asp:TextBox>
+            <asp:TextBox ID="txtMarca" CssClass="fw-semibold text-dark text-opacity-75 pt-2 mb-3" runat="server" TextMode="SingleLine" Text="Marca: "></asp:TextBox>--%>
+
             <div class="py-5 gap-1">
                 <p runat="server" id="CantidadImagenes" class ="fw-semibold"></p>
                 <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras" />

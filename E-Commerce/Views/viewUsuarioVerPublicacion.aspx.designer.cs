@@ -51,22 +51,40 @@ namespace tp_web_equipo_19.Views
         protected global::System.Web.UI.WebControls.TextBox DescripcionArticulo;
 
         /// <summary>
-        /// txtCategoria control.
+        /// listCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCategoria;
+        protected global::System.Web.UI.WebControls.DropDownList listCat;
 
         /// <summary>
-        /// txtMarca control.
+        /// rfvListaCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMarca;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvListaCat;
+
+        /// <summary>
+        /// listMarca control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList listMarca;
+
+        /// <summary>
+        /// rfvListaMarca control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvListaMarca;
 
         /// <summary>
         /// CantidadImagenes control.
