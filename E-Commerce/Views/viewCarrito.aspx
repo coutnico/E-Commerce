@@ -63,7 +63,8 @@
                         this.CargarLabelArticulos();
 
                     %>
-                    <asp:Label runat="server" ID="lblCantProductos" CssClass="text-dark fw-semibold mt-4"></asp:Label>
+                    <asp:Label runat="server" ID="lblCantProductos" CssClass="text-dark fw-semibold mt-3"></asp:Label>
+                    <p class=" text-success fw-semibold">Envio Gratis</p>
                     <div class=" border border-3 rounded-3 mx-3 mb-2 bg-black shadow mt-auto">
                         <% E_Commerce_Models.Carrito.Total = 0;
 
