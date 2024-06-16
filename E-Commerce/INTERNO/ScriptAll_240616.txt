@@ -1,4 +1,4 @@
-﻿
+﻿ok
 
 USE [CATALOGO_P3_DB]
 GO

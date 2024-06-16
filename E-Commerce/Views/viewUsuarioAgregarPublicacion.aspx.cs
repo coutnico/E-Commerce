@@ -23,7 +23,7 @@ namespace tp_web_equipo_19.Views
             List<Marca> marca_list = marcaNegocio.ListarMarcas();
 
            // lblIdPublicacion.Text = 
-            lblIdUsuario.Text = usuario.Id.ToString();
+          //  lblIdUsuario.Text = usuario.Id.ToString();
 
             if (!IsPostBack)
             {
