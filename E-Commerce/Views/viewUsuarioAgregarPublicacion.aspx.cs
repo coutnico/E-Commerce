@@ -81,6 +81,12 @@ namespace tp_web_equipo_19.Views
 
         public void btnAgregar_Click(object sender, EventArgs e)
         {
+            int id = Convert.ToInt32(Session["IdArticulo"]);
+
+            Usuario usuario = (Usuario)Session["Usuario"];
+            
+
+
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
             List<Articulo> articulosList = new List<Articulo>();
@@ -95,6 +101,7 @@ namespace tp_web_equipo_19.Views
             try
             {
 
+                
                 articulo.Nombre = txtArticulo.Text;
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Descripcion = txtDescripcion.Text;
