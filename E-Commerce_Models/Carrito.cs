@@ -82,6 +82,7 @@ namespace E_Commerce_Models
 
         public static void CargarTotalActual()
         {
+            Total = 0;
             foreach (Articulo articulo in ArticulosAgregados)
             {
                 Total += articulo.Precio;

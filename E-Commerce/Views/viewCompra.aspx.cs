@@ -22,6 +22,8 @@ namespace tp_web_equipo_19.Views
         public void CargarLabelArticulos()
         {
             lblCantProductos.Text = $"Productos ({Carrito.CantidadTotal})";
+            lblSubtotal.Text = $"Subtotal: ${Carrito.Total}";
+
         }
     }
 }

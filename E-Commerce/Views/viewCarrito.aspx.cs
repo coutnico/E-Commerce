@@ -33,7 +33,9 @@ namespace tp_web_equipo_19.Views
 
         public void CargarLabelArticulos() 
         {
+
             lblCantProductos.Text = $"Productos ({Carrito.CantidadTotal})";
+            lblSubtotal.Text = $"Subtotal: ${Carrito.Total}";
         }
 
         protected void ibEliminar_Click(object sender, ImageClickEventArgs e)
@@ -57,6 +59,11 @@ namespace tp_web_equipo_19.Views
                 RptArticulos.DataSource = Carrito.ArticulosFiltrados;
                 RptArticulos.DataBind();
             }
+        }
+
+        protected void btnContinuar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewCompra.aspx");
         }
     }
 }
