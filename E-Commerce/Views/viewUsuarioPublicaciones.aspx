@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="text-end">
-    <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion.aspx';">Agregar</button>
+    <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion.aspx';">Nueva</button>
         </div>
     <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>

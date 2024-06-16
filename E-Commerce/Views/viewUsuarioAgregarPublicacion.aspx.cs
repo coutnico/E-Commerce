@@ -14,11 +14,16 @@ namespace tp_web_equipo_19.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+  
+            Usuario usuario = (Usuario)Session["Usuario"];
+
             Marca marca = new Marca();
             MarcaNegocio marcaNegocio = new MarcaNegocio();
 
             List<Marca> marca_list = marcaNegocio.ListarMarcas();
 
+           // lblIdPublicacion.Text = 
+            lblIdUsuario.Text = usuario.Id.ToString();
 
             if (!IsPostBack)
             {
@@ -81,11 +86,12 @@ namespace tp_web_equipo_19.Views
 
         public void btnAgregar_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(Session["IdArticulo"]);
 
             Usuario usuario = (Usuario)Session["Usuario"];
-            
 
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+            Publicaciones publicaciones = new Publicaciones();
+            List<Publicaciones> publicacionessList = new List<Publicaciones>();
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
@@ -100,24 +106,28 @@ namespace tp_web_equipo_19.Views
             string mensaje;
             try
             {
-
-                
-                articulo.Nombre = txtArticulo.Text;
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.IDMarca = Convert.ToInt32(listMarca.SelectedValue);
-                articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
+                publicaciones.articulo.Nombre = txtArticulo.Text;
+                publicaciones.articulo.Codigo = txtCodigo.Text;
+                publicaciones.articulo.Descripcion = txtDescripcion.Text;
+                publicaciones.articulo.IDMarca = Convert.ToInt32(listMarca.SelectedValue);
+                publicaciones.articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
                 // imagen.URL = txtImagenUrl.Text;
-                articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
+                publicaciones.articulo.Precio = Convert.ToDecimal(txtPrecio.Text);   
+                publicaciones.articulo.ID = articulo.ID; // ya busque cual fue el ultimo ID agregado, lo asigno a de publicaciones.
+                publicaciones.IdUsuario = usuario.Id;
+                publicaciones.Stock = Convert.ToInt32(txtStock.Text);
+                //Creo nuevo registro Publicacion
+                publicacionesNegocio.agregarPublicacion(publicaciones);
 
-                articuloNegocio.agregarArticulo(articulo);
-
+                ////// Genero lista, para buscar ultimo ID de articulo cargado y crear registro en imagenes.
                 articulosList = articuloNegocio.ListarArticulos();
+
                 for (x = 0; x < articulosList.Count; x++)
                 {
                     articulo = articulosList[x]; // cargo el ultimo articulo para obtener el ultimo ID
                 }
 
+                //Cargo todas las imagenes .
                 for (x = 0; x <= Convert.ToInt32(lbl_Cantidad_imagenes_agregadas.Text); x++)
                 {
                     if (x < 1)
@@ -133,6 +143,9 @@ namespace tp_web_equipo_19.Views
                         imagen.URL = textBoxToModify.Text;
                         imagenNegocio.InsertarImagen(articulo.ID, imagen.URL); // }
                     }
+
+                 
+
                 }
 
                 mensaje = "Cargado Correctamente ";
@@ -145,6 +158,10 @@ namespace tp_web_equipo_19.Views
                 mensaje = "Se produjo una excepción: " + ex.Message;
                 // Registra el script para mostrar una alerta al usuario en el navegador
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
+            }
+            finally
+            {
+                Response.Redirect("viewUsuarioPublicaciones.aspx");
             }
 
         }
@@ -215,5 +232,6 @@ namespace tp_web_equipo_19.Views
             }
         }
 
+      
     }
 }

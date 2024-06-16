@@ -84,6 +84,7 @@ namespace E_Commerce_Negocio
             ConexionDB conexionDB_Obj = new ConexionDB();
             Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            List<Articulo> articulosList = new List<Articulo>();
             int x = 0, y = 0;
 
             try
@@ -92,8 +93,16 @@ namespace E_Commerce_Negocio
                 // SQL usa ' para el query. y c# com dobles para separar cadenas
 
                 articuloNegocio.agregarArticulo(publicaciones_obj.articulo);
-                           
-                conexionDB_Obj.EjecutarComando("Insert into PUBLICACIONES (IdPublicacion, IdUsuario, IdArticulo, Stock) Values (" + " ' " + publicaciones_obj.IdPublicacion + "' , '" + publicaciones_obj.IdUsuario + "' , '" + publicaciones_obj.articulo.ID + "' , '" + publicaciones_obj.Stock + "' ) ");
+
+                articulosList = articuloNegocio.ListarArticulos();
+
+                for (x = 0; x < articulosList.Count; x++)
+                {
+                    articulo = articulosList[x]; // cargo el ultimo articulo para obtener el ultimo ID
+                }
+                publicaciones_obj.articulo.ID = articulo.ID;
+
+                conexionDB_Obj.EjecutarComando("Insert into PUBLICACIONES (IdUsuario, IdArticulo, Stock) Values (" + " '" + publicaciones_obj.IdUsuario + "' , '" + publicaciones_obj.articulo.ID + "' , '" + publicaciones_obj.Stock + "' ) ");
                 string txt_Publicacion_agregada = "Publicacion agregada exitosamente";
                 //return 1;
             }
