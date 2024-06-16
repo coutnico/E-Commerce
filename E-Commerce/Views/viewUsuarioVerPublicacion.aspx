@@ -4,10 +4,8 @@
 
     <section>
 
-        <div class="text-end">
-            <a href="viewUsuarioPublicaciones.aspx">
-                <img width="100px" src="../Resources/Close_Window.png" />
-            </a>
+        <div class="text-end" >
+            <button type="button" class="btn-close" aria-label="Close"  style="font-size:30px" onclick="window.location.href = 'viewUsuarioPublicaciones.aspx';"></button>
         </div>
         <div class="product-container d-flex justify-content-center align-items-center pb-5">
             <div class="product-image">
