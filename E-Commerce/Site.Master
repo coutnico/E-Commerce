@@ -47,7 +47,7 @@
             #A9EEB4 75%, /* Dark green at 75% */
             #ffffff 100% /* Darkest green at 100% */
             );
-            margin-right: 200px
+            margin-right: 100px
         }
     </style>
 </head>

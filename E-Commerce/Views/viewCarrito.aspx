@@ -19,18 +19,44 @@
             margin-top: 15px;
             margin-left: 40px;
         }
+
+        .fs-Segoe {
+            font-family: "Segoe UI Emoji";
+        }
+
+        .text-shadow {
+            text-shadow: 1px 1px 3px #ccc;
+        }
     </style>
 
-    <div class="container-lg w-100 align-items-start">
+    <div class="container-lg w-100 align-items-start pb-sm-5">
 
 
         <%if (E_Commerce_Models.Carrito.ArticulosFiltrados.Count == 0)
             {  %>
-        <div class="row mt-3 shadow">
-            <div class="text-center">
-                <h2 class="text-success fw-bold">No se agrego ninguna articulo al carrito</h2>
+
+
+
+        <div class="container" style="margin-top: 90px">
+            <div class="position-relative top-50 start-50 translate-middle-x rounded-4 border border-5 border-light shadow-lg bg-white" style="width: 700px; height: 200px; background: rgb(33,37,41); background: radial-gradient(circle, rgba(33,37,41,1) 0%, rgba(19,99,19,1) 64%);">
+                <div class="d-flex align-items-center justify-content-between mx-auto" style="height: 100%;">
+                    <div class="text-start">
+                        <h4 class="text-light fw-bold ms-4">No se agrego ninguna articulo al carrito</h4>
+                    </div>
+                    <div class="text-center me-3">
+                        <a href="viewArticulos.aspx" class="text-decoration-none shadow-lg">
+                            <img src="..\Resources\icons8-tienda-96.png" class="align-items-end" style="width: 130px; height: 130px" alt="Alternate Text" />
+                            <p class="fs-4 text-light fst-italic">Explorar articulos</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
+
+
         <%}
             else
             { %>
