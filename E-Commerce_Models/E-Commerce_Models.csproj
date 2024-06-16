@@ -76,6 +76,8 @@
     <Compile Include="Articulo.cs" />
     <Compile Include="Carrito.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="Ventas.cs" />
+    <Compile Include="Publicaciones.cs" />
     <Compile Include="Usuarios.cs" />
     <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />

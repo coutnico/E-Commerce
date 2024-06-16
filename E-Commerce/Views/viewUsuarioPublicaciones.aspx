@@ -2,8 +2,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    d
-
+    <div class="text-end">
+    <button type="button" class="btn btn-success btn-lg">Agregar</button>
+        </div>
     <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">

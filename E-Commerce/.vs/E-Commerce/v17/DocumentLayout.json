@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce\\E-Commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce\\E-Commerce\\views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce\\e-commerce\\views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|solutionrelative:views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -251,8 +251,7 @@
               "RelativeToolTip": "..\\E-Commerce_Negocio\\ArticuloNegocio.cs",
               "ViewState": "AQIAAIAAAAAAAAAAAAAIwJMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T17:52:51.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T17:52:51.318Z"
             },
             {
               "$type": "Document",
@@ -301,8 +300,7 @@
               "RelativeToolTip": "Views\\viewUsuarioPublicaciones.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-06-12T00:32:30.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:32:30.513Z"
             },
             {
               "$type": "Document",
@@ -469,8 +467,7 @@
               "RelativeToolTip": "Views\\viewUsuarioPublicaciones.aspx.designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-12T00:47:35.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:47:35.844Z"
             },
             {
               "$type": "Document",
