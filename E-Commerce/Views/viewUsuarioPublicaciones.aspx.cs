@@ -12,14 +12,21 @@ namespace tp_web_equipo_19.Views
     public partial class viewUsuarioPublicaciones : System.Web.UI.Page
     {
         private List<Articulo> lista_articulos;
+        private List<Publicaciones> lista_publicaciones;
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+            lista_publicaciones = publicacionesNegocio.ListarPublicaciones();
+
             Articulo articulo = new Articulo();
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
             lista_articulos = articuloNegocio.ListarArticulos();
-
+            
 
             Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
 
@@ -32,7 +39,8 @@ namespace tp_web_equipo_19.Views
 
             if (!IsPostBack)
             {
-                reapeterProductosUsuario.DataSource = lista_articulos;
+                //reapeterProductosUsuario.DataSource = lista_articulos;
+                reapeterProductosUsuario.DataSource = lista_publicaciones;
                 reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
             }
 
@@ -43,8 +51,8 @@ namespace tp_web_equipo_19.Views
             string id = ((Button)sender).CommandArgument;
 
             // Session.Clear();
-            Session.Remove("IDArticulo"); // para que no me deslogue y borre resto de variables guardadas en sesion.
-            Session.Add("IDArticulo", id);
+            Session.Remove("IdPublicacion"); // para que no me deslogue y borre resto de variables guardadas en sesion.
+            Session.Add("IdPublicacion", id);
           
 
 

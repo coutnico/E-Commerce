@@ -31,42 +31,58 @@ namespace E_Commerce_Negocio
 
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
-
+            List<Imagen> listaimagenes = new List<Imagen>();
             List<Publicaciones> listaPublicaciones = new List<Publicaciones>();
 
             Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            int x = 0, y=0;
+            int x = 0, y = 0;
 
 
 
             try
             {
-                //List<Articulo> listarticulo = articuloNegocio.ListarArticulos();
 
-                //for (x = 0; x < listarticulo.Count; x++)
-                //{
-                //    articulo = listarticulo[x];
+                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock from PUBLICACIONES";
 
-                    string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock from PUBLICACIONES";
-                
-                    reader = conexionDB_obj.LeerDatos(query);
+                reader = conexionDB_obj.LeerDatos(query);
 
-                    while (reader.Read())
+                while (reader.Read())
+                {
+
+                    Publicaciones publicaciones = new Publicaciones();
+
+                    publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
+                    publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
+                    publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
+                    publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
+
+                    // Busco en articulos y guardo en publicaciones para listar
+                    articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
+                    publicaciones.articulo = articulo;
+                    //publicaciones.articulo.Codigo = articulo.Codigo;
+                    //publicaciones.articulo.Nombre = articulo.Nombre;
+                    //publicaciones.articulo.Descripcion = articulo.Descripcion;
+                    //publicaciones.articulo.IDMarca = articulo.IDMarca;
+                    //publicaciones.articulo.IDCategoria = articulo.IDCategoria;
+                    //publicaciones.articulo.Precio = articulo.Precio;
+
+                    listaimagenes = imagenNegocio.ListarImagen();
+                    foreach (Imagen imagen_aux in listaimagenes)
                     {
-
-                        Publicaciones publicaciones = new Publicaciones();
-                        
-                        publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
-                        publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
-                        publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
-                        publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
+                        if (publicaciones.articulo.ID == imagen_aux.IdArticulo) {
+                            publicaciones.articulo.ImagenURl = imagen_aux.URL;// Imagen principal (la primera que encuentre)
+                            break;
+                        }; 
+                    }
+                   
+                    
 
                     listaPublicaciones.Add(publicaciones);
 
-                    }
+                }
 
-                    return listaPublicaciones;
+                return listaPublicaciones;
                 //}
             }
 
@@ -128,11 +144,11 @@ namespace E_Commerce_Negocio
             try
             {
                 // SQL usa ' para el query. y c# com dobles para separar cadenas
-               publicaciones = Buscar_Publicacion_por_ID(id_delete);
+                publicaciones = Buscar_Publicacion_por_ID(id_delete);
 
-               articuloNegocio.eliminarArticulo(publicaciones.articulo.ID);
+                articuloNegocio.eliminarArticulo(publicaciones.articulo.ID);
 
-               conexionDB_Obj.EjecutarComando("Delete from PUBLICACIONES where IdPublicacion = " + id_delete);
+                conexionDB_Obj.EjecutarComando("Delete from PUBLICACIONES where IdPublicacion = " + id_delete);
 
                 string txt_Publicacion_eliminada = "Publicacion eliminada";
             }
@@ -155,10 +171,10 @@ namespace E_Commerce_Negocio
 
             try
             {
-                publicaciones = Buscar_Publicacion_por_ID(ID_a_modificar);
-                articuloNegocio.modificarArticulo(publicaciones.articulo,ID_a_modificar);
+                //publicaciones = Buscar_Publicacion_por_ID(ID_a_modificar);
+                articuloNegocio.modificarArticulo(publicacion_obj.articulo, publicacion_obj.articulo.ID);
 
-                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET IdPublicacion =" + publicacion_obj.IdPublicacion + ", IdUsuario =" + publicacion_obj.IdUsuario + ", IdArticulo = '" + publicacion_obj.articulo.ID + ", Stock = " + publicacion_obj.Stock + "where Id = " + ID_a_modificar);
+                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET IdPublicacion =" + publicacion_obj.IdPublicacion + ", IdUsuario =" + publicacion_obj.IdUsuario + ", IdArticulo =" + publicacion_obj.articulo.ID + ", Stock =" + publicacion_obj.Stock + " where Id = " + ID_a_modificar);
 
                 string txt_publicacion_actualizado = "Publicacion Actualizada";
             }
@@ -174,12 +190,14 @@ namespace E_Commerce_Negocio
         public Publicaciones Buscar_Publicacion_por_ID(int id_buscado)
 
         {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            Articulo articulo = new Articulo();
 
             try
             {
-                
+
                 string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock from PUBLICACIONES";
- 
+
                 reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
 
                 Publicaciones publicaciones = new Publicaciones();
@@ -195,7 +213,11 @@ namespace E_Commerce_Negocio
                         publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
                         publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
                         publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
-                     }
+                        articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
+                        publicaciones.articulo = articulo;
+                        
+                       
+                    }
                 }
                 return publicaciones;
 

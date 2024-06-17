@@ -39,6 +39,10 @@
                     <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras" />
                     <asp:Button ID="Siguiente" OnClick="Siguiente_Click" CssClass="btn btn-outline-primary" runat="server" Text="Siguiente" />
                 </div>
+
+                <asp:TextBox ID="txtStock" class="mb-3 fw-bolder text-success" runat="server" TextMode="Number"></asp:TextBox>
+
+
                 <div class="button-group">
                     <asp:Button ID="btnModificarPublicacion" OnClick="btnModificarPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="Modificar" />
                     <br />

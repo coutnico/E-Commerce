@@ -15,6 +15,9 @@ namespace tp_web_equipo_19.Views
         private int IndiceImagen = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+            Publicaciones publicaciones = new Publicaciones();
+
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
@@ -77,36 +80,35 @@ namespace tp_web_equipo_19.Views
 
             ////////-------------- Valores por sesion 
 
-            int id = Convert.ToInt32(Session["IdArticulo"]);
-            Imagen imagen_aux = new Imagen();
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
+            
+
             if (!IsPostBack)
             {
 
                 foreach (Imagen imagen in imagenNegocio.ListarImagen())
                 {
-                    if (imagen.IdArticulo == id)
+                    if (imagen.IdArticulo == publicaciones.articulo.ID)
                     {
                         imagenes.Add(imagen);
-                        imagen_aux = imagen;
+                        
                     }
                 }
-              
 
-                articulo = articuloNegocio.Buscar_Articulo_por_ID(id);
-                txtNombre.Text = articulo.Nombre;
-                txtCodigo.Text = articulo.Codigo;
+
+                txtStock.Text = Convert.ToString(publicaciones.Stock);
+                txtNombre.Text = publicaciones.articulo.Nombre;
+                txtCodigo.Text = publicaciones.articulo.Codigo;
                 CantidadImagenes.InnerText = "Cantidad de imagenes: " + imagenes.Count.ToString();
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
-                listMarca.SelectedValue = Convert.ToString(articulo.IDMarca);
-                listCat.SelectedValue = Convert.ToString(articulo.IDCategoria);
-                //txtMarca.Text = articulo.Marca;
-                //txtCategoria.Text = articulo.Categoria;
-                txtDescripcion.Text = articulo.Descripcion;
-                txtPrecio.Text = articulo.Precio.ToString();
-
-                txtImagenUrl.Text = imagen_aux.URL;
-
-
+                listMarca.SelectedValue = Convert.ToString(publicaciones.articulo.IDMarca);
+                listCat.SelectedValue = Convert.ToString(publicaciones.articulo.IDCategoria);
+                txtDescripcion.Text = publicaciones.articulo.Descripcion;
+                txtPrecio.Text = publicaciones.articulo.Precio.ToString();
+                txtImagenUrl.Text = publicaciones.articulo.ImagenURl;
 
             }
         }
@@ -114,32 +116,33 @@ namespace tp_web_equipo_19.Views
         protected void btnEliminarPublicacion_Click(object sender, EventArgs e)
         {
            // lblposback.Text = "";
+            Publicaciones publicaciones = new Publicaciones();  
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();   
+
+
             Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
             //Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
-            int id = Convert.ToInt32(Session["IdArticulo"]);
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
 
             try
-            {
-
-                articuloNegocio.eliminarArticulo(id);
-
+            {     
+                publicacionesNegocio.eliminarPublicacion(IdPublicacion);
 
                 foreach (Imagen imagen in imagenNegocio.ListarImagen())
                 {
-                    if (imagen.IdArticulo == id)
+                    if (imagen.IdArticulo == publicaciones.articulo.ID)
                     {
-                        imagenNegocio.EliminarImagen(id);
+                        imagenNegocio.EliminarImagen(publicaciones.articulo.ID);
                     }
                 }
                 
-
-                articulo.ID = id;
-
-                string mensaje = "Articulo ID " + articulo.ID + " se ha eliminado Correctamente ";
+                string mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha eliminado Correctamente ";
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
                 Response.Redirect("viewUsuarioPublicaciones.aspx");
@@ -156,35 +159,40 @@ namespace tp_web_equipo_19.Views
 
         protected void btnModificarPublicacion_Click(object sender, EventArgs e)
         {
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
-            int id = Convert.ToInt32(Session["IdArticulo"]);
+            Usuario usuario = (Usuario)Session["usuario"];
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
 
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion); // lo necesito para el ID del art y pub
+
+
             string mensaje;
             try
             {
-
-                articulo.Nombre = txtNombre.Text;
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.IDMarca = Convert.ToInt32(listMarca.SelectedValue);
-                articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
-
-
-                articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
-                // articulo.Precio = Convert.ToDecimal(txtPrecio.Text.ToString(CultureInfo.InvariantCulture));
-                articulo.ID = id;
-
+                
+                publicaciones.IdUsuario = usuario.Id;
+                publicaciones.Stock = Convert.ToInt32(txtStock.Text);
+                publicaciones.articulo.ID = publicaciones.articulo.ID;
+                publicaciones.articulo.Nombre = txtNombre.Text;
+                publicaciones.articulo.Codigo = txtCodigo.Text;
+                publicaciones.articulo.Descripcion = txtDescripcion.Text;
+                publicaciones.articulo.IDMarca = Convert.ToInt32(listMarca.SelectedValue);
+                publicaciones.articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
+                publicaciones.articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
                 imagen.URL = txtImagenUrl.Text;
 
-                articuloNegocio.modificarArticulo(articulo,id);
-                imagenNegocio.ModificarImagen(articulo.ID, imagen.URL); // 
+                
+                publicacionesNegocio.modificarPublicacion(publicaciones, publicaciones.IdPublicacion);
+                imagenNegocio.ModificarImagen(publicaciones.articulo.ID, imagen.URL); // 
 
-
-                mensaje = "Articulo ID " + articulo.ID + " se ha modificado Correctamente ";
+                mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha modificado Correctamente ";
                 // Registra el script para mostrar una alerta al usuario en el navegador
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
