@@ -38,8 +38,7 @@ namespace E_Commerce_Negocio
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             int x = 0, y = 0;
 
-
-
+            
             try
             {
 
@@ -47,6 +46,7 @@ namespace E_Commerce_Negocio
 
                 reader = conexionDB_obj.LeerDatos(query);
 
+                
                 while (reader.Read())
                 {
 
@@ -187,11 +187,12 @@ namespace E_Commerce_Negocio
 
         }
 
-        public Publicaciones Buscar_Publicacion_por_ID(int id_buscado)
+        public Publicaciones Buscar_Publicacion_por_ID(int id_buscado_publi)
 
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            Articulo articulo = new Articulo();
+            
+            int id_aux = 0;
 
             try
             {
@@ -201,22 +202,25 @@ namespace E_Commerce_Negocio
                 reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
 
                 Publicaciones publicaciones = new Publicaciones();
+                Articulo articulo = new Articulo();
 
-                int IdArticulo_aux=0;
+                int IdArticulo_aux = new int();
                 while (reader.Read())
                 {
 
-                    publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
+                    id_aux = Convert.ToInt32(reader["IdPublicacion"]);
+                    //publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
 
-                    if (publicaciones.IdPublicacion == id_buscado)
+                    if (id_aux == id_buscado_publi)
                     {
+                        publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                         publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
                         // publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
                         IdArticulo_aux = Convert.ToInt32(reader["IdArticulo"]);
                         publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
-                        articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
+                        publicaciones.articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
                         // articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
-                        publicaciones.articulo = articulo;
+                        //publicaciones.articulo = articulo;
                         
                        
                     }

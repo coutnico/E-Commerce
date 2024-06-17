@@ -48,6 +48,9 @@
                     <asp:Button ID="btnModificarPublicacion" OnClick="btnModificarPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="Modificar" />
                     <br />
                     <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
+                
+                    <asp:Button ID="btnpruebabuscar" OnClick="btnpruebabuscar_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="prueba" />
+                
                 </div>
             </div>
         </div>

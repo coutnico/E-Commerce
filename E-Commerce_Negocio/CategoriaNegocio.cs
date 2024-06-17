@@ -110,6 +110,7 @@ namespace E_Commerce_Negocio
         public Categoria Buscar_Categoria_por_ID(int id_buscado)
 
         {
+            int id_aux = 0;
             try
             {
                 //conexion.Open();
@@ -123,11 +124,11 @@ namespace E_Commerce_Negocio
                 while (reader.Read())
                 {
 
-                    Categoria.Id = Convert.ToInt32(reader["Id"]);
+                    id_aux = Convert.ToInt32(reader["Id"]);
 
-                    if (Categoria.Id == id_buscado)
+                    if (id_aux == id_buscado)
                     {
-                        Categoria.Id = Convert.ToInt32(reader["Id"]);
+                        Categoria.Id = id_buscado;
                         Categoria.Descripcion = reader["Descripcion"].ToString();
                     }
                 }

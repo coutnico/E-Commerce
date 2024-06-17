@@ -229,5 +229,13 @@ namespace tp_web_equipo_19.Views
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
             }
         }
+
+        protected void btnpruebabuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            Articulo articulo  = new Articulo();    
+
+            articulo = articuloNegocio.Buscar_Articulo_por_ID(5020);
+        }
     }
     }

@@ -114,6 +114,7 @@ namespace E_Commerce_Negocio
         public Marca Buscar_Marca_por_ID(int id_buscado)
 
         {
+            int id_aux = 0;
             try
             {
                 //conexion.Open();
@@ -126,11 +127,11 @@ namespace E_Commerce_Negocio
                 Marca marca = new Marca();
                 while (reader.Read())
                 {
-                    marca.Id = Convert.ToInt32(reader["Id"]);
+                    id_aux = Convert.ToInt32(reader["Id"]);
 
-                    if (marca.Id == id_buscado)
+                    if (id_aux == id_buscado)
                     {
-                        marca.Id = Convert.ToInt32(reader["Id"]);
+                        marca.Id = id_buscado;//Convert.ToInt32(reader["Id"]);
                         marca.Descripcion = reader["Descripcion"].ToString();
                     }
                 }

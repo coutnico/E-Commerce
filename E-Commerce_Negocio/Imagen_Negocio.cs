@@ -105,6 +105,8 @@ namespace E_Commerce_Negocio
         public Imagen Buscar_Imagen_por_ID_articulo(Int32 id_buscado) // medianteID de Articulo
 
         {
+            int id_aux = 0;
+
             try
             {
                 //conexion.Open();
@@ -118,11 +120,11 @@ namespace E_Commerce_Negocio
                 while (reader.Read())
                 {
 
-                    imagen.IdArticulo = Convert.ToInt32(reader["IdArticulo"]);
+                    id_aux = Convert.ToInt32(reader["IdArticulo"]);
 
-                    if (imagen.IdArticulo == id_buscado)
+                    if (id_aux == id_buscado)
                     {
-                        imagen.Id = Convert.ToInt32(reader["Id"]);
+                        imagen.Id = id_buscado;//Convert.ToInt32(reader["Id"]);
                         imagen.URL = reader["ImagenUrl"].ToString();
                     }
                 }

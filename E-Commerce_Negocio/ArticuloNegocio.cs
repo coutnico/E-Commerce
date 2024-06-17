@@ -37,7 +37,7 @@ namespace E_Commerce_Negocio
         try
         {
             //conexion.Open();
-            string query = "Select id, Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from ARTICULOS";
+            string query = "Select Id, Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from ARTICULOS";
             //cmd = new SqlCommand(query, conexion);
             //reader = cmd.ExecuteReader();
             reader = conexionDB_obj.LeerDatos(query);
@@ -150,28 +150,28 @@ namespace E_Commerce_Negocio
     public Articulo Buscar_Articulo_por_ID(int id_buscado)
 
     {
-
-        try
+            
+            int articulo_aux = 0;
+            try
         {
             // conexionDB_obj.AbrirConexion();
             string query = "Select Id, Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from ARTICULOS";
-            //cmd = new SqlCommand(query, conexion);
+                //cmd = new SqlCommand(query, conexion);
 
+                Articulo articulo = new Articulo();
 
-            reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
+                reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
 
-            Articulo articulo = new Articulo();
+            
             while (reader.Read())
             {
 
+                articulo_aux = Convert.ToInt32(reader["Id"]);
 
-
-                articulo.ID = Convert.ToInt32(reader["id"]);
-
-                if (articulo.ID == id_buscado)
+                if (articulo_aux == id_buscado)
                 {
 
-                    articulo.ID = Convert.ToInt32(reader["Id"]);
+                    articulo.ID = id_buscado;
                     articulo.Codigo = reader["Codigo"].ToString();
                     articulo.Nombre = reader["Nombre"].ToString();
                     articulo.Descripcion = reader["Descripcion"].ToString();
