@@ -174,7 +174,7 @@ namespace E_Commerce_Negocio
                 //publicaciones = Buscar_Publicacion_por_ID(ID_a_modificar);
                 articuloNegocio.modificarArticulo(publicacion_obj.articulo, publicacion_obj.articulo.ID);
 
-                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET IdPublicacion =" + publicacion_obj.IdPublicacion + ", IdUsuario =" + publicacion_obj.IdUsuario + ", IdArticulo =" + publicacion_obj.articulo.ID + ", Stock =" + publicacion_obj.Stock + " where Id = " + ID_a_modificar);
+                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET  IdUsuario=" + publicacion_obj.IdUsuario + ", IdArticulo =" + publicacion_obj.articulo.ID + ", Stock =" + publicacion_obj.Stock + " where IdPublicacion = " + ID_a_modificar);
 
                 string txt_publicacion_actualizado = "Publicacion Actualizada";
             }
