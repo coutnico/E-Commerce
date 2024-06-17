@@ -84,6 +84,7 @@ namespace tp_web_equipo_19.Views
 
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
 
+            lblIdPubli.Text = Convert.ToString(IdPublicacion);
 
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
             
@@ -174,7 +175,7 @@ namespace tp_web_equipo_19.Views
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
-            lblIdPubli.Text = Convert.ToString(IdPublicacion);
+            
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion); // lo necesito para el ID del art y pub
 
 

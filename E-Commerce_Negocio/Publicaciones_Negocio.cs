@@ -202,7 +202,7 @@ namespace E_Commerce_Negocio
 
                 Publicaciones publicaciones = new Publicaciones();
 
-
+                int IdArticulo_aux=0;
                 while (reader.Read())
                 {
 
@@ -211,9 +211,11 @@ namespace E_Commerce_Negocio
                     if (publicaciones.IdPublicacion == id_buscado)
                     {
                         publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
-                        publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
+                        // publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
+                        IdArticulo_aux = Convert.ToInt32(reader["IdArticulo"]);
                         publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
-                        articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
+                        articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
+                        // articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
                         publicaciones.articulo = articulo;
                         
                        
