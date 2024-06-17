@@ -39,9 +39,10 @@ namespace tp_web_equipo_19.Views
 
             if (!IsPostBack)
             {
-                //reapeterProductosUsuario.DataSource = lista_articulos;
-                reapeterProductosUsuario.DataSource = lista_publicaciones;
-                reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
+
+                //reapeterProductosUsuario.DataSource = lista_publicaciones;
+                //reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
+
             }
 
         }
