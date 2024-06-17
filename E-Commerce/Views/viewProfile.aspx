@@ -36,7 +36,13 @@
             </div>
         </div>
     </div>
+
     <%} %>
+    <div class="text-end">
+
+        <asp:Button Text="Cerrar Sesion" OnClick="btnCerrarSesion_Click" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnCerrarSesion" />
+
+    </div>
     <div class="container" style="margin-top: 60px">
         <div class="position-relative top-50 start-50 translate-middle-x rounded-4 border border-5 border-info-subtle shadow-lg " style="width: 400px; height: 500px; background: rgb(128,240,146); background: linear-gradient(90deg, rgba(128,240,146,1) 14%, rgba(78,194,228,1) 44%, rgba(78,194,228,1) 60%, rgba(128,240,146,1) 86%);">
             <div class="row align-items-center justify-content-center" style="height: 90%">
@@ -57,8 +63,8 @@
                         <h6>Sos Administrador, puedes ingresar a los ajustes avanzados mediante el siguiente boton: </h6>
                         <%--<asp:Button Text="Avanzado" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-2 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnAdmin" />--%>
                         <% }
-                        else
-                        {  %>
+                            else
+                            {  %>
                         <h4>Sos Usuario </h4>
                         <% } %>
                     </div>

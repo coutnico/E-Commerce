@@ -55,5 +55,11 @@ namespace tp_web_equipo_19.Views
             Response.Redirect("viewUsuarioPublicaciones.aspx",false);
 
         }
+
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Remove("usuario");
+            Response.Redirect("viewLogin.aspx");
+        }
     }
 }
