@@ -51,7 +51,7 @@ namespace tp_web_equipo_19.Views
             string id = ((Button)sender).CommandArgument;
 
             // Session.Clear();
-            Session.Remove("IdPublicacion"); // para que no me deslogue y borre resto de variables guardadas en sesion.
+            Session.Remove("IdPublicacion"); // solo borra esta variable de la sesion.
             Session.Add("IdPublicacion", id);
           
 

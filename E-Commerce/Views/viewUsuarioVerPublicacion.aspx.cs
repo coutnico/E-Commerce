@@ -20,7 +20,9 @@ namespace tp_web_equipo_19.Views
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
+            
             ImagenNegocio imagenNegocio = new ImagenNegocio();
+            Imagen imagen_aux = new Imagen();
 
             ////////-------------- VERIFICO QUE ESTE LOGUEADO
             Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
@@ -98,6 +100,7 @@ namespace tp_web_equipo_19.Views
                     }
                 }
 
+                imagen_aux = imagenes[0];
 
                 txtStock.Text = Convert.ToString(publicaciones.Stock);
                 txtNombre.Text = publicaciones.articulo.Nombre;
@@ -108,7 +111,8 @@ namespace tp_web_equipo_19.Views
                 listCat.SelectedValue = Convert.ToString(publicaciones.articulo.IDCategoria);
                 txtDescripcion.Text = publicaciones.articulo.Descripcion;
                 txtPrecio.Text = publicaciones.articulo.Precio.ToString();
-                txtImagenUrl.Text = publicaciones.articulo.ImagenURl;
+                txtImagenUrl.Text = imagen_aux.URL;
+                // txtImagenUrl.Text = publicaciones.articulo.ImagenURl;
 
             }
         }
@@ -170,6 +174,7 @@ namespace tp_web_equipo_19.Views
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
+            lblIdPubli.Text = Convert.ToString(IdPublicacion);
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion); // lo necesito para el ID del art y pub
 
 

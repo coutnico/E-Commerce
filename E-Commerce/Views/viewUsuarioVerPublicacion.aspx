@@ -13,6 +13,7 @@
             </div>
             <div class="product-details d-flex flex-column p-3">
 
+                <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
                 <asp:TextBox ID="txtNombre" class="mb-3 fw-bolder text-success" runat="server"></asp:TextBox>
                 <asp:TextBox ID="txtCodigo" class="mb-3 fw-bolder text-bg-info" runat="server"></asp:TextBox>
 
