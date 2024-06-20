@@ -13,7 +13,8 @@ namespace tp_web_equipo_19.Views
         private Usuario_Negocio usuario_Negocio = new Usuario_Negocio();
         protected void Page_Load(object sender, EventArgs e)
         {
-            rpUsuarios.DataSource = usuario_Negocio.
+            rpUsuarios.DataSource = usuario_Negocio.ListarUsuarios();
+            rpUsuarios.DataBind();
         }
     }
 }

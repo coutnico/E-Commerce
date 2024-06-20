@@ -93,9 +93,23 @@ namespace E_Commerce_Negocio
                 throw ex;
             }
             finally { conexionDB.CerrarConexion(); }
-
-
         }
 
+        public void EliminarUsaurioPorID(int id)
+        {
+            try
+            {
+                conexionDB.EjecutarComando("DELETE FROM USUARIOS WHERE Id = " + id.ToString());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                conexionDB.CerrarConexion();
+            }
+        }
     }
 }
