@@ -81,9 +81,15 @@ namespace tp_web_equipo_19.Views
 
 
             ////////-------------- Valores por sesion 
+            if  (Convert.ToString(Session["IdPublicacion"]) == null)
+            {
+                Session.Add("error", "Error publicacion");
+                Response.Redirect("viewLogin.aspx", false);
+            }
+
 
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
-
+            
             lblIdPubli.Text = Convert.ToString(IdPublicacion);
 
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);

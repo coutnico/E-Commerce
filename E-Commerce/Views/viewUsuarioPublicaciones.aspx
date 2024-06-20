@@ -6,25 +6,9 @@
         <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion.aspx';">Nueva</button>
     </div>
 
-    <% 
-        E_Commerce_Models.Usuario usuario = (E_Commerce_Models.Usuario)Session["usuario"];
-        E_Commerce_Negocio.Publicaciones_Negocio publicaciones_Negocio = new E_Commerce_Negocio.Publicaciones_Negocio();
-        List<E_Commerce_Models.Publicaciones> listapublicaciones;
+   
 
-        listapublicaciones = publicaciones_Negocio.ListarPublicaciones();
-        foreach (E_Commerce_Models.Publicaciones publicaciones in listapublicaciones)
-        {
-            if (usuario.Id == publicaciones.IdUsuario)
-            {
-                imgProductosUsuario.ImageUrl = publicaciones.articulo.ImagenURl; // img principal
-                lblNombre.Text = publicaciones.articulo.Nombre;
-                lblPrecio.Text = "$" +  Convert.ToString(publicaciones.articulo.Precio);
-                lblStock.Text = "Stock: " + Convert.ToString(publicaciones.Stock);
-
-                BtnVerPublicacion.CommandArgument = Convert.ToString(publicaciones.IdPublicacion);
-    %>
-
-    <div class="card mb-3 mx-auto  " style="max-width: 80%;">
+<%--    <div class="card mb-3 mx-auto  " style="max-width: 80%;">
         <div class="row g-0 ">
             <div class="col-md-4">
                 <asp:Image class="img-fluid rounded-start" ID="imgProductosUsuario" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" Style="max-width: 100%; height: 200px;" runat="server" />
@@ -38,15 +22,15 @@
                     <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>
                 </div>
                 <div class="text-end">
-                    <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
-                    <%--Command argument en logica c# arriba--%>
+                    <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click"    CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
+                    <%--Command argument en logica c# arriba
                 </div>
             </div>
         </div>
-    </div>
+    </div>--%>
 
 
-    <%--    <asp:Repeater ID="reapeterProductosUsuario" runat="server">
+       <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
                 <div class="row g-0 ">
@@ -68,8 +52,7 @@
             </div>
 
         </ItemTemplate>
-    </asp:Repeater>--%>
+    </asp:Repeater>
 
-    <% }
-        } %>
+
 </asp:Content>

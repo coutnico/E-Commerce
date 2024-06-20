@@ -17,16 +17,13 @@ namespace tp_web_equipo_19.Views
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Publicaciones publicaciones = new Publicaciones();
-            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
-            lista_publicaciones = publicacionesNegocio.ListarPublicaciones();
 
             Articulo articulo = new Articulo();
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
             lista_articulos = articuloNegocio.ListarArticulos();
-            
+
 
             Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
 
@@ -40,8 +37,30 @@ namespace tp_web_equipo_19.Views
             if (!IsPostBack)
             {
 
-                //reapeterProductosUsuario.DataSource = lista_publicaciones;
-                //reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
+                Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+                List<Publicaciones> listapublicaciones;
+                List<Publicaciones> listapublicacionesfiltradaporusuario = new List<Publicaciones>(); ;
+                
+                listapublicaciones = publicaciones_Negocio.ListarPublicaciones();
+                foreach (Publicaciones publicaciones in listapublicaciones)
+                {
+                    if (usuario.Id == publicaciones.IdUsuario)
+                    {
+
+                        //imgProductosUsuario.ImageUrl = publicaciones.articulo.ImagenURl; // img principal
+                        //lblNombre.Text = publicaciones.articulo.Nombre;
+                        //lblPrecio.Text = "$" + Convert.ToString(publicaciones.articulo.Precio);
+                        //lblStock.Text = "Stock: " + Convert.ToString(publicaciones.Stock);
+                        //BtnVerPublicacion.CommandArgument = "1010";//Convert.ToString(publicaciones.IdPublicacion);
+
+                        listapublicacionesfiltradaporusuario.Add(publicaciones);
+                    }
+                }
+
+
+
+                reapeterProductosUsuario.DataSource = listapublicacionesfiltradaporusuario;
+                reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
 
             }
 
@@ -49,12 +68,14 @@ namespace tp_web_equipo_19.Views
 
         protected void BtnVerPublicacion_Click(object sender, EventArgs e)
         {
+
             string id = ((Button)sender).CommandArgument;
+
 
             // Session.Clear();
             Session.Remove("IdPublicacion"); // solo borra esta variable de la sesion.
             Session.Add("IdPublicacion", id);
-          
+
 
 
             Response.Redirect("viewUsuarioVerPublicacion.aspx", false);
