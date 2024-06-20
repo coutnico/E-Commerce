@@ -11,8 +11,17 @@ namespace tp_web_equipo_19.Views
 {
 
 
-    public partial class viewUsuarioAgregarPublicacion
+    public partial class viewUsuarioAgregarPublicacion_2
     {
+
+        /// <summary>
+        /// lblCategoriaSeleccionada control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCategoriaSeleccionada;
 
         /// <summary>
         /// txtCodigo control.
@@ -67,24 +76,6 @@ namespace tp_web_equipo_19.Views
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescripcion;
-
-        /// <summary>
-        /// listCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList listCat;
-
-        /// <summary>
-        /// rfvListaCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvListaCat;
 
         /// <summary>
         /// listMarca control.

@@ -186,7 +186,8 @@
     <Content Include="Views\viewUsuarioPublicaciones.aspx" />
     <Content Include="Views\viewUsuarioVerPublicacion.aspx" />
     <Content Include="Views\viewCompra.aspx" />
-    <Content Include="Views\viewUsuarioAgregarPublicacion.aspx" />
+    <Content Include="Views\viewUsuarioAgregarPublicacion_2.aspx" />
+    <Content Include="Views\ViewUsuarioAgregarPublicacion_1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -343,12 +344,19 @@
     <Compile Include="Views\viewCompra.aspx.designer.cs">
       <DependentUpon>viewCompra.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\viewUsuarioAgregarPublicacion.aspx.cs">
-      <DependentUpon>viewUsuarioAgregarPublicacion.aspx</DependentUpon>
+    <Compile Include="Views\viewUsuarioAgregarPublicacion_2.aspx.cs">
+      <DependentUpon>viewUsuarioAgregarPublicacion_2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\viewUsuarioAgregarPublicacion.aspx.designer.cs">
-      <DependentUpon>viewUsuarioAgregarPublicacion.aspx</DependentUpon>
+    <Compile Include="Views\viewUsuarioAgregarPublicacion_2.aspx.designer.cs">
+      <DependentUpon>viewUsuarioAgregarPublicacion_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewUsuarioAgregarPublicacion_1.aspx.cs">
+      <DependentUpon>ViewUsuarioAgregarPublicacion_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ViewUsuarioAgregarPublicacion_1.aspx.designer.cs">
+      <DependentUpon>ViewUsuarioAgregarPublicacion_1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="text-end">
-        <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion.aspx';">Nueva</button>
+        <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion_1.aspx';">Nueva</button>
     </div>
 
    
@@ -42,7 +42,7 @@
                             <asp:Label ID="lblNombre" class="card-title" runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
                             <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("articulo.Precio") %></p>
                              <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "Stock Disponible: " + Eval("Stock") %></p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>
+                        <%--    <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>--%>
                         </div>
                         <div class="text-end">
                             <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />

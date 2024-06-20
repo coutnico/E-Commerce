@@ -1,8 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="viewUsuarioAgregarPublicacion.aspx.cs" Inherits="tp_web_equipo_19.Views.viewUsuarioAgregarPublicacion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="viewUsuarioAgregarPublicacion_2.aspx.cs" Inherits="tp_web_equipo_19.Views.viewUsuarioAgregarPublicacion_2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
+    <div class="text-end">
+        <button type="button" class="btn-close" aria-label="Close" style="font-size: 30px" onclick="window.location.href = 'viewUsuarioPublicaciones.aspx';"></button>
+    </div>
 
     <div class="container-fluid w-50 ">
 
@@ -15,6 +17,13 @@
             <asp:Label ID="lblIdUsuario" runat="server" Text="IdUsuario"></asp:Label>
 
         </div>--%>
+
+
+   <div class="input-group mb-3 d-flex align-items-center justify-content-center">
+    <h4 class="mb-0 mr-2" style="margin-right: 5%;">Categoria:</h4>
+    <asp:Label CssClass="display-6 mb-0" Font-Italic="true" Font-Bold="true"  ID="lblCategoriaSeleccionada" runat="server" Text="Categoria"></asp:Label>
+</div>
+
 
 
         <div class="input-group mb-3 mt-3 ">
@@ -42,16 +51,7 @@
             <%--Campo obligatorio--%>
         </div>
 
-        <div class="input-group mb-3">
-            <span class="input-group-text">Categoria:</span>
-            <asp:DropDownList ID="listCat" runat="server" CssClass="form-select  m-lg-1  rounded" Style="max-width: 500px;"></asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvListaCat" runat="server" ControlToValidate="listCat"
-                ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
-            <%--Campo obligatorio--%>
-            <a class="navbar-brand" href="viewAdmin_AddCat.aspx" style="margin-left: 10px;">
-                <img src="\image\agregar.png" alt="Agregar Categoria" style="height: 45px; align-content: center;">
-            </a>
-        </div>
+    
 
         <div class="input-group mb-3">
             <span class="input-group-text">Marca:</span>

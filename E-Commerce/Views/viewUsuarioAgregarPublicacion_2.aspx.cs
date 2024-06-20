@@ -10,15 +10,19 @@ using System.Web.UI.WebControls;
 
 namespace tp_web_equipo_19.Views
 {
-    public partial class viewUsuarioAgregarPublicacion : System.Web.UI.Page
+    public partial class viewUsuarioAgregarPublicacion_2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
   
             Usuario usuario = (Usuario)Session["Usuario"];
 
+
             Marca marca = new Marca();
             MarcaNegocio marcaNegocio = new MarcaNegocio();
+            
+            Categoria categoria = new Categoria();  
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
 
             List<Marca> marca_list = marcaNegocio.ListarMarcas();
 
@@ -40,27 +44,21 @@ namespace tp_web_equipo_19.Views
                 }
             }
 
-
-            Categoria categoria = new Categoria();
-            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
-
-            List<Categoria> categoria_list = categoriaNegocio.ListarCategorias();
-
             if (!IsPostBack)
             {
                 try
                 {
-
-                    listCat.DataSource = categoria_list;
-                    listCat.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
-                    listCat.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
-                    listCat.DataBind();
+                    int IdCategoria = Convert.ToInt32(Session["IdCategoria"]); // Id seleccionado, lo muevo al lbl.
+                    categoria = categoriaNegocio.Buscar_Categoria_por_ID(IdCategoria);
+                    lblCategoriaSeleccionada.Text = categoria.Descripcion;
                 }
                 catch (Exception ex)
                 {
 
                 }
             }
+
+           
 
             if (!IsPostBack)
             {
@@ -100,17 +98,24 @@ namespace tp_web_equipo_19.Views
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
+            Categoria categoria = new Categoria();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
             int x = 0;
             string textBoxId = "0";
 
             string mensaje;
+
+          
+
             try
             {
                 publicaciones.articulo.Nombre = txtArticulo.Text;
                 publicaciones.articulo.Codigo = txtCodigo.Text;
                 publicaciones.articulo.Descripcion = txtDescripcion.Text;
                 publicaciones.articulo.IDMarca = Convert.ToInt32(listMarca.SelectedValue);
-                publicaciones.articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
+                publicaciones.articulo.IDCategoria = Convert.ToInt32(Session["IdCategoria"]); 
+             //  publicaciones.articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
                 // imagen.URL = txtImagenUrl.Text;
                 publicaciones.articulo.Precio = Convert.ToDecimal(txtPrecio.Text);   
                 publicaciones.articulo.ID = articulo.ID; // ya busque cual fue el ultimo ID agregado, lo asigno a de publicaciones.
