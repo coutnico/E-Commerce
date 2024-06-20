@@ -57,8 +57,8 @@
                         <% if (tipoUser_profile())
                             {  %>
                         <h6>Sos Administrador, puedes ingresar a los ajustes avanzados mediante el siguiente boton: </h6>
-                         <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatosAdmin" OnClick="btnEditarDatosAdmin_Click" />
-
+                        <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatosAdmin" OnClick="btnEditarDatosAdmin_Click" />
+                        <asp:Button Text="Usuarios" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-2 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnABMUsuarios" OnClick="btnABMUsuarios_Click" />
                         <asp:Button Text="ABM (Admin)" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-2 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnABMAdmin" OnClick="btnABMAdmin_Click" />
                         <% }
                             else
