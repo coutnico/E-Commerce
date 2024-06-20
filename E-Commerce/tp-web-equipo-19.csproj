@@ -170,6 +170,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="style.css" />
     <Content Include="Views\viewAdmin_AddArt.aspx" />
     <Content Include="Views\viewAdmin_AddCat.aspx" />
     <Content Include="Views\viewAdmin_AddImagen.aspx" />
