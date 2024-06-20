@@ -12,7 +12,7 @@ namespace tp_web_equipo_19.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+            Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
 
             if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
             {
@@ -38,7 +38,7 @@ namespace tp_web_equipo_19.Views
 
         public bool tipoUser_profile()
         {
-            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+            Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
 
             if (usuario != null)
             {

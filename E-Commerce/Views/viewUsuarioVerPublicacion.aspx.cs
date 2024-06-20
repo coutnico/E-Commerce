@@ -25,7 +25,7 @@ namespace tp_web_equipo_19.Views
             Imagen imagen_aux = new Imagen();
 
             ////////-------------- VERIFICO QUE ESTE LOGUEADO
-            Usuario usuario = (Usuario)Session["usuario"]; // casteo explicito
+            Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
 
             if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
             {
@@ -175,7 +175,7 @@ namespace tp_web_equipo_19.Views
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
-            Usuario usuario = (Usuario)Session["usuario"];
+            Usuarios usuario = (Usuarios)Session["usuario"];
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
 
             Imagen imagen = new Imagen();

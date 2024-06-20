@@ -18,11 +18,11 @@ namespace tp_web_equipo_19.Views
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            Usuario usuario;
+            Usuarios usuario;
             Usuario_Negocio usuario_Negocio = new Usuario_Negocio();    
             try
             {
-                usuario = new Usuario(txtUser.Text,txtPass.Text, false);
+                usuario = new Usuarios(txtUser.Text,txtPass.Text, false);
                
                 if(usuario_Negocio.loguear(usuario))
                 {

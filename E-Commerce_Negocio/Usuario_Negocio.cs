@@ -5,19 +5,21 @@ using System.Web;
 using E_Commerce_Models;
 using E_Commerce_Controller;
 using System.Data.SqlClient;
+using System.Collections;
+using System.Text.RegularExpressions;
 
 namespace E_Commerce_Negocio
 {
 
-    
+
 
     public class Usuario_Negocio
     {
         ConexionDB conexionDB = new ConexionDB();
         SqlDataReader reader = null;
-        public bool loguear (Usuario usuario)
+        public bool loguear(Usuarios usuario)
         {
-            
+
 
             try
             {
@@ -28,8 +30,8 @@ namespace E_Commerce_Negocio
                 //reader = conexionDB.LeerDatos("Select Id, Usuario, Pass, TipoUser FROM USUARIOS Where Usuario = @user and Pass = @pass");
                 reader = conexionDB.LeerDatos("Select Id, Usuario, Pass, TipoUser FROM USUARIOS Where Usuario = '" + usuario.User + "' and Pass = '" + usuario.Pass + "'");
 
-                
-               while (reader.Read())
+
+                while (reader.Read())
                 {
                     usuario.Id = Convert.ToInt32(reader["Id"]);
                     usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
@@ -37,24 +39,63 @@ namespace E_Commerce_Negocio
                     return true;
                 }
 
-                
+
                 return false;
-                
+
 
             }
 
 
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw ex;
-  
+
             }
-            finally {
+            finally
+            {
                 conexionDB.CerrarConexion();
             }
 
         }
 
+        public List<Usuarios> ListarUsuarios()
+        {
+            List<Usuarios> listausuarios = new List<Usuarios>();
+
+            try
+            {
+                //conexion.Open();
+                string query = "Select Id, Usuario, Pass, TipoUser From Usuarios";
+                //cmd = new SqlCommand(query, conexion);
+                //reader = cmd.ExecuteReader();
+                reader = conexionDB.LeerDatos(query);
+
+
+                while (reader.Read())
+                {
+
+                    Usuarios usuario = new Usuarios();
+
+                    usuario.Id = Convert.ToInt32(reader["Id"]);
+                    usuario.User = reader["Usuario"].ToString();
+                    usuario.Pass = reader["Pass"].ToString();
+                    usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+
+                    listausuarios.Add(usuario);
+
+                }
+
+                return listausuarios;
+            }
+
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexionDB.CerrarConexion(); }
+
+
+        }
 
     }
 }

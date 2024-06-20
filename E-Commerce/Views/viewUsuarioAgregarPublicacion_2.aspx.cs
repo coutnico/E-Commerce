@@ -15,7 +15,7 @@ namespace tp_web_equipo_19.Views
         protected void Page_Load(object sender, EventArgs e)
         {
   
-            Usuario usuario = (Usuario)Session["Usuario"];
+            Usuarios usuario = (Usuarios)Session["Usuario"];
 
 
             Marca marca = new Marca();
@@ -85,7 +85,7 @@ namespace tp_web_equipo_19.Views
         public void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            Usuario usuario = (Usuario)Session["Usuario"];
+            Usuarios usuario = (Usuarios)Session["Usuario"];
 
             Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
             Publicaciones publicaciones = new Publicaciones();

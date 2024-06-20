@@ -12,7 +12,7 @@ namespace E_Commerce_Models
         ADMIN = 2
     }
 
-    public class Usuario
+    public class Usuarios
     {
 
         public int Id { get; set; }
@@ -26,12 +26,17 @@ namespace E_Commerce_Models
 
         //creo consctructor
 
-        public Usuario(string user, string pass, bool admin)
+        public Usuarios(string user, string pass, bool admin)
         {
             User = user;
             Pass = pass;
             tipoUsuario = admin ? TipoUsuario.ADMIN : TipoUsuario.NORMAL; // Con el bool hago un op ternario. Si es 1, asino el valor de admin (2) si no (1)
 
+        }
+
+        public Usuarios()
+        {
+           
         }
     }
 }
