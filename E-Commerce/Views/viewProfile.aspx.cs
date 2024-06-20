@@ -61,5 +61,15 @@ namespace tp_web_equipo_19.Views
             Session.Remove("usuario");
             Response.Redirect("viewLogin.aspx");
         }
+
+        protected void btnEditarDatosAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnABMAdmin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewAdmin_AddArt.aspx");
+        }
     }
 }
