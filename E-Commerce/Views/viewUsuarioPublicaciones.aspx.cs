@@ -56,9 +56,6 @@ namespace tp_web_equipo_19.Views
                         listapublicacionesfiltradaporusuario.Add(publicaciones);
                     }
                 }
-
-
-
                 reapeterProductosUsuario.DataSource = listapublicacionesfiltradaporusuario;
                 reapeterProductosUsuario.DataBind(); // VINCULA LOS DATOS
 
