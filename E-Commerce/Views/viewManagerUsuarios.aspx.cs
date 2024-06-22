@@ -66,5 +66,11 @@ namespace tp_web_equipo_19.Views
             rpUsuarios.DataSource = listaFiltrada;
             rpUsuarios.DataBind();
         }
+
+        protected string GetTipoUsuarioText(object tipoUsuario)
+        {
+            int tipo = Convert.ToInt32(tipoUsuario);          
+            return tipo == 2 ? "Administrador" : "Usuario";
+        }
     }
 }
