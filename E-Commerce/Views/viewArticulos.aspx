@@ -118,7 +118,7 @@
 
 
     <div class="row justify-content-center align-items-center mt-5">
-        <p class="fs-4 text-shadow fw-bold text-light text-center rounded-2" style="background-color: #212529; max-width:1480px">PUBLICACIONES</p>
+        <p class="fs-4 text-shadow fw-bold text-light text-center rounded-2" style="background-color: #212529; max-width: 1480px">PUBLICACIONES</p>
         <div class="d-flex justify-content-start align-items-start mb-2 mt-1" style="margin-left: 400px">
             <div class="searchBox">
                 <asp:TextBox runat="server" ID="txtBuscador" OnTextChanged="txtBuscador_TextChanged" CssClass="searchInput" type="text" placeholder="Buscar nombre de producto" aria-label="Search" Style="width: 300px"></asp:TextBox>

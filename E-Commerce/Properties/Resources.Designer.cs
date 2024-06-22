@@ -63,6 +63,16 @@ namespace tp_web_equipo_19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ajustes {
+            get {
+                object obj = ResourceManager.GetObject("ajustes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Banner1 {
             get {
                 object obj = ResourceManager.GetObject("Banner1", resourceCulture);
@@ -116,6 +126,36 @@ namespace tp_web_equipo_19.Properties {
         internal static System.Drawing.Bitmap ErrorImagen {
             get {
                 object obj = ResourceManager.GetObject("ErrorImagen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_advertencia {
+            get {
+                object obj = ResourceManager.GetObject("icons8_advertencia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ajustes {
+            get {
+                object obj = ResourceManager.GetObject("icons8_ajustes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ajustes__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8_ajustes__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
