@@ -93,13 +93,40 @@
                                 <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server" />
                             </td>
                             <td>
-                                <asp:ImageButton ImageUrl="https://img.icons8.com/color/480/settings--v1.png" runat="server" Style="width: 50px;" />
+                                <img src="https://img.icons8.com/color/480/settings--v1.png" alt="Alternate Text" style="width: 50px;" onclick='<%# "openModal(\"exampleModal_" + Container.ItemIndex + "\")" %>' />
+
+                                <div class="modal fade" id='<%# "exampleModal_" + Container.ItemIndex %>' tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" style="left:100px">
+                                        <div class="cardUsuario shadow-lg">
+                                            <div class="cardUsuario__img">
+                                                <img src="..\Resources\bannerUsuario.png" alt="Alternate Text" class="rounded-4" style="height: 193px; width: 295px" />
+                                            </div>
+                                            <div class="cardUsuario__avatar">
+                                                <img src="https://img.icons8.com/fluency/96/user-male-circle--v1.png" alt="Alternate Text" style="height: 120px; width: 120px" />
+                                            </div>
+                                            <div class="cardUsuario__title"><%# Eval("User") %></div>
+                                            <div class="cardUsuario__subtitle"><%# Convert.ToInt32(Eval("tipoUsuario")) == 2 ? "Administrador" : "Usuario" %></div>
+                                            <div class="cardUsuario__wrapper">
+                                                <button class="cardUsuario__btn w-auto">Publicaciones</button>
+                                                <asp:Button Text="Modificar" CssClass="cardUsuario__btn cardUsuario__btn-solid" ID="btnModificar" OnClick="btnModificar_Click" CommandArgument='<%# Eval("Id") %>' CommandName="IdUsuario" runat="server" />
+                                                <asp:Button Text="Eliminar" CssClass="cardUsuario__btn cardUsuario__btn-solid" ID="btnEliminar" OnClick="btnEliminar_Click" CommandArgument='<%# Eval("Id") %>' CommandName="IdUsuario" runat="server" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </ItemTemplate>
                 </asp:Repeater>
             </tbody>
         </table>
+
+        <script>
+    function openModal(modalId) {
+        $('#' + modalId).modal('show');
+    }
+        </script>
+
 
 
         <%--<div class="row m-3">
