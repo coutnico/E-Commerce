@@ -25,3 +25,12 @@
 -- GENERAR UN AVISO POR CORREO QUE SE HA PUBLICADO UN ARTICULO.
 
 --SOLUCIONAR SUBIR VARIAS IMAGENES (TIENE QUE SUBIR COMO BASE 64). SUBIR MULTIPLE IMAGENES DESDE FRONT.
+
+
+// 20/06 Segunda revision
+
+
+- Cambiar los ABM que no sea baja fisica, si no baja "Logica".. o en realidad una columna de usuario bloqueado.
+- Generar una lista default de articulos, y que el usuario pueda agregar nuevos si no estan en la lista.
+- Las publicaciones que tengan opcion de pausarlas (si luego de cierto tiempo que se elimine automaticamente), o eliminarlas
+- ABM Administrador, que se vean como tabla los usuarios. QUe se puedan blqouear, anular publi y demas.

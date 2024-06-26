@@ -716,3 +716,38 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\E-Commerce\obj\Debug\tp-web-e.2F64D225.Up2Date
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\E-Commerce\obj\Debug\tp-web-equipo-19.dll
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce\E-Commerce\obj\Debug\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\tp-web-equipo-19.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\tp-web-equipo-19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Antlr3.Runtime.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\AspNet.ScriptManager.jQuery.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Models.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Negocio.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\System.Web.Optimization.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\WebGrease.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Controller.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Models.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Models.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Negocio.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Negocio.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\System.Web.Optimization.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Newtonsoft.Json.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Antlr3.Runtime.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Controller.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\E-Commerce_Controller.dll.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp_web_equipo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-equipo-19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-e.2F64D225.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-equipo-19.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\obj\Debug\tp-web-equipo-19.pdb
