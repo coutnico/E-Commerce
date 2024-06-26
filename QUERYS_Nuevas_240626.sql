@@ -108,11 +108,11 @@ GO
 -- Otros (IDCategoria = 8)
 INSERT INTO [dbo].[MARCAS] (Descripcion, IDCategoria)
 VALUES 
-    ('Amazon', 8),
-    ('eBay', 8),
-    ('Alibaba', 8),
-    ('MercadoLibre', 8),
-    ('Etsy', 8),
-    ('Otro', 8);  -- Agregar 'Otro' a la categoría 8
+    ('Personalizado', 8),
+    ('xx', 8),
+    ('xx', 8),
+    ('xx', 8),
+    ('xx', 8),
+    ('xx', 8);  -- Agregar 'Otro' a la categoría 8
 
 GO

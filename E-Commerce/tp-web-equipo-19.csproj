@@ -132,6 +132,7 @@
     <None Include="Resources\LogoClosemarket.png" />
     <None Include="Resources\Verificacion.gif" />
     <Content Include="INTERNO\Pendientes.txt" />
+    <Content Include="INTERNO\QUERYS_Nuevas_240626.sql" />
     <Content Include="INTERNO\ScriptAll_240616.txt" />
     <Content Include="INTERNO\scriptAll_240620.sql" />
     <None Include="Resources\bannerUsuario.png" />
