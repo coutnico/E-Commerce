@@ -24,6 +24,7 @@ namespace tp_web_equipo_19.Views
             Marca = MarcaNegocio.Buscar_Marca_por_ID(Convert.ToInt32(txtIDMarcaBuscado.Text));
 
             txtDescripcion.Text = Marca.Descripcion;
+            Marca.IdCategoria = Convert.ToInt32(txtIdCategoria.Text);
 
         }
 
@@ -34,6 +35,7 @@ namespace tp_web_equipo_19.Views
             string mensaje;
 
             Marca.Descripcion = txtDescripcion.Text;
+            Marca.IdCategoria = Convert.ToInt32(txtIdCategoria.Text);
 
             Marca.Id = Convert.ToInt32(txtIDMarcaBuscado.Text);
             try
@@ -60,6 +62,7 @@ namespace tp_web_equipo_19.Views
 
             Marca.Descripcion = txtDescripcion.Text;
             Marca.Id = Convert.ToInt32(txtIDMarcaBuscado.Text);
+            Marca.IdCategoria = Convert.ToInt32(txtIdCategoria.Text);
 
             try
             {

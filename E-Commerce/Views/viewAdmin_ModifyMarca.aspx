@@ -47,7 +47,13 @@
                 <%--Campo obligatorio--%>
             </div>
 
-
+            <div class="input-group mb-3 mt-3 ">
+                <span class="input-group-text">IdCategoria: </span>
+                <asp:TextBox ID="txtIdCategoria" runat="server" CssClass="form-control m-lg-1 rounded">  </asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtIdCategoria"
+                    ErrorMessage="El ID de la Categoria es obligatorio" Display="Dynamic"></asp:RequiredFieldValidator>
+                <%--Campo obligatorio--%>
+            </div>
 
 
             <div class="container-fluid">

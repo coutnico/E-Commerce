@@ -28,7 +28,7 @@ namespace E_Commerce_Negocio
             try
             {
                 //conexion.Open();
-                string query = "Select Id, Descripcion from MARCAS";
+                string query = "Select Id, Descripcion,IdCategoria from MARCAS";
                 //cmd = new SqlCommand(query, conexion);
 
 
@@ -41,7 +41,7 @@ namespace E_Commerce_Negocio
 
                     marca.Id = Convert.ToInt32(reader["Id"]);
                     marca.Descripcion = reader["Descripcion"].ToString();
-
+                    marca.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
                     lista.Add(marca);
 
                 }
@@ -65,7 +65,7 @@ namespace E_Commerce_Negocio
             {
 
                 // SQL usa ' para el query. y c# com dobles para separar cadenas
-                conexionDB_Obj.EjecutarComando("Insert into MARCAS (Descripcion) Values (" + " ' " + marca_obj.Descripcion + " ') ");
+                conexionDB_Obj.EjecutarComando("Insert into MARCAS (Descripcion, IdCategoria) Values (" + " ' " + marca_obj.Descripcion + "'," + marca_obj.IdCategoria + ") ");
                 string txt_categoria_agregada = "Marca agregada exitosamente";
             }
             catch (Exception)
@@ -101,7 +101,7 @@ namespace E_Commerce_Negocio
             try
             {
                 // SQL usa ' para el query. y c# com dobles para separar cadenas
-                conexionDB_Obj.EjecutarComando("UPDATE MARCAS SET Descripcion = '" + marca_obj.Descripcion + " ' WHERE ID = " + ID_a_modificar);
+                conexionDB_Obj.EjecutarComando("UPDATE MARCAS SET Descripcion = '" + marca_obj.Descripcion + "'," + marca_obj.IdCategoria + " WHERE ID = " + ID_a_modificar);
                 string txt_categoria_actualizada = "Marca Actualizada";
             }
             catch (Exception)
@@ -118,7 +118,7 @@ namespace E_Commerce_Negocio
             try
             {
                 //conexion.Open();
-                string query = "Select id, Descripcion from MARCAS";
+                string query = "Select id, Descripcion, IdCategoria from MARCAS";
                 //cmd = new SqlCommand(query, conexion);
 
 
@@ -133,6 +133,7 @@ namespace E_Commerce_Negocio
                     {
                         marca.Id = id_buscado;//Convert.ToInt32(reader["Id"]);
                         marca.Descripcion = reader["Descripcion"].ToString();
+                        marca.IdCategoria = Convert.ToInt32(reader["IdCategoria"]);
                     }
                 }
                 return marca;

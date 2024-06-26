@@ -32,12 +32,23 @@
             </div>
 
             <div class="input-group mb-3 mt-3 ">
-                <span class="input-group-text">ID (Nuevo):</span>
+                <span class="input-group-text">Descripcion:</span>
                 <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control m-lg-1 rounded">  </asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDescripcion"
                     ErrorMessage="La descripcion es obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
             </div>
+
+            <div class="input-group mb-3 mt-3 ">
+                <span class="input-group-text">ID Categoria:</span>
+                <asp:TextBox ID="txtIdCategoria" runat="server" CssClass="form-control m-lg-1 rounded">  </asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtIdCategoria"
+                    ErrorMessage="El ID de la Categoria es obligatorio" Display="Dynamic"></asp:RequiredFieldValidator>
+                <%--Campo obligatorio--%>
+            </div>
+
+
+
             <asp:Button ID="btnAgregarMarca" runat="server" Text="Agregar" OnClick="btnAgregarMarca_Click" class="btn btn-outline-success" type="submit" />
         </div>
 

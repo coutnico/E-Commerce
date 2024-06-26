@@ -41,6 +41,8 @@ namespace tp_web_equipo_19.Views
 
 
             Marca.Descripcion = txtDescripcion.Text;
+            Marca.IdCategoria = Convert.ToInt32(txtIdCategoria.Text);
+
             string mensaje;
             try
             {

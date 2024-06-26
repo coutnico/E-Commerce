@@ -20,7 +20,7 @@
                 <asp:TextBox ID="txtPrecio" CssClass="text-dark text-opacity-75 rounded rounded-3 bg-success bg-opacity-50 fs-4 text-center mb-3" runat="server" TextMode="SingleLine"> $</asp:TextBox>
                 <asp:TextBox ID="txtDescripcion" CssClass="text-break pt-2 mb-3" runat="server" TextMode="MultiLine" Rows="4"></asp:TextBox>
 
-                <asp:DropDownList ID="listCat" runat="server" CssClass="form-select  m-lg-1  rounded"></asp:DropDownList>
+                <asp:DropDownList ID="listCat" runat="server" CssClass="form-select  m-lg-1  rounded" OnTextChanged="listCat_TextChanged" AutoPostBack="True"></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="rfvListaCat" runat="server" ControlToValidate="listCat"
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>

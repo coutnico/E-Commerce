@@ -26,14 +26,34 @@ namespace tp_web_equipo_19.Views
 
             List<Marca> marca_list = marcaNegocio.ListarMarcas();
 
+            List<Marca> marcaListFiltradaIdCat = new List<Marca>();
+
+            int IdCategoria = Convert.ToInt32(Session["IdCategoria"]);
+
+            foreach (Marca marca_aux in marca_list)
+            {
+                if (IdCategoria == marca_aux.IdCategoria)
+                {
+                    marcaListFiltradaIdCat.Add(marca_aux);
+                }
+            }
+          
+
+
            // lblIdPublicacion.Text = 
-          //  lblIdUsuario.Text = usuario.Id.ToString();
+           //  lblIdUsuario.Text = usuario.Id.ToString();
 
             if (!IsPostBack)
             {
                 try
                 {
-                    listMarca.DataSource = marca_list;
+
+                    //listMarca.DataSource = marca_list;
+                    //listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
+                    //listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
+                    //listMarca.DataBind();
+
+                    listMarca.DataSource = marcaListFiltradaIdCat;
                     listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
                     listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
                     listMarca.DataBind();
@@ -48,7 +68,7 @@ namespace tp_web_equipo_19.Views
             {
                 try
                 {
-                    int IdCategoria = Convert.ToInt32(Session["IdCategoria"]); // Id seleccionado, lo muevo al lbl.
+                  //  int IdCategoria = Convert.ToInt32(Session["IdCategoria"]); // Id seleccionado, lo muevo al lbl.
                     categoria = categoriaNegocio.Buscar_Categoria_por_ID(IdCategoria);
                     lblCategoriaSeleccionada.Text = categoria.Descripcion;
                 }

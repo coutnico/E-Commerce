@@ -20,7 +20,7 @@ namespace tp_web_equipo_19.Views
 
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
             Articulo articulo = new Articulo();
-            
+
             ImagenNegocio imagenNegocio = new ImagenNegocio();
             Imagen imagen_aux = new Imagen();
 
@@ -34,6 +34,12 @@ namespace tp_web_equipo_19.Views
 
             }
             ////////-------------- Genero lista por def.
+            ///envio por session
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+            lblIdPubli.Text = Convert.ToString(IdPublicacion);
+
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
 
             //Cargo lista cat y marca
             Marca marca = new Marca();
@@ -41,15 +47,30 @@ namespace tp_web_equipo_19.Views
 
             List<Marca> marca_list = marcaNegocio.ListarMarcas();
 
+            List<Marca> marcaListFiltradaIdCat = new List<Marca>();
+
+            foreach (Marca marca_aux in marca_list)
+            {
+                if (publicaciones.articulo.IDCategoria == marca_aux.IdCategoria)
+                {
+                    marcaListFiltradaIdCat.Add(marca_aux);
+                }
+            }
+
             if (!IsPostBack)
             {
                 //lblposback.Text = "PRIMER POSBACK";
                 try
                 {
-                    listMarca.DataSource = marca_list;
+                    //listMarca.DataSource = marca_list;
+                    //listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
+                    //listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
+                    //listMarca.DataBind();
+                    listMarca.DataSource = marcaListFiltradaIdCat;
                     listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
                     listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
                     listMarca.DataBind();
+
                 }
                 catch (Exception ex)
                 {
@@ -79,21 +100,12 @@ namespace tp_web_equipo_19.Views
                 }
             }
 
-
             ////////-------------- Valores por sesion 
-            if  (Convert.ToString(Session["IdPublicacion"]) == null)
+            if (Convert.ToString(IdPublicacion) == null)
             {
                 Session.Add("error", "Error publicacion");
                 Response.Redirect("viewLogin.aspx", false);
             }
-
-
-            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
-            
-            lblIdPubli.Text = Convert.ToString(IdPublicacion);
-
-            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
-            
 
             if (!IsPostBack)
             {
@@ -103,7 +115,7 @@ namespace tp_web_equipo_19.Views
                     if (imagen.IdArticulo == publicaciones.articulo.ID)
                     {
                         imagenes.Add(imagen);
-                        
+
                     }
                 }
 
@@ -126,9 +138,9 @@ namespace tp_web_equipo_19.Views
 
         protected void btnEliminarPublicacion_Click(object sender, EventArgs e)
         {
-           // lblposback.Text = "";
-            Publicaciones publicaciones = new Publicaciones();  
-            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();   
+            // lblposback.Text = "";
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
 
 
             Articulo articulo = new Articulo();
@@ -142,7 +154,7 @@ namespace tp_web_equipo_19.Views
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
 
             try
-            {     
+            {
                 publicacionesNegocio.eliminarPublicacion(IdPublicacion);
 
                 foreach (Imagen imagen in imagenNegocio.ListarImagen())
@@ -152,7 +164,7 @@ namespace tp_web_equipo_19.Views
                         imagenNegocio.EliminarImagen(publicaciones.articulo.ID);
                     }
                 }
-                
+
                 string mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha eliminado Correctamente ";
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
@@ -161,7 +173,7 @@ namespace tp_web_equipo_19.Views
             }
             catch
             {
-              //  lblposback.Text = "ERROR AL ELIMINAR. refresque la pagina ! ";
+                //  lblposback.Text = "ERROR AL ELIMINAR. refresque la pagina ! ";
             }
 
 
@@ -181,14 +193,14 @@ namespace tp_web_equipo_19.Views
             Imagen imagen = new Imagen();
             ImagenNegocio imagenNegocio = new ImagenNegocio();
 
-            
+
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion); // lo necesito para el ID del art y pub
 
 
             string mensaje;
             try
             {
-                
+
                 publicaciones.IdUsuario = usuario.Id;
                 publicaciones.Stock = Convert.ToInt32(txtStock.Text);
                 publicaciones.articulo.ID = publicaciones.articulo.ID;
@@ -200,7 +212,7 @@ namespace tp_web_equipo_19.Views
                 publicaciones.articulo.Precio = Convert.ToDecimal(txtPrecio.Text);
                 imagen.URL = txtImagenUrl.Text;
 
-                
+
                 publicacionesNegocio.modificarPublicacion(publicaciones, publicaciones.IdPublicacion);
                 imagenNegocio.ModificarImagen(publicaciones.articulo.ID, imagen.URL); // 
 
@@ -236,6 +248,32 @@ namespace tp_web_equipo_19.Views
             }
         }
 
-       
+        protected void listCat_TextChanged(object sender, EventArgs e)
+        {
+            Publicaciones publicaciones = new Publicaciones();
+
+            Marca marca = new Marca();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+
+            List<Marca> marca_list = marcaNegocio.ListarMarcas();
+            List<Marca> marcaListFiltradaIdCat = new List<Marca>();
+
+            publicaciones.articulo.IDCategoria = Convert.ToInt32(listCat.SelectedValue);
+
+
+            foreach (Marca marca_aux in marca_list)
+            {
+                if (publicaciones.articulo.IDCategoria == marca_aux.IdCategoria)
+                {
+                    marcaListFiltradaIdCat.Add(marca_aux);
+                }
+            }
+
+            listMarca.DataSource = marcaListFiltradaIdCat;
+            listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
+            listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
+            listMarca.DataBind();
+
+        }
     }
-    }
+}

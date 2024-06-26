@@ -9,6 +9,8 @@ namespace E_Commerce_Models
     {
         public Int32 Id { set; get; }
         public string Descripcion { set; get; }
+        public Int32 IdCategoria { set; get; }
+
 
     }
 }
