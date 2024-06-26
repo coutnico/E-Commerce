@@ -34,3 +34,4 @@
 - Generar una lista default de articulos, y que el usuario pueda agregar nuevos si no estan en la lista.
 - Las publicaciones que tengan opcion de pausarlas (si luego de cierto tiempo que se elimine automaticamente), o eliminarlas
 - ABM Administrador, que se vean como tabla los usuarios. QUe se puedan blqouear, anular publi y demas.
+- Condicionar que cuando se crea una nueva publicacion, cuando seleccionan la categoria, solo aparezcan las marcas relacionadas con esa categoria.
