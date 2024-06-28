@@ -49,6 +49,7 @@ namespace tp_web_equipo_19.Views
             Session.Add("IdCategoria", IdCategoria);
 
             Response.Redirect("viewUsuarioAgregarPublicacion_2.aspx");
+
         }
     }
 }

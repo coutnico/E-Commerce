@@ -12,10 +12,20 @@ namespace E_Commerce_Models
         public Articulo articulo { get; set; }
         public int Stock { get; set; }
 
+        public bool Pausada { get; set; }   
+
+        public bool Baja_Logica {  get; set; }
+
+        // No en tablas. Solo vis
+        public string Pausada_String { get; set; }
+
+
+
         public Publicaciones()
         {
             articulo = new Articulo();
-            
+
+           
         }
         // Constructor para inicializar la clase
         //public Publicaciones(int idVendedor, Articulo articulo_aux, int stock_aux)

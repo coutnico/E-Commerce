@@ -6,9 +6,9 @@
         <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion_1.aspx';">Nueva</button>
     </div>
 
-   
 
-<%--    <div class="card mb-3 mx-auto  " style="max-width: 80%;">
+
+    <%--    <div class="card mb-3 mx-auto  " style="max-width: 80%;">
         <div class="row g-0 ">
             <div class="col-md-4">
                 <asp:Image class="img-fluid rounded-start" ID="imgProductosUsuario" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" Style="max-width: 100%; height: 200px;" runat="server" />
@@ -30,7 +30,7 @@
     </div>--%>
 
 
-       <asp:Repeater ID="reapeterProductosUsuario" runat="server">
+    <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
                 <div class="row g-0 ">
@@ -39,19 +39,20 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <asp:Label ID="lblNombre" class="card-title h4"  runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
+                            <asp:Label ID="lblNombre" class="card-title h4" runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
+
+                            <asp:Label ID="lblPausada"  style="font-size: smaller; margin-left: auto;" runat="server" Text=""> <%# Eval("Pausada_String") %> </asp:Label>
 
                             <div class="ms-auto d-flex align-items-center">
-                                 <asp:Label ID="lblCategoria" class="align-content-center h8"  runat="server" Text=""> <%# Eval("articulo.Categoria") %> </asp:Label>
-
+                                <asp:Label ID="lblCategoria" class="align-content-center h8" runat="server" Text=""> <%# Eval("articulo.Categoria") %> </asp:Label>
                             </div>
 
                             <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("articulo.Precio") %></p>
-                             <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "Stock Disponible: " + Eval("Stock") %></p>
-                        <%--    <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>--%>
+                            <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "Stock Disponible: " + Eval("Stock") %></p>
+                            <%--    <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>--%>
                         </div>
 
-                        
+
 
                         <div class="text-end">
                             <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />

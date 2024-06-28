@@ -4,14 +4,17 @@
 
     <section>
 
-        <div class="text-end" >
-            <button type="button" class="btn-close" aria-label="Close"  style="font-size:30px" onclick="window.location.href = 'viewUsuarioPublicaciones.aspx';"></button>
+        <div class="text-end">
+            <button type="button" class="btn-close" aria-label="Close" style="font-size: 30px" onclick="window.location.href = 'viewUsuarioPublicaciones.aspx';"></button>
         </div>
         <div class="product-container d-flex justify-content-center align-items-center pb-5">
             <div class="product-image">
                 <img runat="server" id="ImagenPrincipalArticulo" src="#" alt="Alternate Text" class="img-thumbnail" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" style="width: 500px; height: 500px;" />
             </div>
             <div class="product-details d-flex flex-column p-3">
+
+
+                <asp:Label ID="lblPublicacionPausada" CssClass="h4" runat="server" Text="PublicacionPausada"></asp:Label>
 
                 <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
                 <asp:TextBox ID="txtNombre" class="mb-3 fw-bolder text-success" runat="server"></asp:TextBox>
@@ -31,7 +34,7 @@
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
 
-                
+
                 <asp:TextBox ID="txtImagenUrl" runat="server" CssClass="form-control m-lg-1 rounded" Style="max-width: 500px;" placeholder="Escriba la URL de la imagen del Articulo..."></asp:TextBox>
 
 
@@ -48,7 +51,16 @@
                     <asp:Button ID="btnModificarPublicacion" OnClick="btnModificarPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="Modificar" />
                     <br />
                     <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
-                
+                    <br />
+                     <% if (lblPublicacionPausada.Text != "Pausada") {   %>
+                    <asp:Button ID="btnPausarPublicacion" OnClick="btnPausarPublicacion_Click" CssClass="btn btn-warning btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Pausar" />
+                    
+                    <% } else {  %>
+
+                     <asp:Button ID="btnRestablecerPublicacion" OnClick="btnRestablecerPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Activar" />
+                    
+                    <%} %>
+ 
                 </div>
             </div>
         </div>

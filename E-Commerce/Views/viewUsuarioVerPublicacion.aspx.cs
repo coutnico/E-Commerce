@@ -122,6 +122,7 @@ namespace tp_web_equipo_19.Views
                 imagen_aux = imagenes[0];
 
                 txtStock.Text = Convert.ToString(publicaciones.Stock);
+                lblPublicacionPausada.Text = publicaciones.Pausada_String;     
                 txtNombre.Text = publicaciones.articulo.Nombre;
                 txtCodigo.Text = publicaciones.articulo.Codigo;
                 CantidadImagenes.InnerText = "Cantidad de imagenes: " + imagenes.Count.ToString();
@@ -131,6 +132,7 @@ namespace tp_web_equipo_19.Views
                 txtDescripcion.Text = publicaciones.articulo.Descripcion;
                 txtPrecio.Text = publicaciones.articulo.Precio.ToString();
                 txtImagenUrl.Text = imagen_aux.URL;
+           
                 // txtImagenUrl.Text = publicaciones.articulo.ImagenURl;
 
             }
@@ -274,6 +276,31 @@ namespace tp_web_equipo_19.Views
             listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
             listMarca.DataBind();
 
+        }
+
+        protected void btnPausarPublicacion_Click(object sender, EventArgs e) // Ver de agregar fecha, luego de esa fecha se eliminaria automaticamente publi.
+        {
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+            bool pausar = true;
+
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+
+            publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
+            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+        }
+
+        protected void btnRestablecerPublicacion_Click(object sender, EventArgs e)
+        {
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+
+            bool pausar = false;
+
+            publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
+
+            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
         }
     }
 }

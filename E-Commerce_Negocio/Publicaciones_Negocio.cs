@@ -43,7 +43,7 @@ namespace E_Commerce_Negocio
             try
             {
 
-                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock from PUBLICACIONES";
+                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock, Pausada, Baja_Logica from PUBLICACIONES";
 
                 reader = conexionDB_obj.LeerDatos(query);
 
@@ -57,6 +57,8 @@ namespace E_Commerce_Negocio
                     publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
                     publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
                     publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
+                    publicaciones.Pausada = Convert.ToBoolean(reader["Pausada"]);
+                    publicaciones.Baja_Logica = Convert.ToBoolean(reader["Baja_Logica"]);
 
                     // Busco en articulos y guardo en publicaciones para listar
                     articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
@@ -68,6 +70,7 @@ namespace E_Commerce_Negocio
                     publicaciones.articulo.Marca = marca.Descripcion;
                     publicaciones.articulo.Categoria = categoria.Descripcion;
 
+                    publicaciones.Pausada_String = publicaciones.Pausada ? "Pausada" : "Activa";
 
                     listaimagenes = imagenNegocio.ListarImagen();
                     foreach (Imagen imagen_aux in listaimagenes)
@@ -120,7 +123,7 @@ namespace E_Commerce_Negocio
                 }
                 publicaciones_obj.articulo.ID = articulo.ID;
 
-                conexionDB_Obj.EjecutarComando("Insert into PUBLICACIONES (IdUsuario, IdArticulo, Stock) Values (" + " '" + publicaciones_obj.IdUsuario + "' , '" + publicaciones_obj.articulo.ID + "' , '" + publicaciones_obj.Stock + "' ) ");
+                conexionDB_Obj.EjecutarComando("Insert into PUBLICACIONES (IdUsuario, IdArticulo, Stock, Pausada, Baja_Logica) Values (" + " '" + publicaciones_obj.IdUsuario + "' , '" + publicaciones_obj.articulo.ID + "' , '" + publicaciones_obj.Stock + "' , '" + 0 + "' , '" + 0 + "' ) ");
                 string txt_Publicacion_agregada = "Publicacion agregada exitosamente";
                 //return 1;
             }
@@ -161,14 +164,43 @@ namespace E_Commerce_Negocio
             }
         }
 
-        public void modificarPublicacion(Publicaciones publicacion_obj, int ID_a_modificar)
+        public void pausaroactivarPublicacion(bool pausar_activar, int ID_a_pausar) // 1 es pausar
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            int valor_recibido; // es necesario para enviar al sql (bool/bit)
+
+            valor_recibido = pausar_activar ? 1 : 0;
+
+            try
+            {              
+                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET Pausada = " + valor_recibido + " where IdPublicacion = " + ID_a_pausar);
+
+                string txt_publicacion_actualizado = "Publicacion Actualizada";
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+
+               
+            }
+           
+        }
+
+
+
+
+        public void modificarPublicacion(Publicaciones publicacion_obj, int ID_a_modificar) // No se genera la pausa de publicacion desde aca
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
             Publicaciones publicaciones = new Publicaciones();
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
             Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-
 
 
             try
@@ -207,7 +239,7 @@ namespace E_Commerce_Negocio
             try
             {
 
-                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock from PUBLICACIONES";
+                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock, Pausada, Baja_Logica  from PUBLICACIONES";
 
                 reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
 
@@ -225,11 +257,15 @@ namespace E_Commerce_Negocio
                     {
                         publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                         publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
+                        publicaciones.Pausada = Convert.ToBoolean(reader["Pausada"]);
+                        publicaciones.Baja_Logica = Convert.ToBoolean(reader["Baja_Logica"]);
+
                         // publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
                         IdArticulo_aux = Convert.ToInt32(reader["IdArticulo"]);
                         publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
                         publicaciones.articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
 
+                        publicaciones.Pausada_String = publicaciones.Pausada ? "Pausada" : "Activa";
 
                         marca = marcaNegocio.Buscar_Marca_por_ID(articulo.IDMarca);
                         categoria = categoriaNegocio.Buscar_Categoria_por_ID(articulo.IDCategoria);

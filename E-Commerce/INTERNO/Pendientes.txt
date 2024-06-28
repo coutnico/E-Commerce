@@ -31,7 +31,8 @@
 
 
 - Cambiar los ABM que no sea baja fisica, si no baja "Logica".. o en realidad una columna de usuario bloqueado.
-- Generar una lista default de articulos, y que el usuario pueda agregar nuevos si no estan en la lista.
+- Generar una lista default de articulos, y que el usuario pueda agregar nuevos si no estan en la lista. // SI SE HACE ESTO HAY QUE MODIFCAR LA TABLA DE ARTICULOS, POR QUE ESTA TABLA TIENE PRECIO, DESCRIPCION Y DEMAS.. QUE CORRESPONDE A CADA PUBLICACON. A NO SER QUE SE GENERE UNA NUEVA TABLA DE ARTICULOS DEFAULT, CON EL NOMBRE DEL ARTICULO
+
 - Las publicaciones que tengan opcion de pausarlas (si luego de cierto tiempo que se elimine automaticamente), o eliminarlas
 - ABM Administrador, que se vean como tabla los usuarios. QUe se puedan blqouear, anular publi y demas.
-- Condicionar que cuando se crea una nueva publicacion, cuando seleccionan la categoria, solo aparezcan las marcas relacionadas con esa categoria.
+- Condicionar que cuando se crea una nueva publicacion, cuando seleccionan la categoria, solo aparezcan las marcas relacionadas con esa categoria. // HECHO
