@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace E_Commerce_Negocio
@@ -60,12 +61,13 @@ namespace E_Commerce_Negocio
                     // Busco en articulos y guardo en publicaciones para listar
                     articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
                     publicaciones.articulo = articulo;
-                    //publicaciones.articulo.Codigo = articulo.Codigo;
-                    //publicaciones.articulo.Nombre = articulo.Nombre;
-                    //publicaciones.articulo.Descripcion = articulo.Descripcion;
-                    //publicaciones.articulo.IDMarca = articulo.IDMarca;
-                    //publicaciones.articulo.IDCategoria = articulo.IDCategoria;
-                    //publicaciones.articulo.Precio = articulo.Precio;
+
+                    marca = marcaNegocio.Buscar_Marca_por_ID(articulo.IDMarca);
+                    categoria = categoriaNegocio.Buscar_Categoria_por_ID(articulo.IDCategoria);
+
+                    publicaciones.articulo.Marca = marca.Descripcion;
+                    publicaciones.articulo.Categoria = categoria.Descripcion;
+
 
                     listaimagenes = imagenNegocio.ListarImagen();
                     foreach (Imagen imagen_aux in listaimagenes)
@@ -191,7 +193,15 @@ namespace E_Commerce_Negocio
 
         {
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-            
+            Marca marca = new Marca();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            Categoria categoria = new Categoria();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            Imagen imagen = new Imagen();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            List<Imagen> listaimagenes = new List<Imagen>();
+
+            // FALTA IMAGEN
             int id_aux = 0;
 
             try
@@ -219,10 +229,24 @@ namespace E_Commerce_Negocio
                         IdArticulo_aux = Convert.ToInt32(reader["IdArticulo"]);
                         publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
                         publicaciones.articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
-                        // articulo = articuloNegocio.Buscar_Articulo_por_ID(publicaciones.articulo.ID);
-                        //publicaciones.articulo = articulo;
-                        
-                       
+
+
+                        marca = marcaNegocio.Buscar_Marca_por_ID(articulo.IDMarca);
+                        categoria = categoriaNegocio.Buscar_Categoria_por_ID(articulo.IDCategoria);
+
+                        publicaciones.articulo.Marca = marca.Descripcion;
+                        publicaciones.articulo.Categoria = categoria.Descripcion;
+
+                        listaimagenes = imagenNegocio.ListarImagen();
+                        foreach (Imagen imagen_aux in listaimagenes)
+                        {
+                            if (publicaciones.articulo.ID == imagen_aux.IdArticulo)
+                            {
+                                publicaciones.articulo.ImagenURl = imagen_aux.URL;// Imagen principal (la primera que encuentre)
+                                break;
+                            };
+                        }
+
                     }
                 }
                 return publicaciones;

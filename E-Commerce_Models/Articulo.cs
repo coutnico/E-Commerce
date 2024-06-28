@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Drawing; // VER SI USAMOS ESTA LIBRERIA U OTRA (COMO ImageSharp (ImageSharp))
 
+
 namespace E_Commerce_Models
 {
     public class Articulo
@@ -32,6 +33,7 @@ namespace E_Commerce_Models
         public string Categoria { get; set; }
 
         //FUNCIONES
+
 
     }
 }

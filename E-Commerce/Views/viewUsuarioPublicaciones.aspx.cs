@@ -52,7 +52,7 @@ namespace tp_web_equipo_19.Views
                         //lblPrecio.Text = "$" + Convert.ToString(publicaciones.articulo.Precio);
                         //lblStock.Text = "Stock: " + Convert.ToString(publicaciones.Stock);
                         //BtnVerPublicacion.CommandArgument = "1010";//Convert.ToString(publicaciones.IdPublicacion);
-
+                            
                         listapublicacionesfiltradaporusuario.Add(publicaciones);
                     }
                 }

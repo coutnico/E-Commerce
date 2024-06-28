@@ -39,11 +39,20 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <asp:Label ID="lblNombre" class="card-title" runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
+                            <asp:Label ID="lblNombre" class="card-title h4"  runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
+
+                            <div class="ms-auto d-flex align-items-center">
+                                 <asp:Label ID="lblCategoria" class="align-content-center h8"  runat="server" Text=""> <%# Eval("articulo.Categoria") %> </asp:Label>
+
+                            </div>
+
                             <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("articulo.Precio") %></p>
                              <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "Stock Disponible: " + Eval("Stock") %></p>
                         <%--    <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>--%>
                         </div>
+
+                        
+
                         <div class="text-end">
                             <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
                         </div>
