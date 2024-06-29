@@ -30,9 +30,13 @@
     </div>--%>
 
 
+
+
     <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
+                <div class="col-md-auto text-end">
+                    <asp:Label ID="lblPausada" Style="font-size: smaller; font-style:italic" runat="server" Text=""> Publicacion <%# Eval("Pausada_String") %> </asp:Label></div>
                 <div class="row g-0 ">
                     <div class="col-md-4">
                         <img class="img-fluid rounded-start" id="imgProductosUsuario" src="<%# Eval("articulo.ImagenURl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" style="max-width: 100%; height: 200px;" />
@@ -40,8 +44,6 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <asp:Label ID="lblNombre" class="card-title h4" runat="server" Text=""> <%# Eval("articulo.Nombre") %> </asp:Label>
-
-                            <asp:Label ID="lblPausada"  style="font-size: smaller; margin-left: auto;" runat="server" Text=""> <%# Eval("Pausada_String") %> </asp:Label>
 
                             <div class="ms-auto d-flex align-items-center">
                                 <asp:Label ID="lblCategoria" class="align-content-center h8" runat="server" Text=""> <%# Eval("articulo.Categoria") %> </asp:Label>
