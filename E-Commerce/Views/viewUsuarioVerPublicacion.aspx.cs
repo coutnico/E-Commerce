@@ -178,7 +178,7 @@ namespace tp_web_equipo_19.Views
                 //  lblposback.Text = "ERROR AL ELIMINAR. refresque la pagina ! ";
             }
 
-
+            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
         }
 
 
@@ -230,7 +230,7 @@ namespace tp_web_equipo_19.Views
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
             }
 
-
+            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
         }
         protected void Atras_Click(object sender, EventArgs e)
         {

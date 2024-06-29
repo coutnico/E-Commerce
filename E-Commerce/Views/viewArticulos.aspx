@@ -159,18 +159,18 @@
                         <div class="border border-4 border-dark border-opacity-100 rounded-3 h-100">
                             <div class="row g-0 h-100 bg-black bg-opacity-50 rounded-1">
                                 <div class="col-md-6 text-center">
-                                    <img class="img-fluid w-100" id="imagenArticulo" src="<%# Eval("ImagenUrl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
-                                    <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Ver Detalle" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
+                                    <img class="img-fluid w-100" id="imagenArticulo" src="<%# Eval("articulo.ImagenURl") %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Foto" style="max-width: 100%; height: 200px;" />
+                                    <asp:Button runat="server" ID="BtnVerDetalle" OnClick="BtnVerDetalle_Click1" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IDPublicacion" Text="Ver Detalle" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
                                 </div>
                                 <div class="col-md-6 d-flex flex-column">
                                     <div class="d-flex justify-content-between">
-                                        <p runat="server" id="txtNombre" class="card-text fw-semibold fs-4 text-light ms-1 text-shadow"><%# Eval("Nombre") %></p>
-                                        <asp:ImageButton ID="btnAgregarCarrito" ImageUrl="https://img.icons8.com/color/480/add-shopping-cart--v1.png" Width="40" Height="40" OnClick="btnAgregarCarrito_Click" CommandArgument='<%# Eval("ID") %>' CommandName="IDArticulo" Text="Agregar al carrito" runat="server" />
+                                        <p runat="server" id="txtNombre" class="card-text fw-semibold fs-4 text-light ms-1 text-shadow"><%# Eval("articulo.Nombre") %></p>
+                                        <asp:ImageButton ID="btnAgregarCarrito" ImageUrl="https://img.icons8.com/color/480/add-shopping-cart--v1.png" Width="40" Height="40" OnClick="btnAgregarCarrito_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IDPublicacion" Text="Agregar al carrito" runat="server" />
                                     </div>
                                     <div class=" flex-grow-1 position-relative d-flex align-items-start ">
                                     </div>
                                     <div class="card-footer text-body-secondary">
-                                        <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("Precio") %></p>
+                                        <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"><%# "$" + Eval("articulo.Precio") %></p>
                                     </div>
                                 </div>
                             </div>

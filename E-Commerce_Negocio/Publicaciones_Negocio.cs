@@ -267,8 +267,8 @@ namespace E_Commerce_Negocio
 
                         publicaciones.Pausada_String = publicaciones.Pausada ? "Pausada" : "Activa";
 
-                        marca = marcaNegocio.Buscar_Marca_por_ID(articulo.IDMarca);
-                        categoria = categoriaNegocio.Buscar_Categoria_por_ID(articulo.IDCategoria);
+                        marca = marcaNegocio.Buscar_Marca_por_ID(publicaciones.articulo.IDMarca);
+                        categoria = categoriaNegocio.Buscar_Categoria_por_ID(publicaciones.articulo.IDCategoria);
 
                         publicaciones.articulo.Marca = marca.Descripcion;
                         publicaciones.articulo.Categoria = categoria.Descripcion;

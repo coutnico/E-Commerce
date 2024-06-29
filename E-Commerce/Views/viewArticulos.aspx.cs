@@ -13,23 +13,44 @@ namespace tp_web_equipo_19.Views
     {
         private SiteMaster master;
         private List<Articulo> lista_articulos;
+
+        private List<Publicaciones> listapublicaciones;
+
+        private List<Publicaciones> listapublicaciones_nopausadas = new List<Publicaciones>();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             master = (SiteMaster)this.Master;
             master.Contador = Carrito.ContadorArticulos.ToString();
 
-            Articulo articulo = new Articulo();
+            //Articulo articulo = new Articulo();
 
-            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            //ArticuloNegocio articuloNegocio = new ArticuloNegocio();
 
-            lista_articulos = articuloNegocio.ListarArticulos();
+            //lista_articulos = articuloNegocio.ListarArticulos();
 
 
-            if (!IsPostBack)
+            //if (!IsPostBack)
+            //{
+            //    reapeter_articulos.DataSource = lista_articulos;
+            //    reapeter_articulos.DataBind(); // VINCULA LOS DATOS
+            //}
+
+
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+
+            listapublicaciones = publicaciones_Negocio.ListarPublicaciones();
+
+            foreach (Publicaciones publicaciones in listapublicaciones)
             {
-                reapeter_articulos.DataSource = lista_articulos;
-                reapeter_articulos.DataBind(); // VINCULA LOS DATOS
+                if (publicaciones.Pausada == false)
+                {
+                    listapublicaciones_nopausadas.Add(publicaciones);
+                }
             }
+
+            reapeter_articulos.DataSource = listapublicaciones_nopausadas;
+            reapeter_articulos.DataBind(); // VINCULA LOS DATOS
 
         }
 
@@ -42,15 +63,25 @@ namespace tp_web_equipo_19.Views
 
             master.Contador = Carrito.ContadorArticulos.ToString();
 
-
             string valor = ((ImageButton)sender).CommandArgument;
 
-            foreach (var articulo in lista_articulos)
+            //foreach (var articulo in lista_articulos)
+            //{
+            //    if (articulo.ID == Convert.ToInt32(valor))
+            //    {
+            //        Carrito.AgregarArticulo(articulo);
+            //       // Carrito.ListaArticulosFiltrados(); // AGREGADO
+            //        break;
+            //    }
+            //}
+
+            foreach (var publicaciones in listapublicaciones_nopausadas)
             {
-                if (articulo.ID == Convert.ToInt32(valor))
+                if (publicaciones.IdPublicacion == Convert.ToInt32(valor))
                 {
+                    var articulo = publicaciones.articulo;
                     Carrito.AgregarArticulo(articulo);
-                   // Carrito.ListaArticulosFiltrados(); // AGREGADO
+                    // Carrito.ListaArticulosFiltrados(); // AGREGADO
                     break;
                 }
             }
@@ -62,8 +93,11 @@ namespace tp_web_equipo_19.Views
             string id = ((Button)sender).CommandArgument;
 
             //Session.Clear();
-            Session.Remove("IDArticulo"); // para que no me deslogue y borre resto de variables guardadas en sesion.
-            Session.Add("IdArticulo", id);
+            //Session.Remove("IDArticulo"); // para que no me deslogue y borre resto de variables guardadas en sesion.
+            //Session.Add("IdArticulo", id);
+
+            Session.Remove("IDPublicacion"); // para que no me deslogue y borre resto de variables guardadas en sesion.
+            Session.Add("IDPublicacion", id);
 
             Response.Redirect("viewDetallada.aspx");
 
@@ -75,15 +109,29 @@ namespace tp_web_equipo_19.Views
 
             List<Articulo> listaFiltrada = new List<Articulo>() { };
 
-            foreach (Articulo articulo in lista_articulos)
+            List<Publicaciones> listaFiltradaPublicaciones = new List<Publicaciones>() { };
+
+
+            //foreach (Articulo articulo in lista_articulos)
+            //{
+            //    if (articulo.Nombre.ToUpper().Contains(textoFiltardo))
+            //    {
+            //        listaFiltrada.Add(articulo);
+            //    }
+            //}
+
+            //reapeter_articulos.DataSource = listaFiltrada;
+            //reapeter_articulos.DataBind();
+
+            foreach (Publicaciones publicaciones in listapublicaciones)
             {
-                if (articulo.Nombre.ToUpper().Contains(textoFiltardo))
+                if (publicaciones.articulo.Nombre.ToUpper().Contains(textoFiltardo))
                 {
-                    listaFiltrada.Add(articulo);
+                    listaFiltradaPublicaciones.Add(publicaciones);
                 }
             }
 
-            reapeter_articulos.DataSource = listaFiltrada;
+            reapeter_articulos.DataSource = listaFiltradaPublicaciones;
             reapeter_articulos.DataBind();
         }
 
