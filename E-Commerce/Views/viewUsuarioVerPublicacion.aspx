@@ -34,8 +34,8 @@
                     ErrorMessage="Lista obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                 <%--Campo obligatorio--%>
 
-
-                <asp:TextBox ID="txtImagenUrl" runat="server" CssClass="form-control m-lg-1 rounded" Style="max-width: 500px;" placeholder="Escriba la URL de la imagen del Articulo..."></asp:TextBox>
+                <p runat="server" id="imgNumber" class="fw-semibold"></p>
+                <asp:TextBox ID="txtImagenUrl" runat="server" CssClass="form-control m-lg-1 rounded" Style="max-width: 500px;" placeholder="Escriba la URL de la imagen del Articulo..."> </asp:TextBox>
 
 
                 <div class="py-5 gap-1">

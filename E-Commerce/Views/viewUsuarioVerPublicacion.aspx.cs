@@ -12,7 +12,7 @@ namespace tp_web_equipo_19.Views
     public partial class viewUsuarioVerPublicacion : System.Web.UI.Page
     {
         private List<Imagen> imagenes = new List<Imagen>() { };
-        private int IndiceImagen = 0;
+        private int IndiceImagen;
         protected void Page_Load(object sender, EventArgs e)
         {
             Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
@@ -109,7 +109,7 @@ namespace tp_web_equipo_19.Views
 
             if (!IsPostBack)
             {
-
+                IndiceImagen = 0;
                 foreach (Imagen imagen in imagenNegocio.ListarImagen())
                 {
                     if (imagen.IdArticulo == publicaciones.articulo.ID)
@@ -234,19 +234,53 @@ namespace tp_web_equipo_19.Views
         }
         protected void Atras_Click(object sender, EventArgs e)
         {
-            if (IndiceImagen != 0)
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
+
+            foreach (Imagen imagen in imagenNegocio.ListarImagen())
+            {
+                if (imagen.IdArticulo == publicaciones.articulo.ID)
+                {
+                    imagenes.Add(imagen);
+
+                }
+            }
+            if (IndiceImagen > 0)
             {
                 IndiceImagen--;
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
+                imgNumber.InnerText = Convert.ToString(IndiceImagen);
+                txtImagenUrl.Text = imagenes[IndiceImagen].URL;
             }
         }
 
         protected void Siguiente_Click(object sender, EventArgs e)
         {
-            if (IndiceImagen != imagenes.Count - 1)
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
+
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+            publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
+
+            foreach (Imagen imagen in imagenNegocio.ListarImagen())
             {
-                IndiceImagen++;
+                if (imagen.IdArticulo == publicaciones.articulo.ID)
+                {
+                    imagenes.Add(imagen);
+
+                }
+            }
+            if (IndiceImagen <= imagenes.Count)
+            {
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
+                IndiceImagen++;
+                imgNumber.InnerText = Convert.ToString(IndiceImagen);
+                txtImagenUrl.Text = imagenes[IndiceImagen].URL;
             }
         }
 
