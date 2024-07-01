@@ -37,7 +37,7 @@ namespace tp_web_equipo_19.Views
             ///envio por session
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
 
-            lblIdPubli.Text = Convert.ToString(IdPublicacion);
+            //lblIdPubli.Text = Convert.ToString(IdPublicacion);
 
             publicaciones = publicacionesNegocio.Buscar_Publicacion_por_ID(IdPublicacion);
 
@@ -122,7 +122,7 @@ namespace tp_web_equipo_19.Views
                 imagen_aux = imagenes[0];
 
                 txtStock.Text = Convert.ToString(publicaciones.Stock);
-                lblPublicacionPausada.Text = publicaciones.Pausada_String;     
+                lblPublicacionPausada.Text = "Publicacion " + publicaciones.Pausada_String;     
                 txtNombre.Text = publicaciones.articulo.Nombre;
                 txtCodigo.Text = publicaciones.articulo.Codigo;
                 CantidadImagenes.InnerText = "Cantidad de imagenes: " + imagenes.Count.ToString();
@@ -302,5 +302,25 @@ namespace tp_web_equipo_19.Views
 
             Response.Redirect("viewUsuarioPublicaciones.aspx", false);
         }
+
+        protected void btnBajaLogicaPublicacion_Click(object sender, EventArgs e)
+        {
+            int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+
+            bool Baja_Logica = true;
+
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+
+            publicaciones_Negocio.bajaLogicaPublicacion(Baja_Logica, IdPublicacion);
+            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+
+        }
+
+
+
+
+
+
+
     }
 }

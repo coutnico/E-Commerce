@@ -44,7 +44,7 @@ namespace tp_web_equipo_19.Views
                 listapublicaciones = publicaciones_Negocio.ListarPublicaciones();
                 foreach (Publicaciones publicaciones in listapublicaciones)
                 {
-                    if (usuario.Id == publicaciones.IdUsuario)
+                    if ( (usuario.Id == publicaciones.IdUsuario) && (publicaciones.Baja_Logica == false))
                     {
 
                         //imgProductosUsuario.ImageUrl = publicaciones.articulo.ImagenURl; // img principal

@@ -191,6 +191,33 @@ namespace E_Commerce_Negocio
            
         }
 
+        public void bajaLogicaPublicacion(bool baja_logica, int ID_a_bajaLogica) // 1 es pausar
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            int valor_recibido; // es necesario para enviar al sql (bool/bit)
+
+            valor_recibido = baja_logica ? 1 : 0;
+
+            try
+            {
+                conexionDB_Obj.EjecutarComando("UPDATE PUBLICACIONES SET Baja_Logica = " + valor_recibido + " where IdPublicacion = " + ID_a_bajaLogica);
+
+                string txt_publicacion_actualizado = "Publicacion Actualizada";
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+
+
+            }
+
+        }
+
 
 
 

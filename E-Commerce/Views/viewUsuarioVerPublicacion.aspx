@@ -16,7 +16,7 @@
 
                 <asp:Label ID="lblPublicacionPausada" CssClass="h4" runat="server" Text="PublicacionPausada"></asp:Label>
 
-                <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
+      <%--          <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
                 <asp:TextBox ID="txtNombre" class="mb-3 fw-bolder text-success" runat="server"></asp:TextBox>
                 <asp:TextBox ID="txtCodigo" class="mb-3 fw-bolder text-bg-info" runat="server"></asp:TextBox>
 
@@ -50,7 +50,8 @@
                 <div class="button-group">
                     <asp:Button ID="btnModificarPublicacion" OnClick="btnModificarPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="Modificar" />
                     <br />
-                    <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
+                    <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" Visible="false" />
+                     <asp:Button ID="btnBajaLogicaPublicacion" OnClick="btnBajaLogicaPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
                     <br />
                      <% if (lblPublicacionPausada.Text != "Pausada") {   %>
                     <asp:Button ID="btnPausarPublicacion" OnClick="btnPausarPublicacion_Click" CssClass="btn btn-warning btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Pausar" />

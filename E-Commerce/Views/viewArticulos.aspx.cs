@@ -43,7 +43,7 @@ namespace tp_web_equipo_19.Views
 
             foreach (Publicaciones publicaciones in listapublicaciones)
             {
-                if (publicaciones.Pausada == false)
+                if ((publicaciones.Pausada == false) && (publicaciones.Baja_Logica == false))
                 {
                     listapublicaciones_nopausadas.Add(publicaciones);
                 }
