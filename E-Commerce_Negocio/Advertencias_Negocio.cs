@@ -24,7 +24,7 @@ namespace E_Commerce_Negocio
 
             try
             {
-                string query = "Select ID_ADVERTENCIA, ID_USUARIO, DESCRIPCION From ADVERTECIAS";
+                string query = "Select ID_ADVERTENCIA, ID_USUARIO From ADVERTENCIAS";
                 reader = conexionDB_obj.LeerDatos(query);
 
                 while (reader.Read())
@@ -34,7 +34,6 @@ namespace E_Commerce_Negocio
 
                     advertencia.ID_Advertencia = Convert.ToInt32(reader["ID_ADVERTENCIA"]);
                     advertencia.ID_Usuario = Convert.ToInt32(reader["ID_USUARIO"]);
-                    advertencia.Descripcion = reader["DESCRIPCION"].ToString();
 
                     lista.Add(advertencia);
                 }
@@ -51,13 +50,13 @@ namespace E_Commerce_Negocio
         }
 
 
-        public bool InsertarAdvertencia(int id_usuario, string descripcion)
+        public bool InsertarAdvertencia(int id_usuario)
 
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
             try
             {
-                conexionDB_Obj.EjecutarComando($"INSERT INTO ADVERTECIAS (ID_USUARIO, DESCRIPCION) VALUES({id_usuario},{descripcion})");
+                conexionDB_Obj.EjecutarComando($"INSERT INTO ADVERTENCIAS (ID_USUARIO) VALUES({id_usuario})");
                 return true;
             }
             catch (Exception)

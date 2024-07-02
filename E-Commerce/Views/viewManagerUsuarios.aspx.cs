@@ -2,6 +2,7 @@
 using E_Commerce_Negocio;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -69,8 +70,43 @@ namespace tp_web_equipo_19.Views
 
         protected string GetTipoUsuarioText(object tipoUsuario)
         {
-            int tipo = Convert.ToInt32(tipoUsuario);          
+            int tipo = Convert.ToInt32(tipoUsuario);
             return tipo == 2 ? "Administrador" : "Usuario";
+        }
+
+        protected void btnAdvertencia_Click(object sender, ImageClickEventArgs e)
+        {
+            Advertencias_Negocio advertencias_Negocio = new Advertencias_Negocio();
+            int Id_Usuario = Convert.ToInt32(((ImageButton)sender).CommandArgument);
+
+            try
+            {
+                int ContadordeAdvertencias = 0;
+                foreach (Advertencia advertencia in advertencias_Negocio.ListarAdvertencias())
+                {
+                    if (advertencia.ID_Usuario == Id_Usuario)
+                    {
+                        ContadordeAdvertencias++;
+                    }
+                }
+
+
+                if (ContadordeAdvertencias > 3)
+                {
+                    
+                }
+                else
+                {
+                    advertencias_Negocio.InsertarAdvertencia(Id_Usuario);
+                }
+
+            }
+            catch (SqlException)
+            {
+                Session.Add("Error", $"Error al colocar una advertencia al usuario ID° = {Id_Usuario.ToString()}");
+                Response.Redirect("viewError.aspx", false);
+            }
+
         }
     }
 }

@@ -96,7 +96,7 @@
                             </td>
 
                             <td>
-                                <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server" />
+                                <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server"  ID="btnAdvertencia" OnClick="btnAdvertencia_Click" ClientIDMode="Static" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario" OnClientClick="return ShowDialogResultOk()"/>
                             </td>
                             <td>
                                 <img src="https://img.icons8.com/pulsar-gradient/420/web-account.png" alt="Alternate Text" style="width: 50px;" onclick='<%# "openModal(\"exampleModal_" + Container.ItemIndex + "\")" %>' />
@@ -129,6 +129,17 @@
             function openModal(modalId) {
                 $('#' + modalId).modal('show');
             }
+
+            function ShowDialogResultOk() {
+                Swal.fire({
+                    title: "Advertencia agregada exitosamente",
+                    text: "Mail Enviado",
+                    icon: "success"
+                });
+
+                return true;
+            }
+
         </script>
     </div>
 </asp:Content>
