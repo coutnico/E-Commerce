@@ -138,12 +138,14 @@
     <None Include="Resources\bannerUsuario.png" />
     <None Include="Resources\ajustes.gif" />
     <Content Include="INTERNO\scriptAll_240626.sql" />
+    <None Include="Resources\buscar-en-la-lista.gif" />
     <Content Include="Resources\Close_Window.png" />
     <None Include="Resources\icons8-tienda-96.png" />
     <None Include="Resources\usuario.gif" />
     <None Include="Resources\icons8-advertencia.gif" />
     <None Include="Resources\icons8-ajustes.gif" />
     <None Include="Resources\icons8-ajustes %281%29.gif" />
+    <None Include="Resources\MAs.gif" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

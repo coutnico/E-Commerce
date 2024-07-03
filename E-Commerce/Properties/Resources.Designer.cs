@@ -123,6 +123,16 @@ namespace tp_web_equipo_19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buscar_en_la_lista {
+            get {
+                object obj = ResourceManager.GetObject("buscar_en_la_lista", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ErrorImagen {
             get {
                 object obj = ResourceManager.GetObject("ErrorImagen", resourceCulture);
@@ -176,6 +186,16 @@ namespace tp_web_equipo_19.Properties {
         internal static System.Drawing.Bitmap LogoMercado {
             get {
                 object obj = ResourceManager.GetObject("LogoMercado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAs {
+            get {
+                object obj = ResourceManager.GetObject("MAs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
