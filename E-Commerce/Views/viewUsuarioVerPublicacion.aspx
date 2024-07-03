@@ -5,7 +5,10 @@
     <section>
 
         <div class="text-end">
-            <button type="button" class="btn-close" aria-label="Close" style="font-size: 30px" onclick="window.location.href = 'viewUsuarioPublicaciones.aspx';"></button>
+
+
+                              <asp:Button ID="btnCerrar" OnClick="btnCerrar_Click" class="btn-close" aria-label="Close" style="font-size: 30px" runat="server" Text="" />
+
         </div>
         <div class="product-container d-flex justify-content-center align-items-center pb-5">
             <div class="product-image">
@@ -16,7 +19,7 @@
 
                 <asp:Label ID="lblPublicacionPausada" CssClass="h4" runat="server" Text="PublicacionPausada"></asp:Label>
 
-      <%--          <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
+                <%--          <asp:Label ID="lblIdPubli" runat="server" Text="IDPubli"></asp:Label><%-- temporal para ver idpubli--%>
                 <asp:TextBox ID="txtNombre" class="mb-3 fw-bolder text-success" runat="server"></asp:TextBox>
                 <asp:TextBox ID="txtCodigo" class="mb-3 fw-bolder text-bg-info" runat="server"></asp:TextBox>
 
@@ -40,8 +43,8 @@
 
                 <div class="py-5 gap-1">
                     <p runat="server" id="CantidadImagenes" class="fw-semibold"></p>
-                    <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras"  />
-                    <asp:Button ID="Siguiente" OnClick="Siguiente_Click" CssClass="btn btn-outline-primary" runat="server" Text="Siguiente"/>
+                    <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras" />
+                    <asp:Button ID="Siguiente" OnClick="Siguiente_Click" CssClass="btn btn-outline-primary" runat="server" Text="Siguiente" />
                 </div>
 
                 <asp:TextBox ID="txtStock" class="mb-3 fw-bolder text-success" runat="server" TextMode="Number"></asp:TextBox>
@@ -51,17 +54,19 @@
                     <asp:Button ID="btnModificarPublicacion" OnClick="btnModificarPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-bottom: 10px; width: 300px; height: 60px" runat="server" Text="Modificar" />
                     <br />
                     <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" Visible="false" />
-                     <asp:Button ID="btnBajaLogicaPublicacion" OnClick="btnBajaLogicaPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
+                    <asp:Button ID="btnBajaLogicaPublicacion" OnClick="btnBajaLogicaPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
                     <br />
-                     <% if (lblPublicacionPausada.Text != "Pausada") {   %>
+                    <% if (lblPublicacionPausada.Text != "Pausada")
+                        {   %>
                     <asp:Button ID="btnPausarPublicacion" OnClick="btnPausarPublicacion_Click" CssClass="btn btn-warning btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Pausar" />
-                    
-                    <% } else {  %>
 
-                     <asp:Button ID="btnRestablecerPublicacion" OnClick="btnRestablecerPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Activar" />
-                    
+                    <% }
+                        else
+                        {  %>
+
+                    <asp:Button ID="btnRestablecerPublicacion" OnClick="btnRestablecerPublicacion_Click" CssClass="btn btn-success btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Activar" />
+
                     <%} %>
- 
                 </div>
             </div>
         </div>

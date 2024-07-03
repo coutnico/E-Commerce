@@ -18,6 +18,14 @@ namespace tp_web_equipo_19.Views
         public List<Usuarios> Lista_Usuarios { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
+            if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
+            {
+                Session.Add("error", "Debes loguearte para ingresar");
+                Response.Redirect("viewLogin.aspx", false);
+
+            }
+
             Lista_Usuarios = usuario_Negocio.ListarUsuarios();
             if (!IsPostBack)
             {
@@ -129,6 +137,18 @@ namespace tp_web_equipo_19.Views
                 Response.Redirect("viewError.aspx", false);
             }
 
+        }
+
+        protected void btnPublicacionVerAdm_Click(object sender, EventArgs e)
+        {
+            
+            string idUsuario = ((Button)sender).CommandArgument;
+
+            Session.Remove("idUsuario_Publications");
+            Session.Add("idUsuario_Publications", idUsuario);
+
+
+            Response.Redirect("viewAdmin_Publicaciones.aspx", false);
         }
     }
 }

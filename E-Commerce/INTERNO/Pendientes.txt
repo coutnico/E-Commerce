@@ -40,3 +40,9 @@
 - Condicionar que cuando se crea una nueva publicacion, cuando seleccionan la categoria, solo aparezcan las marcas relacionadas con esa categoria. // HECHO
 
 - SE AGREGA PARA TODAS LAS CLASES COLUMNA DE BAJA LOGICA
+
+
+- En login Administrador que vea publicaciones del usuario que selecciono
+- Sistema de chat entre comprador y vendedor.
+- Mail solicitud pago y confirmacion
+- Crear por default articulos (modificar tabla articulos)

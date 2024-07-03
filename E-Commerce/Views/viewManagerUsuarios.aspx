@@ -112,12 +112,14 @@
                                             </div>
                                             <div class="cardUsuario__title"><%# Eval("User") %></div>
                                             <div class="cardUsuario__subtitle"><%# Convert.ToInt32(Eval("tipoUsuario")) == 2 ? "Administrador" : "Usuario" %></div>
-                                            <div class="cardUsuario__wrapper">
-                                                <button class="cardUsuario__btn cardUsuario__btn-solid w-auto">Publicaciones</button>
+                                            <div class="cardUsuario__wrapper">  
+                                       
+                                              <%--  <asp:Button ID="btnPublicacionVerAdm"  OnClick="btnPublicacionVerAdm_Click" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario_to_Publi" class="cardUsuario__btn cardUsuario__btn-solid w-auto"  runat="server" Text="Publicaciones" />--%>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                  <asp:Button ID="btnPublicacionVerAdm"  OnClick="btnPublicacionVerAdm_Click" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario_to_Publi" class="cardUsuario__btn cardUsuario__btn-solid w-auto"  runat="server" Text="Publicaciones" />
                             </td>
                         </tr>
                     </ItemTemplate>

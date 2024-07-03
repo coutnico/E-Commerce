@@ -145,7 +145,7 @@ namespace tp_web_equipo_19.Views
             // lblposback.Text = "";
             Publicaciones publicaciones = new Publicaciones();
             Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
-
+            Usuarios usuario = (Usuarios)Session["usuario"];
 
             Articulo articulo = new Articulo();
             ArticuloNegocio articuloNegocio = new ArticuloNegocio();
@@ -172,7 +172,14 @@ namespace tp_web_equipo_19.Views
                 string mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha eliminado Correctamente ";
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
-                Response.Redirect("viewUsuarioPublicaciones.aspx");
+                if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+                {
+                    Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+                }
+                else
+                {
+                    Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+                }
 
             }
             catch
@@ -205,7 +212,7 @@ namespace tp_web_equipo_19.Views
             try
             {
 
-                publicaciones.IdUsuario = usuario.Id;
+              //  publicaciones.IdUsuario = //usuario.Id; Mantengo mismo ID, no lo piso. Ya que si lo hago desde x ejemplo Admin, me lo modificaria
                 publicaciones.Stock = Convert.ToInt32(txtStock.Text);
                 publicaciones.articulo.ID = publicaciones.articulo.ID;
                 publicaciones.articulo.Nombre = txtNombre.Text;
@@ -231,8 +238,13 @@ namespace tp_web_equipo_19.Views
                 // Registra el script para mostrar una alerta al usuario en el navegador
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
             }
-
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL) { 
             Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            }
+            else
+            {
+                Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+            }
         }
         protected void Atras_Click(object sender, EventArgs e)
         {
@@ -325,46 +337,78 @@ namespace tp_web_equipo_19.Views
         protected void btnPausarPublicacion_Click(object sender, EventArgs e) // Ver de agregar fecha, luego de esa fecha se eliminaria automaticamente publi.
         {
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
+            Usuarios usuario = (Usuarios)Session["usuario"];
 
             bool pausar = true;
 
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
-            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            }
+            else
+            {
+                Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+            }
         }
 
         protected void btnRestablecerPublicacion_Click(object sender, EventArgs e)
         {
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
-
+            Usuarios usuario = (Usuarios)Session["usuario"];
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
             bool pausar = false;
 
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
 
-            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            }
+            else
+            {
+                Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+            }
         }
 
         protected void btnBajaLogicaPublicacion_Click(object sender, EventArgs e)
         {
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
-
+            Usuarios usuario = (Usuarios)Session["usuario"];
             bool Baja_Logica = true;
 
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
             publicaciones_Negocio.bajaLogicaPublicacion(Baja_Logica, IdPublicacion);
-            Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            }
+            else
+            {
+                Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+            }
 
         }
 
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
 
+            Usuarios usuario = (Usuarios)Session["usuario"];
 
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                Response.Redirect("viewUsuarioPublicaciones.aspx", false);
+            }
+            else
+            {
+                Response.Redirect("viewAdmin_Publicaciones.aspx", false);
+            }
 
-
-
-
+        }
     }
 }

@@ -199,6 +199,7 @@
     <Content Include="Views\viewCompra.aspx" />
     <Content Include="Views\viewUsuarioAgregarPublicacion_2.aspx" />
     <Content Include="Views\ViewUsuarioAgregarPublicacion_1.aspx" />
+    <Content Include="Views\viewAdmin_Publicaciones.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -375,6 +376,13 @@
     </Compile>
     <Compile Include="Views\ViewUsuarioAgregarPublicacion_1.aspx.designer.cs">
       <DependentUpon>ViewUsuarioAgregarPublicacion_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewAdmin_Publicaciones.aspx.cs">
+      <DependentUpon>viewAdmin_Publicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewAdmin_Publicaciones.aspx.designer.cs">
+      <DependentUpon>viewAdmin_Publicaciones.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
