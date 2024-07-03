@@ -79,6 +79,7 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="Compras.cs" />
     <Compile Include="Publicaciones.cs" />
+    <Compile Include="Suspension.cs" />
     <Compile Include="Usuarios.cs" />
     <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />
