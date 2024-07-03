@@ -17,7 +17,7 @@ namespace E_Commerce_Negocio
     {
         ConexionDB conexionDB = new ConexionDB();
         SqlDataReader reader = null;
-        public bool loguear(Usuarios usuario)
+        public (bool Existe, bool Suspendido) loguear(Usuarios usuario)
         {
 
 
@@ -33,19 +33,26 @@ namespace E_Commerce_Negocio
 
                 while (reader.Read())
                 {
+                    Suspensiones_Negocio suspensiones = new Suspensiones_Negocio();
+
                     usuario.Id = Convert.ToInt32(reader["Id"]);
                     usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+                    bool UsuarioSuspendido = false;
 
-                    return true;
+                    foreach (Suspension suspension in suspensiones.ListarSuspensiones())
+                    {
+                        if (usuario.Id == suspension.ID_Usuario && DateTime.Today <= suspension.Fecha_Fin)
+                        {
+                            UsuarioSuspendido = true;
+                            break;
+                        }
+                    }
+
+
+                    return (true, UsuarioSuspendido);
                 }
-
-
-                return false;
-
-
+                return (false, false);
             }
-
-
             catch (Exception ex)
             {
                 throw ex;

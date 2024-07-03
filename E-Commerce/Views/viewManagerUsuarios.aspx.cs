@@ -93,8 +93,23 @@ namespace tp_web_equipo_19.Views
                 }
 
 
-                if (ContadordeAdvertencias > 3)
+                if (ContadordeAdvertencias > 2)
                 {
+                    Suspensiones_Negocio suspensiones = new Suspensiones_Negocio();
+                    int contadorSuspensionesActivas = 0;
+                    foreach (Suspension suspension in suspensiones.ListarSuspensiones())
+                    {
+                        if (suspension.ID_Usuario == Id_Usuario && DateTime.Today <= suspension.Fecha_Fin)
+                        {
+                            contadorSuspensionesActivas++;
+                        }
+                    }
+
+                    if (contadorSuspensionesActivas == 0)
+                    {
+                        suspensiones.InsertarSuspension(Id_Usuario);
+                    }
+
 
 
                     string script = "ShowUsuarioSuspendido();";
