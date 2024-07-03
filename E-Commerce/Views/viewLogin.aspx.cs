@@ -23,18 +23,23 @@ namespace tp_web_equipo_19.Views
             try
             {
                 usuario = new Usuarios(txtUser.Text,txtPass.Text, false);
-               
-                if(usuario_Negocio.loguear(usuario))
+                
+                if(usuario_Negocio.loguear(usuario).Existe && !usuario_Negocio.loguear(usuario).Suspendido)
                 {
                     Session.Add("usuario", usuario);
                     Response.Redirect("viewProfile.aspx",false); // Para evitar que genere el th. ex.
 
                 }
-                else
+                else if (!usuario_Negocio.loguear(usuario).Existe && !usuario_Negocio.loguear(usuario).Suspendido)
                 {
-                    Session.Add("Error", "user o pass incorrecto");
+                    Session.Add("Error", "Usuario o Contraseña Incorrectos");
                     Response.Redirect("viewError.aspx",false);
-                }                  
+                }
+                else if(usuario_Negocio.loguear(usuario).Existe && usuario_Negocio.loguear(usuario).Suspendido)
+                {
+                    Session.Add("Error", "Usuario suspendido, ponerse en contacto con closeMarket@hotmail.com para renovar la membresia");
+                    Response.Redirect("viewError.aspx", false);
+                }
             }
 
             catch (Exception ex)
