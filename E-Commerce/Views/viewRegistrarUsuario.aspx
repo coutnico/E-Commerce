@@ -18,27 +18,27 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="form-container">
-                    <h2 class="text-center">Registro</h2>
+                    <h2 class="text-center">Registrarse</h2>
                     <div>
                         <div class="form-group">
-                            <label for="username">Nombre de Usuario</label>
-                            <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario">
+                            <label for="username">Usuario</label>
+                            <asp:TextBox runat="server" placeholder="Ingrese su nombre de usuario" CssClass="form-control bg-dark-subtle border border-3 border-white text-dark fs-6 fw-semibold text-center" />
                         </div>
                         <div class="form-group">
                             <label for="lastName">Apellido</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Ingrese su apellido">
+                            <asp:TextBox runat="server" placeholder="Ingrese su nombre de usuario" CssClass="form-control bg-dark-subtle border border-3 border-white text-dark fs-6 fw-semibold text-center" />
+
                         </div>
                         <div class="form-group">
                             <label for="firstName">Nombres</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Ingrese sus nombres">
+                            <asp:TextBox runat="server" placeholder="Ingrese su nombre de usuario" CssClass="form-control bg-dark-subtle border border-3 border-white text-dark fs-6 fw-semibold text-center" />
                         </div>
                         <div class="form-group">
-                            <label for="address">Domicilio</label>
-                            <select class="form-control" id="address">
-                                <option value="domicilio1">Domicilio 1</option>
-                                <option value="domicilio2">Domicilio 2</option>
-                                <option value="domicilio3">Domicilio 3</option>
-                            </select>
+                            <div class="w-50 d-flex">
+                                <label for="domiclio" class="text-dark fs-6 mt-2 fw-semibold">Domicilio asociados</label>
+                                <asp:ImageButton ImageUrl="..\Resources\buscar-en-la-lista.gif" runat="server" />
+                                <asp:ImageButton ImageUrl="..\Resources\MAs.gif" runat="server" />
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="gender">Género</label>
