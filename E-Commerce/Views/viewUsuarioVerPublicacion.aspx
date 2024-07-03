@@ -40,8 +40,8 @@
 
                 <div class="py-5 gap-1">
                     <p runat="server" id="CantidadImagenes" class="fw-semibold"></p>
-                    <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras" />
-                    <asp:Button ID="Siguiente" OnClick="Siguiente_Click" CssClass="btn btn-outline-primary" runat="server" Text="Siguiente" />
+                    <asp:Button ID="Atras" OnClick="Atras_Click" CssClass="btn btn-outline-secondary me-2" runat="server" Text="Atras"  />
+                    <asp:Button ID="Siguiente" OnClick="Siguiente_Click" CssClass="btn btn-outline-primary" runat="server" Text="Siguiente"/>
                 </div>
 
                 <asp:TextBox ID="txtStock" class="mb-3 fw-bolder text-success" runat="server" TextMode="Number"></asp:TextBox>

@@ -109,6 +109,8 @@ namespace tp_web_equipo_19.Views
 
             if (!IsPostBack)
             {
+
+                Session.Add("IndiceImagen", 0);
                 IndiceImagen = 0;
                 foreach (Imagen imagen in imagenNegocio.ListarImagen())
                 {
@@ -249,12 +251,15 @@ namespace tp_web_equipo_19.Views
 
                 }
             }
-            if (IndiceImagen > 0)
-            {
-                IndiceImagen--;
+            IndiceImagen = Convert.ToInt32(Session["IndiceImagen"]);          
+            IndiceImagen--;
+            if (IndiceImagen > -1)
+            {            
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
                 imgNumber.InnerText = Convert.ToString(IndiceImagen);
                 txtImagenUrl.Text = imagenes[IndiceImagen].URL;
+                Session.Remove("IndiceImagen");
+                Session.Add("IndiceImagen", IndiceImagen);
             }
         }
 
@@ -275,12 +280,17 @@ namespace tp_web_equipo_19.Views
 
                 }
             }
-            if (IndiceImagen <= imagenes.Count)
-            {
+
+            IndiceImagen = Convert.ToInt32(Session["IndiceImagen"]);
+
+            IndiceImagen++;
+            if (IndiceImagen <= imagenes.Count - 1)
+            {             
                 ImagenPrincipalArticulo.Src = imagenes[IndiceImagen].URL;
-                IndiceImagen++;
                 imgNumber.InnerText = Convert.ToString(IndiceImagen);
                 txtImagenUrl.Text = imagenes[IndiceImagen].URL;
+                Session.Remove("IndiceImagen");
+                Session.Add("IndiceImagen", IndiceImagen);
             }
         }
 

@@ -26,6 +26,8 @@ namespace tp_web_equipo_19.Views
 
 
             Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
+            Session.Remove("IndiceImagen");
+
 
             if (usuario == null) // Si no hay nadie logueado, que no permita ingresar a la pagina de perfil.
             {
