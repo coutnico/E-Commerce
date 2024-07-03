@@ -92,11 +92,11 @@
                             <td class="text-light fs-6 fw-semibold"><%# Eval("User") %></td>
                             <td class="">
                                 <asp:Label Text='<%# Eval("tipoUsuario", this.GetTipoUsuarioText(Eval("tipoUsuario"))) %>' runat="server" ID="lblRango" />
-                                <asp:ImageButton ImageUrl="https://img.icons8.com/pulsar-gradient/48/change.png" runat="server" style="height: 30px; width: 30px"/>
+                                <asp:ImageButton ImageUrl="https://img.icons8.com/pulsar-gradient/48/change.png" runat="server" Style="height: 30px; width: 30px" />
                             </td>
 
                             <td>
-                                <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server"  ID="btnAdvertencia" OnClick="btnAdvertencia_Click" ClientIDMode="Static" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario" OnClientClick="return ShowDialogResultOk()"/>
+                                <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server" ID="btnAdvertencia" OnClick="btnAdvertencia_Click" ClientIDMode="AutoID" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario" />
                             </td>
                             <td>
                                 <img src="https://img.icons8.com/pulsar-gradient/420/web-account.png" alt="Alternate Text" style="width: 50px;" onclick='<%# "openModal(\"exampleModal_" + Container.ItemIndex + "\")" %>' />
@@ -125,21 +125,28 @@
             </tbody>
         </table>
 
-        <script>
+        <script >
             function openModal(modalId) {
                 $('#' + modalId).modal('show');
             }
 
-            function ShowDialogResultOk() {
+            function ShowEnviarAdvertencia() {
                 Swal.fire({
-                    title: "Advertencia agregada exitosamente",
+                    title: "Advertencia cargada con exito",
                     text: "Mail Enviado",
-                    icon: "success"
+                    icon: "info",
+                    confirmButtonColor: "#3085d6"
                 });
+            }    
 
-                return true;
-            }
-
+            function ShowUsuarioSuspendido() {
+                Swal.fire({
+                    title: "Usuario suspendido",
+                    text: "<%DateTime.Today.ToString("dd/MM/yyyy"); %>",
+                    icon: "warning",
+                    confirmButtonColor: "#3085d6"
+                });
+            }  
         </script>
     </div>
 </asp:Content>

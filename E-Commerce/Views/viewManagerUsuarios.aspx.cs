@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Optimization;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -76,8 +78,8 @@ namespace tp_web_equipo_19.Views
 
         protected void btnAdvertencia_Click(object sender, ImageClickEventArgs e)
         {
-            Advertencias_Negocio advertencias_Negocio = new Advertencias_Negocio();
             int Id_Usuario = Convert.ToInt32(((ImageButton)sender).CommandArgument);
+            Advertencias_Negocio advertencias_Negocio = new Advertencias_Negocio();
 
             try
             {
@@ -93,11 +95,16 @@ namespace tp_web_equipo_19.Views
 
                 if (ContadordeAdvertencias > 3)
                 {
-                    
+
+
+                    string script = "ShowUsuarioSuspendido();";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "showalert", script, true);
                 }
                 else
                 {
                     advertencias_Negocio.InsertarAdvertencia(Id_Usuario);
+                    string script = "ShowEnviarAdvertencia();";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "showalert", script, true);
                 }
 
             }
