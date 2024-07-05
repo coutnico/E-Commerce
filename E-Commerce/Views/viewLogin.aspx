@@ -39,7 +39,7 @@
             <div class="row align-items-center justify-content-center" style="height: 90%">
                 <div class="col-md-8 text-center">
                     <img src="https://img.icons8.com/glassmorphism/480/shop.png" class="mt-3" alt="Login" width="180" height="180" />
-                    <asp:TextBox runat="server" ID="txtUser" ClientIDMode="Static" placeholder="Correo electronico" CssClass="form-control bg-dark-subtle mt-3 mb-3 border border-3 border-white text-dark fs-6 fw-semibold text-center" Style="margin: auto;" />
+                    <asp:TextBox runat="server" ID="txtUser" ClientIDMode="Static" placeholder="Usuario" CssClass="form-control bg-dark-subtle mt-3 mb-3 border border-3 border-white text-dark fs-6 fw-semibold text-center" Style="margin: auto;" />
                     <asp:TextBox runat="server" ID="txtPass" ClientIDMode="Static" placeholder="Contraseña" CssClass="form-control bg-dark-subtle mt-1 mb-3 border border-3 border-white text-dark fs-6 fw-semibold text-center" Style="margin: auto;" />
                     <div>
                         <asp:Button Text="Ingresar" class="btn btn-dark rounded-3 mt-5 border border-2 border-white text-light fs-6 fw-semibold fs-Segoe text-shadow" Width="200px" runat="server" ID="BtnLogin" OnClientClick="return validarEmailAndPass()" OnClick="BtnLogin_Click" />
