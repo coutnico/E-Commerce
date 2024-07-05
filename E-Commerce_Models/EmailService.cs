@@ -29,7 +29,7 @@ namespace E_Commerce_Models
             email.To.Add(emailDestino);
             email.Subject = asunto;
             email.IsBodyHtml = true; // puedo escribar html en el body.
-            email.Body = "<h1> CUERPO DEL CORREO </H1> </BR> continua aca segun lo cargado.." + cuerpo ;
+            email.Body =  cuerpo ;
             //email.Body= cuerpo;
         }
 
