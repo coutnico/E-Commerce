@@ -23,6 +23,8 @@ namespace E_Commerce_Models
 
         public TipoUsuario tipoUsuario { get; set; }
 
+        public string Email { get; set; }
+
 
         //creo consctructor
 

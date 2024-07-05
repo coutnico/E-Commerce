@@ -28,7 +28,7 @@ namespace E_Commerce_Negocio
                 //conexionDB.AgregarParametro("@pass", usuario.Pass);
 
                 //reader = conexionDB.LeerDatos("Select Id, Usuario, Pass, TipoUser FROM USUARIOS Where Usuario = @user and Pass = @pass");
-                reader = conexionDB.LeerDatos("Select Id, Usuario, Pass, TipoUser FROM USUARIOS Where Usuario = '" + usuario.User + "' and Pass = '" + usuario.Pass + "'");
+                reader = conexionDB.LeerDatos("Select Id, Usuario, Pass, TipoUser, EMAIL FROM USUARIOS Where Usuario = '" + usuario.User + "' and Pass = '" + usuario.Pass + "'");
 
 
                 while (reader.Read())
@@ -72,7 +72,7 @@ namespace E_Commerce_Negocio
             try
             {
                 //conexion.Open();
-                string query = "Select Id, Usuario, Pass, TipoUser From Usuarios";
+                string query = "Select Id, Usuario, Pass, TipoUser, EMAIL From Usuarios";
                 //cmd = new SqlCommand(query, conexion);
                 //reader = cmd.ExecuteReader();
                 reader = conexionDB.LeerDatos(query);
@@ -86,6 +86,7 @@ namespace E_Commerce_Negocio
                     usuario.Id = Convert.ToInt32(reader["Id"]);
                     usuario.User = reader["Usuario"].ToString();
                     usuario.Pass = reader["Pass"].ToString();
+                    usuario.Email = reader["EMAIL"].ToString();
                     usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
 
                     listausuarios.Add(usuario);

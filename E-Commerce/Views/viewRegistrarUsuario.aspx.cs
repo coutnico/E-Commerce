@@ -13,5 +13,15 @@ namespace tp_web_equipo_19.Views
         {
 
         }
+
+        protected void btnRegistar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnSalir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
