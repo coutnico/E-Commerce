@@ -137,6 +137,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="libman.json" />
+    <Content Include="Views\viewEnvioEmail.aspx" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.js" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.min.js" />
     <None Include="Resources\ErrorImagen.png" />
@@ -411,6 +412,13 @@
     </Compile>
     <Compile Include="Views\viewChatHub.aspx.designer.cs">
       <DependentUpon>viewChatHub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewEnvioEmail.aspx.cs">
+      <DependentUpon>viewEnvioEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewEnvioEmail.aspx.designer.cs">
+      <DependentUpon>viewEnvioEmail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
