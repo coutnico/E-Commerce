@@ -15,7 +15,8 @@ namespace E_Commerce_Models
         public EmailService() // constructor. coloco credenciales x def.
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("marianoutnprogramacion@gmail.com", "Mariano-123"); // ver de generar archivo de configuracion.
+            server.UseDefaultCredentials = false;
+            server.Credentials = new NetworkCredential("marianoutnprogramacion@gmail.com", "sayj eqkg ebyw adrk"); // ver de generar archivo de configuracion.
             server.EnableSsl = true;
             server.Port = 587;
             server.Host = "smtp.gmail.com";
@@ -24,7 +25,7 @@ namespace E_Commerce_Models
         public void armarCorreo(string emailDestino, string asunto, string cuerpo)
         {
             email = new MailMessage();
-            email.From = new MailAddress("noresponder@ecommerceprogramacioniii.com");
+            email.From = new MailAddress("marianoutnprogramacion@gmail.com"); //new MailAddress("noresponder@ecommerceprogramacioniii.com");
             email.To.Add(emailDestino);
             email.Subject = asunto;
             email.IsBodyHtml = true; // puedo escribar html en el body.

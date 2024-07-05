@@ -29,7 +29,8 @@ namespace tp_web_equipo_19.Views
 
             } 
             catch (Exception ex) { // received error frm class
-                Session.Add("ErrorEnvioEmail", ex); 
+                Session.Add("ErrorEnvioEmail", ex);
+                Response.Redirect("viewError.aspx", false);
             }
 
 
