@@ -1,0 +1,44 @@
+
+CORE del Negocio
+- Compra/Venta. Listo
+- Canal de comunicacion (Chat). En proceso falta vincular clase compra, id compra y demas..
+- Envio de correo automatico. hecho 
+- Cuando se publique una nueva publi envie correo auto 
+
+
+ABM
+- Se cambia que sea baja logica en las Publicaciones.
+- Se generan categorias y marcas por default.
+- funcionando publicaciones y articulos. Falta solucionar el cargar mas de una img
+
+
+
+
+- CLAS
+
+- Modifico view usuario publi 2
+
+- MIS PUBLICACIONES. AGREGAR TITULO EN MIS PUBLICACIONES y en el de ADMIN.
+TAMBIEN
+CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO
+
+
+-------------
+CONDICIONAMIENTOS
+- Que te deje entrar a ciertas pantallas, por usuariuoi registrado.  admin user, compradores chat y demas
+- carga de datos, foreign keys, entre Marcas y categorias.. no puede haber  una marca sin su categroai
+- Falta condicionar que si ya esta registrado con el correo que aparezca advertencia.. En la BD no lo agregaria.
+- 
+
+-----
+PENDIENTES
+- CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET
+- Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no.
+- Nos falta terminar el chat entre usuarios. Condicionado por IDCompras. 
+- Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan
+- ABM del administrador en al articulo
+
+- Cargar datos por default, pero bien cargado con imagenes y demas
+
+- Envio de correo electronico cuando se genera una advertencia al usuario
+- Agregar cantidad de suspensiones que tiene cada usu

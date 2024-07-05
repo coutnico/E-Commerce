@@ -47,3 +47,21 @@
 - Sistema de chat entre comprador y vendedor.
 - Mail solicitud pago y confirmacion
 - Crear por default articulos (modificar tabla articulos)
+
+
+// 05/07/2024 
+PENDIENTES
+
+- CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET
+- Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no.
+- Nos falta terminar el chat entre usuarios. Condicionado por IDCompras. 
+- Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan
+- ABM del administrador en al articulo
+
+
+- Envio de correo electronico cuando se genera una advertencia al usuario
+- Agregar cantidad de suspensiones que tiene cada usuario
+- Cargar datos por default, pero bien cargado con imagenes y demas
+- MIS PUBLICACIONES. AGREGAR TITULO EN MIS PUBLICACIONES y en el de ADMIN.
+TAMBIEN
+CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO
