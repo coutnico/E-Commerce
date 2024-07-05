@@ -19,29 +19,67 @@ namespace tp_web_equipo_19.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Registra el hub de SignalR
-            ScriptManager.RegisterStartupScript(this, GetType(), "signalr",
-                "<script src='https://localhost:44380/wwwroot/js/signalr/dist/browser/signalr.js'></script>", false);
+            /*  // Registra el hub de SignalR
+              ScriptManager.RegisterStartupScript(this, GetType(), "signalr",
+                  "<script src='https://localhost:44380/wwwroot/js/signalr/dist/browser/signalr.js'></script>", false);
 
-            // Lógica para manejar el envío de mensajes desde el servidor
+              // Lógica para manejar el envío de mensajes desde el servidor
+              if (!IsPostBack)
+              {
+                  //
+              }*/
+
+            Chat chat = new Chat();
+            ChatNegocio chatNegocio = new ChatNegocio();
+            List<Chat> listaChats;
+
             if (!IsPostBack)
             {
-                // Nada específico para hacer en la carga inicial, puedes manejar eventos aquí si es necesario
+
+                listaChats = chatNegocio.ListarChats();
+
+             
+                List<Chat> listaChatsAMostrar = new List<Chat>();
+                foreach (Chat chats_aux in listaChats)
+                {
+                    //***** Colocar IDCompra para filtro a la seleccionada por SESION cuando entren al link de la compra! MODIFICAR, AHORA ESTA HARDCODE
+                    if (chats_aux.IdCompra == 1)
+                    {
+                        listaChatsAMostrar.Add(chats_aux);
+                    }
+
+                }
+
+                reapeterChats.DataSource = listaChatsAMostrar;
+                reapeterChats.DataBind();
+
+
             }
         }
 
-        protected void sendButton_Click(object sender, EventArgs e)
+
+        protected void btnEnviarMensaje_Click(object sender, EventArgs e)
         {
-            // Obtener el nombre y el mensaje desde los controles ASP.NET
-            string name = txtName.Text.Trim();
-            string message = txtMessage.Text.Trim();
+            Chat chat = new Chat();
+            ChatNegocio chatNegocio = new ChatNegocio();
 
-            // Llamar al método Send del hub de SignalR para enviar el mensaje
-            var hubContext = GlobalHost.ConnectionManager.GetHubContext<ChatHub>();
-            hubContext.Clients.All.addNewMessageToPage(name, message);
+            //  int remitente = Convert.ToInt32(((Button)sender).CommandArgument);
+            int remitente = 1; // TEMPORAL!
 
-            // Limpiar el campo de mensaje después de enviar
-            txtMessage.Text = "";
+            chat.IdCompra = 1; //  //***** colocar dinamico cuando este la clase
+            chat.Remitente = remitente; // Debe traer el valor por sesion 1 comprador 2 vendedor
+            chat.Mensaje = txtMensajeNuevo.Text;
+
+            try
+            {
+                chatNegocio.agregarChat(chat);
+                Response.Redirect("viewChatHub.aspx", false);
+            }
+            catch (Exception ex)
+            {
+                Session.Add("error_chat", ex);
+                Response.Redirect("viewError.aspx", false);
+            }
         }
     }
 }

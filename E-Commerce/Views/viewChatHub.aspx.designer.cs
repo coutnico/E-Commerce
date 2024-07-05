@@ -15,30 +15,30 @@ namespace tp_web_equipo_19.Views
     {
 
         /// <summary>
-        /// txtName control.
+        /// reapeterChats control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.Repeater reapeterChats;
 
         /// <summary>
-        /// txtMessage control.
+        /// txtMensajeNuevo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMessage;
+        protected global::System.Web.UI.WebControls.TextBox txtMensajeNuevo;
 
         /// <summary>
-        /// sendButton control.
+        /// btnEnviarMensaje control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sendButton;
+        protected global::System.Web.UI.WebControls.Button btnEnviarMensaje;
     }
 }

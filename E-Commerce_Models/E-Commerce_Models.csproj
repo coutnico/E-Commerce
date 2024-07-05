@@ -114,6 +114,7 @@
     <Compile Include="Carrito.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="ChatHub.cs" />
+    <Compile Include="Chat.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="Compras.cs" />
     <Compile Include="Publicaciones.cs" />

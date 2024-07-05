@@ -25,11 +25,11 @@ namespace E_Commerce_Models
         public void armarCorreo(string emailDestino, string asunto, string cuerpo)
         {
             email = new MailMessage();
-            email.From = new MailAddress("marianoutnprogramacion@gmail.com"); //new MailAddress("noresponder@ecommerceprogramacioniii.com");
+            email.From = new MailAddress("noresponder@e-commerce.com"); //new MailAddress("noresponder@ecommerceprogramacioniii.com");
             email.To.Add(emailDestino);
             email.Subject = asunto;
             email.IsBodyHtml = true; // puedo escribar html en el body.
-            email.Body = "<h1> CUERPO DEL CORREO </H1> </BR> continua aca..";
+            email.Body = "<h1> CUERPO DEL CORREO </H1> </BR> continua aca segun lo cargado.." + cuerpo ;
             //email.Body= cuerpo;
         }
 
