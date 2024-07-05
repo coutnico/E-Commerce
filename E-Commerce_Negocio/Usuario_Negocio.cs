@@ -119,5 +119,25 @@ namespace E_Commerce_Negocio
                 conexionDB.CerrarConexion();
             }
         }
+
+        public bool CrearUsuario(string nombreUsuario, string contraseña, string email, string nombres, string apellidos, string genero, int Nrotelefono1, int NroTelefono2, int documento)
+        {
+            try
+            {
+                conexionDB.EjecutarComando("");
+                return true;
+
+
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+            finally
+            {
+                conexionDB.CerrarConexion();
+            }
+        }
     }
 }
