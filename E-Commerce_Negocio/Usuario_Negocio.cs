@@ -120,14 +120,12 @@ namespace E_Commerce_Negocio
             }
         }
 
-        public bool CrearUsuario(string nombreUsuario, string contraseña, string email, string nombres, string apellidos, string genero, int Nrotelefono1, int NroTelefono2, int documento)
+        public bool CrearUsuario(string nombreUsuario, string contraseña, string email)
         {
             try
             {
-                conexionDB.EjecutarComando("");
+                conexionDB.EjecutarComando($"INSERT INTO USUARIOS (Usuario, Pass, TipoUser, EMAIL) VALUES ('{nombreUsuario}', '{contraseña}', 1, '{email}')");
                 return true;
-
-
             }
             catch (Exception)
             {

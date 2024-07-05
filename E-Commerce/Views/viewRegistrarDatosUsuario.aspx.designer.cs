@@ -11,7 +11,7 @@ namespace tp_web_equipo_19.Views
 {
 
 
-    public partial class viewRegistrarUsuario
+    public partial class viewRegistrarDatosUsuario
     {
 
         /// <summary>

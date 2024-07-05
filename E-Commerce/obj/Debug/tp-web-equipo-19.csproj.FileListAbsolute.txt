@@ -808,3 +808,11 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.xml
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.Security.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.Owin.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.Owin.Security.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Owin.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.Owin.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce\bin\Microsoft.Owin.Security.xml

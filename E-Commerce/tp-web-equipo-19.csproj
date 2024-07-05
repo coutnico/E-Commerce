@@ -138,6 +138,7 @@
     <Content Include="Global.asax" />
     <Content Include="libman.json" />
     <Content Include="Views\viewEnvioEmail.aspx" />
+    <Content Include="Views\viewRegister.aspx" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.js" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.min.js" />
     <None Include="Resources\ErrorImagen.png" />
@@ -214,7 +215,7 @@
     <Content Include="Views\viewManagerUsuarios.aspx" />
     <Content Include="Views\viewProfile.aspx" />
     <Content Include="Views\viewError.aspx" />
-    <Content Include="Views\viewRegistrarUsuario.aspx" />
+    <Content Include="Views\viewRegistrarDatosUsuario.aspx" />
     <Content Include="Views\viewUsuarioPublicaciones.aspx" />
     <Content Include="Views\viewUsuarioVerPublicacion.aspx" />
     <Content Include="Views\viewCompra.aspx" />
@@ -357,12 +358,19 @@
     <Compile Include="Views\viewError.aspx.designer.cs">
       <DependentUpon>viewError.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\viewRegistrarUsuario.aspx.cs">
-      <DependentUpon>viewRegistrarUsuario.aspx</DependentUpon>
+    <Compile Include="Views\viewRegister.aspx.cs">
+      <DependentUpon>viewRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\viewRegistrarUsuario.aspx.designer.cs">
-      <DependentUpon>viewRegistrarUsuario.aspx</DependentUpon>
+    <Compile Include="Views\viewRegister.aspx.designer.cs">
+      <DependentUpon>viewRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewRegistrarDatosUsuario.aspx.cs">
+      <DependentUpon>viewRegistrarDatosUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewRegistrarDatosUsuario.aspx.designer.cs">
+      <DependentUpon>viewRegistrarDatosUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\viewUsuarioPublicaciones.aspx.cs">
       <DependentUpon>viewUsuarioPublicaciones.aspx</DependentUpon>

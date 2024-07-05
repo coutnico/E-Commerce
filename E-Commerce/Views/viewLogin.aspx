@@ -42,9 +42,9 @@
                     <asp:TextBox runat="server" ID="txtUser" ClientIDMode="Static" placeholder="Correo electronico" CssClass="form-control bg-dark-subtle mt-3 mb-3 border border-3 border-white text-dark fs-6 fw-semibold text-center" Style="margin: auto;" />
                     <asp:TextBox runat="server" ID="txtPass" ClientIDMode="Static" placeholder="Contraseña" CssClass="form-control bg-dark-subtle mt-1 mb-3 border border-3 border-white text-dark fs-6 fw-semibold text-center" Style="margin: auto;" />
                     <div>
-                        <asp:Button Text="INGRESAR" class="btn btn-dark rounded-3 mt-5 border border-2 border-white text-light fs-6 fw-semibold fs-Segoe text-shadow" Width="200px" runat="server" ID="BtnLogin" OnClientClick="return validarEmailAndPass()" OnClick="BtnLogin_Click" />
+                        <asp:Button Text="Ingresar" class="btn btn-dark rounded-3 mt-5 border border-2 border-white text-light fs-6 fw-semibold fs-Segoe text-shadow" Width="200px" runat="server" ID="BtnLogin" OnClientClick="return validarEmailAndPass()" OnClick="BtnLogin_Click" />
                         <br />
-                        <asp:Button Text="REGISTRARME" runat="server" class="btn btn-dark mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe text-shadow"  Width="250px" ID="BtnRegistarme" OnClientClick="return validarEmailAndPass()" OnClick="BtnRegistarme_Click" />
+                        <asp:Button Text="Registrarme" runat="server" class="btn btn-dark mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe text-shadow"  Width="250px" ID="BtnRegistarme"  OnClick="BtnRegistarme_Click" />
                     </div>
                 </div>
             </div>

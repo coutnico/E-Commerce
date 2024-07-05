@@ -59,7 +59,7 @@ namespace tp_web_equipo_19.Views
 
         protected void BtnRegistarme_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("viewRegister.aspx");
         }
     }
 }

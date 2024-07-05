@@ -398,3 +398,13 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Negocio\bin\Microsoft.Owin.xml
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Negocio\bin\Microsoft.Owin.Security.xml
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Negocio\bin\Newtonsoft.Json.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.Owin.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.Owin.Security.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Newtonsoft.Json.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Owin.dll
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.Owin.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Microsoft.Owin.Security.xml
+C:\Users\nicoo\OneDrive\Desktop\Proyectos Nico\E-Commerce\E-Commerce_Negocio\bin\Newtonsoft.Json.xml
