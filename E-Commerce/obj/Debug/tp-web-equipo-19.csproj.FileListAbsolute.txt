@@ -800,3 +800,11 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\roslyn\vbc.rsp
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\roslyn\VBCSCompiler.exe
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.Security.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce\bin\Microsoft.Owin.Security.xml

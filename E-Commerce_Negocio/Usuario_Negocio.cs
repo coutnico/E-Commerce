@@ -86,7 +86,7 @@ namespace E_Commerce_Negocio
                     usuario.Id = Convert.ToInt32(reader["Id"]);
                     usuario.User = reader["Usuario"].ToString();
                     usuario.Pass = reader["Pass"].ToString();
-                    usuario.Email = reader["EMAIL"].ToString();
+                   // usuario.Email = reader["EMAIL"].ToString();
                     usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
 
                     listausuarios.Add(usuario);

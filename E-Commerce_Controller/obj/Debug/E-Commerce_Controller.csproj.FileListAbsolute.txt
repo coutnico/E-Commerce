@@ -293,3 +293,13 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\obj\Debug\E-Commer.A8BADC74.Up2Date
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\obj\Debug\E-Commerce_Controller.dll
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\obj\Debug\E-Commerce_Controller.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.Owin.Security.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.Owin.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Microsoft.Owin.Security.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Controller\bin\Newtonsoft.Json.xml

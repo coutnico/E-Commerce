@@ -303,3 +303,13 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\obj\Debug\E-Commer.D01C52FD.Up2Date
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\obj\Debug\E-Commerce_Models.dll
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\obj\Debug\E-Commerce_Models.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.Owin.Security.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Newtonsoft.Json.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Owin.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.Owin.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Microsoft.Owin.Security.xml
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TPC\E-Commerce NEW\E-Commerce_Models\bin\Newtonsoft.Json.xml
