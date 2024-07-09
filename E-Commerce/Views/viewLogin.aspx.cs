@@ -23,8 +23,12 @@ namespace tp_web_equipo_19.Views
             try
             {
                 usuario = new Usuarios(txtUser.Text,txtPass.Text, false);
-                
-                if(usuario_Negocio.loguear(usuario).Existe && !usuario_Negocio.loguear(usuario).Suspendido)
+
+
+                usuario.Email = (usuario_Negocio.Buscar_Usuario_por_Nombre(usuario.User)).Email;
+                usuario.tipoUsuario = (usuario_Negocio.Buscar_Usuario_por_Nombre(usuario.User)).tipoUsuario;
+
+                if (usuario_Negocio.loguear(usuario).Existe && !usuario_Negocio.loguear(usuario).Suspendido)
                 {
                     Session.Add("usuario", usuario);
                     Response.Redirect("viewProfile.aspx",false); // Para evitar que genere el th. ex.

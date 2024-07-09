@@ -86,7 +86,7 @@ namespace E_Commerce_Negocio
                     usuario.Id = Convert.ToInt32(reader["Id"]);
                     usuario.User = reader["Usuario"].ToString();
                     usuario.Pass = reader["Pass"].ToString();
-                   // usuario.Email = reader["EMAIL"].ToString();
+                    usuario.Email = reader["EMAIL"].ToString();
                     usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
 
                     listausuarios.Add(usuario);
@@ -137,5 +137,51 @@ namespace E_Commerce_Negocio
                 conexionDB.CerrarConexion();
             }
         }
+
+        public Usuarios Buscar_Usuario_por_Nombre(string buscar_por_nombre_usuario)
+
+        {
+
+            string usuario_aux ="";
+            try
+            {
+                // conexionDB_obj.AbrirConexion();
+                string query = "Select Id, Usuario, Pass, TipoUser, EMAIL From Usuarios";
+                //cmd = new SqlCommand(query, conexion);
+
+                Usuarios usuario = new Usuarios();
+
+                reader = conexionDB.LeerDatos(query); //reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+
+                    usuario_aux = reader["Usuario"].ToString();
+
+                    if (usuario_aux.ToLower() == buscar_por_nombre_usuario.ToLower())
+                    {
+
+                        usuario.Id = Convert.ToInt32(reader["Id"]);
+                        usuario.User = reader["Usuario"].ToString();
+                        usuario.Pass = reader["Pass"].ToString();
+                        usuario.Email = reader["EMAIL"].ToString();
+                        usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+
+                    }
+                }
+                return usuario;
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexionDB.CerrarConexion(); }
+
+
+        }
+
+
     }
 }

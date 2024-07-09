@@ -39,19 +39,10 @@ namespace tp_web_equipo_19.Views
             }
           
 
-
-           // lblIdPublicacion.Text = 
-           //  lblIdUsuario.Text = usuario.Id.ToString();
-
             if (!IsPostBack)
             {
                 try
                 {
-
-                    //listMarca.DataSource = marca_list;
-                    //listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
-                    //listMarca.DataValueField = "Id";   // Nombre del campo que se utilizará como valor
-                    //listMarca.DataBind();
 
                     listMarca.DataSource = marcaListFiltradaIdCat;
                     listMarca.DataTextField = "Descripcion"; // Nombre del campo que se mostrará
@@ -121,6 +112,9 @@ namespace tp_web_equipo_19.Views
             Categoria categoria = new Categoria();
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
 
+            EmailService emailService = new EmailService();
+           
+
             int x = 0;
             string textBoxId = "0";
 
@@ -144,6 +138,9 @@ namespace tp_web_equipo_19.Views
                 //Creo nuevo registro Publicacion
                 publicacionesNegocio.agregarPublicacion(publicaciones);
 
+                string asuntoPublicacionNueva = "";
+                     
+                string cuerpoPublicacionNueva = "";
                 ////// Genero lista, para buscar ultimo ID de articulo cargado y crear registro en imagenes.
                 articulosList = articuloNegocio.ListarArticulos();
 
@@ -167,11 +164,13 @@ namespace tp_web_equipo_19.Views
                         TextBox textBoxToModify = (TextBox)txtImagenUrl_Dinamico.FindControl(textBoxId);
                         imagen.URL = textBoxToModify.Text;
                         imagenNegocio.InsertarImagen(articulo.ID, imagen.URL); // }
-                    }
-
-                 
-
+                    }       
                 }
+
+                asuntoPublicacionNueva = "Has generado una Nueva Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + txtArticulo.Text + " se ha generado satisfactoriamente. TE DESEAMOS EXITOS EN TUS VENTAS!!!";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
 
                 mensaje = "Cargado Correctamente ";
                 // Registra el script para mostrar una alerta al usuario en el navegador

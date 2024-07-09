@@ -30,7 +30,7 @@ namespace E_Commerce_Models
             email.Subject = asunto;
             email.IsBodyHtml = true; // puedo escribar html en el body.
             email.Body =  cuerpo ;
-            //email.Body= cuerpo;
+ 
         }
 
         public void enviarEmail()

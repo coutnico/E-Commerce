@@ -40,7 +40,7 @@
                         <!-- Descripción -->
                         <div class="mb-3">
                             <label class="form-label">Descripción:</label>
-                            <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" Style="max-width: 50%;" placeholder="Escriba la Descripción del Artículo..."></asp:TextBox>
+                            <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" Style="max-width: 50%;" TextMode="MultiLine" placeholder="Escriba la Descripción del Artículo..."></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ControlToValidate="txtDescripcion"
                                 ErrorMessage="La descripción es obligatoria" Display="Dynamic"></asp:RequiredFieldValidator>
                         </div>

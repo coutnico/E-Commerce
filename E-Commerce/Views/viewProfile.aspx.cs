@@ -23,7 +23,7 @@ namespace tp_web_equipo_19.Views
             else
             {
                 //   lblUsuario.Text = usuario.User;
-                lblCorreoElectronico.Text = "Correo Electronico"; //Habria que buscarlo en el listado de usuarios para obtener el correo  --> usuario.Email; //                  
+                lblCorreoElectronico.Text = usuario.Email;//  "Correo Electronico"; //Habria que buscarlo en el listado de usuarios para obtener el correo  --> usuario.Email; //                  
 
             }
 
