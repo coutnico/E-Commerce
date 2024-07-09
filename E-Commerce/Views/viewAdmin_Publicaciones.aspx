@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="viewAdmin_Publicaciones.aspx.cs" Inherits="tp_web_equipo_19.Views.viewAdmin_Publicaciones" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
+        <div class="d-flex justify-content-between align-items-center">
+    <span style="margin-left:42%;" class="h2" >Mis publicaciones</span>
+</div>
     
     <asp:Repeater ID="reapeterProductosUsuario" runat="server">
         <ItemTemplate>

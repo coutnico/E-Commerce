@@ -48,7 +48,7 @@ namespace tp_web_equipo_19.Views
             return false;
         }
 
-        protected void btnMisVentas_Click(object sender, EventArgs e)
+        protected void btnMisPublicaciones_Click(object sender, EventArgs e)
         {
             Response.Redirect("viewUsuarioPublicaciones.aspx",false);
 
