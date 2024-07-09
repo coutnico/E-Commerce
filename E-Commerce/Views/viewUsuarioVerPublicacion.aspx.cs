@@ -13,6 +13,14 @@ namespace tp_web_equipo_19.Views
     {
         private List<Imagen> imagenes = new List<Imagen>() { };
         private int IndiceImagen;
+
+
+        EmailService emailService = new EmailService();
+
+        string asuntoPublicacionNueva = "";
+
+        string cuerpoPublicacionNueva = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Publicaciones_Negocio publicacionesNegocio = new Publicaciones_Negocio();
@@ -172,6 +180,12 @@ namespace tp_web_equipo_19.Views
                 string mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha eliminado Correctamente ";
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
+                asuntoPublicacionNueva = "Has Eliminado una Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+
+
                 if (usuario.tipoUsuario == TipoUsuario.NORMAL)
                 {
                     Response.Redirect("viewUsuarioPublicaciones.aspx", false);
@@ -230,6 +244,12 @@ namespace tp_web_equipo_19.Views
                 mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha modificado Correctamente ";
                 // Registra el script para mostrar una alerta al usuario en el navegador
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
+
+                asuntoPublicacionNueva = "Has Modificado una Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha MODIFICADO satisfactoriamente.";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+
 
             }
             catch (Exception ex)
@@ -338,12 +358,20 @@ namespace tp_web_equipo_19.Views
         {
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
             Usuarios usuario = (Usuarios)Session["usuario"];
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+            Publicaciones publicaciones = new Publicaciones();
 
             bool pausar = true;
 
-            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
+            publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(IdPublicacion);
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
+
+            asuntoPublicacionNueva = "Has Pausado una Publicacion";
+            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha PAUSADO satisfactoriamente.";
+            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+            emailService.enviarEmail();
+
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
             {
                 Response.Redirect("viewUsuarioPublicaciones.aspx", false);
@@ -359,10 +387,18 @@ namespace tp_web_equipo_19.Views
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
             Usuarios usuario = (Usuarios)Session["usuario"];
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+            Publicaciones publicaciones = new Publicaciones();
 
             bool pausar = false;
 
+            publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(IdPublicacion);
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
+
+
+            asuntoPublicacionNueva = "Has Restablecido una Publicacion";
+            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha REESTABLECIDA satisfactoriamente.";
+            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+            emailService.enviarEmail();
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
             {
@@ -379,10 +415,18 @@ namespace tp_web_equipo_19.Views
             int IdPublicacion = Convert.ToInt32(Session["IdPublicacion"]);
             Usuarios usuario = (Usuarios)Session["usuario"];
             bool Baja_Logica = true;
-
+            Publicaciones publicaciones = new Publicaciones();
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
             publicaciones_Negocio.bajaLogicaPublicacion(Baja_Logica, IdPublicacion);
+
+
+
+            asuntoPublicacionNueva = "Has Eliminado una Publicacion";
+            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
+            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+            emailService.enviarEmail();
+
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
             {

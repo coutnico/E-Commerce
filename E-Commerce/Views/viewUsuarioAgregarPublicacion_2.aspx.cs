@@ -113,7 +113,10 @@ namespace tp_web_equipo_19.Views
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
 
             EmailService emailService = new EmailService();
-           
+
+            string asuntoPublicacionNueva = "";
+
+            string cuerpoPublicacionNueva = "";
 
             int x = 0;
             string textBoxId = "0";
@@ -138,9 +141,6 @@ namespace tp_web_equipo_19.Views
                 //Creo nuevo registro Publicacion
                 publicacionesNegocio.agregarPublicacion(publicaciones);
 
-                string asuntoPublicacionNueva = "";
-                     
-                string cuerpoPublicacionNueva = "";
                 ////// Genero lista, para buscar ultimo ID de articulo cargado y crear registro en imagenes.
                 articulosList = articuloNegocio.ListarArticulos();
 

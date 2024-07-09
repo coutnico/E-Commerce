@@ -88,7 +88,7 @@
                     <asp:Button ID="btnEliminarPublicacion" OnClick="btnEliminarPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" Visible="false" />
                     <asp:Button ID="btnBajaLogicaPublicacion" OnClick="btnBajaLogicaPublicacion_Click" CssClass="btn btn-danger btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Eliminar" />
                     <br />
-                    <% if (lblPublicacionPausada.Text != "Pausada")
+                    <% if (lblPublicacionPausada.Text != "Publicacion Pausada")
                         {   %>
                     <asp:Button ID="btnPausarPublicacion" OnClick="btnPausarPublicacion_Click" CssClass="btn btn-warning btn-lg" Style="margin-top: 10px; width: 300px; height: 60px" runat="server" Text="Pausar" />
 
