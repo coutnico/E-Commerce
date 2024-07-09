@@ -55,13 +55,13 @@ PENDIENTES
 - CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET
 - Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no.
 - Nos falta terminar el chat entre usuarios. Condicionado por IDCompras. 
-- Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan
+- Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan // HECHO
+- Enviar correo cuando modifica elimina una publicacion el administrador (pero debe figurar que fue él).CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO // EN PROCESO
 - ABM del administrador en al articulo
 
 
 - Envio de correo electronico cuando se genera una advertencia al usuario
 - Agregar cantidad de suspensiones que tiene cada usuario
 - Cargar datos por default, pero bien cargado con imagenes y demas
-- MIS PUBLICACIONES. AGREGAR TITULO EN MIS PUBLICACIONES y en el de ADMIN.
-TAMBIEN
-CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO
+- MIS PUBLICACIONES. AGREGAR TITULO EN MIS PUBLICACIONES y en el de ADMIN. // HECHO
+

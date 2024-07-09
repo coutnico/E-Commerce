@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|solutionrelative:interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce\\views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|solutionrelative:views\\viewusuarioverpublicacion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -50,10 +54,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{B78B5243-7085-4AC8-8FBA-F0198C263745}|..\\E-Commerce_Negocio\\E-Commerce_Negocio.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce_negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|solutionrelative:interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\views\\viewadmin_publicaciones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -118,11 +118,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "viewUsuarioAgregarPublicacion_2.aspx.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioAgregarPublicacion_2.aspx.cs",
               "RelativeDocumentMoniker": "Views\\viewUsuarioAgregarPublicacion_2.aspx.cs",
@@ -130,12 +130,11 @@
               "RelativeToolTip": "Views\\viewUsuarioAgregarPublicacion_2.aspx.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAwwHIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T03:09:59.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T03:09:59.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Models\\EmailService.cs",
               "RelativeDocumentMoniker": "..\\E-Commerce_Models\\EmailService.cs",
@@ -143,12 +142,11 @@
               "RelativeToolTip": "..\\E-Commerce_Models\\EmailService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAArwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T16:11:42.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T16:11:42.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "viewLogin.aspx",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewLogin.aspx",
               "RelativeDocumentMoniker": "Views\\viewLogin.aspx",
@@ -160,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "viewUsuarioVerPublicacion.aspx",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioVerPublicacion.aspx",
               "RelativeDocumentMoniker": "Views\\viewUsuarioVerPublicacion.aspx",
@@ -173,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "viewUsuarioVerPublicacion.aspx.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioVerPublicacion.aspx.cs",
               "RelativeDocumentMoniker": "Views\\viewUsuarioVerPublicacion.aspx.cs",
@@ -181,12 +179,11 @@
               "RelativeToolTip": "Views\\viewUsuarioVerPublicacion.aspx.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAgwIYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T19:26:56.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T19:26:56.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "viewUsuarioPublicaciones.aspx",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioPublicaciones.aspx",
               "RelativeDocumentMoniker": "Views\\viewUsuarioPublicaciones.aspx",
@@ -194,12 +191,11 @@
               "RelativeToolTip": "Views\\viewUsuarioPublicaciones.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-05T18:48:10.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-05T18:48:10.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "viewUsuarioPublicaciones.aspx.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioPublicaciones.aspx.cs",
               "RelativeDocumentMoniker": "Views\\viewUsuarioPublicaciones.aspx.cs",
@@ -207,12 +203,24 @@
               "RelativeToolTip": "Views\\viewUsuarioPublicaciones.aspx.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwCsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T19:48:00.221Z",
+              "WhenOpened": "2024-07-05T19:48:00.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pendientes.txt",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
+              "RelativeDocumentMoniker": "INTERNO\\Pendientes.txt",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
+              "RelativeToolTip": "INTERNO\\Pendientes.txt",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADoAAADQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-05T22:22:14.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "viewUsuarioAgregarPublicacion_2.aspx",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewUsuarioAgregarPublicacion_2.aspx",
               "RelativeDocumentMoniker": "Views\\viewUsuarioAgregarPublicacion_2.aspx",
@@ -220,12 +228,11 @@
               "RelativeToolTip": "Views\\viewUsuarioAgregarPublicacion_2.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-07-09T03:09:52.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T03:09:52.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Usuario_Negocio.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\Usuario_Negocio.cs",
               "RelativeDocumentMoniker": "..\\E-Commerce_Negocio\\Usuario_Negocio.cs",
@@ -237,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "viewLogin.aspx.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewLogin.aspx.cs",
               "RelativeDocumentMoniker": "Views\\viewLogin.aspx.cs",
@@ -249,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "viewProfile.aspx.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewProfile.aspx.cs",
               "RelativeDocumentMoniker": "Views\\viewProfile.aspx.cs",
@@ -261,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "viewProfile.aspx",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\Views\\viewProfile.aspx",
               "RelativeDocumentMoniker": "Views\\viewProfile.aspx",
@@ -273,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ArticuloNegocio.cs",
               "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\ArticuloNegocio.cs",
               "RelativeDocumentMoniker": "..\\E-Commerce_Negocio\\ArticuloNegocio.cs",
@@ -330,18 +337,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-05T21:43:29.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Pendientes.txt",
-              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
-              "RelativeDocumentMoniker": "INTERNO\\Pendientes.txt",
-              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
-              "RelativeToolTip": "INTERNO\\Pendientes.txt",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAEAAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-07-05T22:22:14.023Z"
             },
             {
               "$type": "Document",
