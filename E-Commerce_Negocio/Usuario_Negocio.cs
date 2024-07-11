@@ -182,6 +182,50 @@ namespace E_Commerce_Negocio
 
         }
 
+        public Usuarios Buscar_Usuario_por_IDUsuario(int buscar_por_IDUsuario)
+
+        {
+
+            int IdUsuario_aux = 0;
+            try
+            {
+                // conexionDB_obj.AbrirConexion();
+                string query = "Select Id, Usuario, Pass, TipoUser, EMAIL From Usuarios";
+                //cmd = new SqlCommand(query, conexion);
+
+                Usuarios usuario = new Usuarios();
+
+                reader = conexionDB.LeerDatos(query); //reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+
+                    IdUsuario_aux = Convert.ToInt32(reader["Id"]);
+
+                    if (IdUsuario_aux == buscar_por_IDUsuario)
+                    {
+
+                        usuario.Id = Convert.ToInt32(reader["Id"]);
+                        usuario.User = reader["Usuario"].ToString();
+                        usuario.Pass = reader["Pass"].ToString();
+                        usuario.Email = reader["EMAIL"].ToString();
+                        usuario.tipoUsuario = Convert.ToInt32(reader["TipoUser"]) == 2 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+
+                    }
+                }
+                return usuario;
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexionDB.CerrarConexion(); }
+
+
+        }
+
 
     }
 }

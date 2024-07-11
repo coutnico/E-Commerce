@@ -24,13 +24,9 @@ namespace tp_web_equipo_19.Views
 
             lista_articulos = articuloNegocio.ListarArticulos();
 
-
-
-
             int idUsuario = Convert.ToInt32(Session["idUsuario_Publications"]); //
 
             Session.Remove("IndiceImagen");
-
 
 
             if (!IsPostBack)

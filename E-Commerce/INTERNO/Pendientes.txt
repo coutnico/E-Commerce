@@ -54,7 +54,7 @@ PENDIENTES
 
 - CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET
 - Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no.
-- Nos falta terminar el chat entre usuarios. Condicionado por IDCompras. 
+- Terminar el chat entre usuarios. Condicionado por IDCompras. 
 - Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan // HECHO
 - Enviar correo cuando modifica elimina una publicacion el administrador (pero debe figurar que fue él).CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO // EN PROCESO
 - ABM del administrador en al articulo

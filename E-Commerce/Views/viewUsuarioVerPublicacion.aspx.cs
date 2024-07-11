@@ -178,12 +178,28 @@ namespace tp_web_equipo_19.Views
                 }
 
                 string mensaje = "Articulo ID " + publicaciones.articulo.ID + " se ha eliminado Correctamente ";
-                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);              
 
-                asuntoPublicacionNueva = "Has Eliminado una Publicacion";
-                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
-                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
-                emailService.enviarEmail();
+                Usuarios user_aux = new Usuarios();
+                Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+
+                user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
+
+                if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+                {
+                    asuntoPublicacionNueva = "Has Eliminado una Publicacion";
+                    cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
+                    emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                    emailService.enviarEmail();
+                }
+                else
+                {
+
+                    asuntoPublicacionNueva = "Un Administrador ha Eliminado una de tus Publicaciones";
+                    cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido ELIMINADA por un ADMINISTRADOR.";
+                    emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                    emailService.enviarEmail();
+                }
 
 
                 if (usuario.tipoUsuario == TipoUsuario.NORMAL)
@@ -245,11 +261,25 @@ namespace tp_web_equipo_19.Views
                 // Registra el script para mostrar una alerta al usuario en el navegador
                 ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('" + mensaje + "');", true);
 
+                Usuarios user_aux = new Usuarios();
+                Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+
+                 user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
+
+                if (usuario.tipoUsuario == TipoUsuario.NORMAL) { 
                 asuntoPublicacionNueva = "Has Modificado una Publicacion";
                 cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha MODIFICADO satisfactoriamente.";
                 emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                 emailService.enviarEmail();
+                } else
+                {
 
+                asuntoPublicacionNueva = "Un Administrador ha Modificado una de tus Publicaciones";
+                cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido MODIFICADA por un ADMINISTRADOR.";
+                emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+                }
+                
 
             }
             catch (Exception ex)
@@ -367,10 +397,27 @@ namespace tp_web_equipo_19.Views
             publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(IdPublicacion);
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
 
-            asuntoPublicacionNueva = "Has Pausado una Publicacion";
-            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha PAUSADO satisfactoriamente.";
-            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
-            emailService.enviarEmail();
+            Usuarios user_aux = new Usuarios();
+            Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+
+            user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
+
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                asuntoPublicacionNueva = "Has Pausado una Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha PAUSADO satisfactoriamente.";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
+            else
+            {
+
+                asuntoPublicacionNueva = "Un Administrador ha Pausado una de tus Publicaciones";
+                cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido PAUSADA por un ADMINISTRADOR.";
+                emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
+
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
             {
@@ -394,11 +441,26 @@ namespace tp_web_equipo_19.Views
             publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(IdPublicacion);
             publicaciones_Negocio.pausaroactivarPublicacion(pausar, IdPublicacion);
 
+            Usuarios user_aux = new Usuarios();
+            Usuario_Negocio userauxNegocio = new Usuario_Negocio();
 
-            asuntoPublicacionNueva = "Has Restablecido una Publicacion";
-            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha REESTABLECIDA satisfactoriamente.";
-            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
-            emailService.enviarEmail();
+            user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
+
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                asuntoPublicacionNueva = "Has Restablecido una Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha REESTABLECIDA satisfactoriamente.";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
+            else
+            {
+
+                asuntoPublicacionNueva = "Un Administrador ha Restablecido una de tus Publicaciones";
+                cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido REESTABLECIDA por un ADMINISTRADOR.";
+                emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
             {
@@ -418,14 +480,30 @@ namespace tp_web_equipo_19.Views
             Publicaciones publicaciones = new Publicaciones();
             Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
 
+            publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(IdPublicacion);
             publicaciones_Negocio.bajaLogicaPublicacion(Baja_Logica, IdPublicacion);
 
+            Usuarios user_aux = new Usuarios();
+            Usuario_Negocio userauxNegocio = new Usuario_Negocio();
 
+            user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
-            asuntoPublicacionNueva = "Has Eliminado una Publicacion";
-            cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
-            emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
-            emailService.enviarEmail();
+            if (usuario.tipoUsuario == TipoUsuario.NORMAL)
+            {
+                asuntoPublicacionNueva = "Has Eliminado una Publicacion";
+                cuerpoPublicacionNueva = " Hola " + usuario.User + " ! . Tu publicacion de " + publicaciones.articulo.Nombre + " se ha ELIMINADO satisfactoriamente.";
+                emailService.armarCorreo(usuario.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
+            else
+            {
+
+                asuntoPublicacionNueva = "Un Administrador ha Eliminado una de tus Publicaciones";
+                cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido ELIMINADA por un ADMINISTRADOR.";
+                emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
+                emailService.enviarEmail();
+            }
+
 
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
