@@ -136,6 +136,12 @@
   <data name="bannerUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bannerUsuario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="banner_femenino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner femenino.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner_masculino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner masculino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="buscar_en_la_lista" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buscar-en-la-lista.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

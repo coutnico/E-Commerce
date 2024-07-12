@@ -73,6 +73,26 @@ namespace tp_web_equipo_19.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banner_femenino {
+            get {
+                object obj = ResourceManager.GetObject("banner_femenino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banner_masculino {
+            get {
+                object obj = ResourceManager.GetObject("banner_masculino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Banner1 {
             get {
                 object obj = ResourceManager.GetObject("Banner1", resourceCulture);

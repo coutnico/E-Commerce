@@ -87,13 +87,13 @@ namespace tp_web_equipo_19.Views
         protected global::System.Web.UI.WebControls.DropDownList gender;
 
         /// <summary>
-        /// btnRegistar control.
+        /// btnModificarDatos control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistar;
+        protected global::System.Web.UI.WebControls.Button btnModificarDatos;
 
         /// <summary>
         /// btnSalir control.

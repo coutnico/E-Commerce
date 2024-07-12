@@ -62,7 +62,6 @@ namespace tp_web_equipo_19.Views
 
         protected void btnEditarDatosAdmin_Click(object sender, EventArgs e)
         {
-
         }
 
         protected void btnABMAdmin_Click(object sender, EventArgs e)
@@ -73,6 +72,11 @@ namespace tp_web_equipo_19.Views
         protected void btnABMUsuarios_Click(object sender, EventArgs e)
         {
             Response.Redirect("viewManagerUsuarios.aspx");
+        }
+
+        protected void btnEditarDatos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewRegistrarDatosUsuario.aspx", false);
         }
     }
 }

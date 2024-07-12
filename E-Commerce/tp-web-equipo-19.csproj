@@ -137,6 +137,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="libman.json" />
+    <None Include="Resources\banner femenino.jpeg" />
+    <None Include="Resources\banner masculino.jpg" />
     <Content Include="Views\viewEnvioEmail.aspx" />
     <Content Include="Views\viewRegister.aspx" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.js" />
