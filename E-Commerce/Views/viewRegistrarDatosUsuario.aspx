@@ -81,7 +81,7 @@
 
                     </div>
 
-                    <asp:TextBox ID="txtDocumento" runat="server" CssClass="form-control rounded-4" required="" type="text" placeholder="Documento" />
+                    <asp:TextBox ID="txtDocumento" runat="server" CssClass="form-control rounded-4" required="" type="number" placeholder="Documento" />
 
                     <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control rounded-4" required="" type="number" placeholder="Teléfono" />
 
@@ -96,10 +96,33 @@
 
                     <div class="d-flex justify-content-between align-items-center">
                         <asp:Button Text="Modificar datos" OnClick="btnModificarDatos_Click" CssClass="btnSignOut me-1" Width="125px" runat="server" ID="btnModificarDatos" Style="width: 200px" />
-                        <asp:Button Text="Volver" OnClick="btnSalir_Click" CssClass="btnExit me-1" Width="125px" runat="server" ID="btnSalir" Style="width: 100px" />
+                        <a href="viewProfile.aspx" class="btnExit me-1" style="width:100px;width:125px; text-decoration:none">Volver</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+        function ShowModificacionExitosa() {
+            Swal.fire({
+                title: "Procedimiento exitoso",
+                timer: 1000,
+                icon: "success",
+            });
+
+            window.location.href = 'viewProfile.aspx'
+        }  
+
+        function ShowError() {
+            Swal.fire({
+                title: "Datos incompletos",
+                text: "Intentelo de nuevo....",
+                timer: 1000,
+                icon: "error",
+            });
+        }
+
+    </script>
 </asp:Content>

@@ -1,9 +1,11 @@
 ﻿using E_Commerce_Models;
+using E_Commerce_Negocio;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Web;
+using System.Web.Optimization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,9 +14,29 @@ namespace tp_web_equipo_19.Views
     public partial class viewRegistrarDatosUsuario : System.Web.UI.Page
     {
         public Usuarios Usuario { get; set; }
+        private Datos_Personales_Negocio managerDB = new Datos_Personales_Negocio();
         protected void Page_Load(object sender, EventArgs e)
         {
             Usuario = (Usuarios)Session["usuario"];
+
+            if (!IsPostBack)
+            {
+
+                foreach (Datos_Personales datos in managerDB.ListarDatosPersonales())
+                {
+                    if (datos.ID_Usuario == Usuario.Id)
+                    {
+                        username.Text = Usuario.User;
+                        txtApellido.Text = datos.Apellidos;
+                        txtNombres.Text = datos.Nombres;
+                        txtEmail.Text = Usuario.Email;
+                        txtDocumento.Text = datos.Documento.ToString() == string.Empty ? "0" : datos.Documento.ToString();
+                        txtTelefono.Text = datos.Telefono.ToString() == string.Empty ? "0" : datos.Telefono.ToString();
+                        txtTelefono2.Text = datos.TelefonoAux.ToString() == string.Empty ? "0" : datos.TelefonoAux.ToString();
+                        gender.SelectedValue = datos.Genero;
+                    }
+                }
+            }
         }
 
         protected void btnRegistar_Click(object sender, EventArgs e)
@@ -87,7 +109,40 @@ namespace tp_web_equipo_19.Views
 
         protected void btnModificarDatos_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (gender.SelectedItem.ToString() != "Genero")
+                {
 
+                    Datos_Personales datosAmodificar = new Datos_Personales();
+
+                    datosAmodificar.ID_Usuario = Usuario.Id;
+                    datosAmodificar.Nombres = txtNombres.Text;
+                    datosAmodificar.Apellidos = txtApellido.Text;
+                    datosAmodificar.Genero = gender.SelectedItem.Text;
+                    datosAmodificar.Telefono = Convert.ToInt32(txtTelefono.Text);
+                    if (!string.IsNullOrEmpty(txtTelefono2.Text))
+                        datosAmodificar.TelefonoAux = Convert.ToInt32(txtTelefono2.Text);
+                    else
+                        datosAmodificar.TelefonoAux = 0;
+
+                    datosAmodificar.Documento = Convert.ToInt32(txtDocumento.Text);
+
+                    managerDB.ModificarDatos_Personales(datosAmodificar);
+
+                    string script = "ShowModificacionExitosa();";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "showalert", script, true);
+                }
+                else
+                {
+                    string script = "ShowError();";
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "showalert", script, true);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

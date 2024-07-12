@@ -41,9 +41,9 @@ namespace E_Commerce_Negocio
                     datos.Nombres = reader["Nombres"].ToString();
                     datos.Apellidos = reader["Apellido"].ToString();
                     datos.Genero = reader["Genero"].ToString();
-                    datos.Telefono = Convert.ToInt32(reader["Telefono"].ToString());
-                    datos.TelefonoAux = Convert.ToInt32(reader["Telefono_Aux"].ToString());
-                    datos.Documento = Convert.ToInt32(reader["Documento"].ToString());
+                    datos.Telefono = reader["Telefono"] != DBNull.Value ? Convert.ToInt32(reader["Telefono"].ToString()) : 0;
+                    datos.TelefonoAux = reader["Telefono_Aux"] != DBNull.Value ? Convert.ToInt32(reader["Telefono_Aux"].ToString()) : 0;
+                    datos.Documento = reader["Documento"] != DBNull.Value ? Convert.ToInt32(reader["Documento"].ToString()) : 0;
 
 
                     lista.Add(datos);
@@ -61,7 +61,7 @@ namespace E_Commerce_Negocio
 
 
         }
-        public void modificarArticulo(Datos_Personales datos_personales)
+        public void ModificarDatos_Personales(Datos_Personales datos_personales)
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
 
