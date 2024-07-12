@@ -96,7 +96,7 @@
 
                     <div class="d-flex justify-content-between align-items-center">
                         <asp:Button Text="Modificar datos" OnClick="btnModificarDatos_Click" CssClass="btnSignOut me-1" Width="125px" runat="server" ID="btnModificarDatos" Style="width: 200px" />
-                        <a href="viewProfile.aspx" class="btnExit me-1" style="width:100px;width:125px; text-decoration:none">Volver</a>
+                        <a href="viewProfile.aspx" class="btnExit me-1" style="width: 100px; width: 125px; text-decoration: none">Volver</a>
                     </div>
                 </div>
             </div>
@@ -110,10 +110,14 @@
                 title: "Procedimiento exitoso",
                 timer: 1000,
                 icon: "success",
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    window.location.href = 'viewProfile.aspx'
+                }
             });
-
-            window.location.href = 'viewProfile.aspx'
-        }  
+            
+        }
 
         function ShowError() {
             Swal.fire({

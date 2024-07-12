@@ -83,30 +83,6 @@ namespace tp_web_equipo_19.Views
             }
         }
 
-        protected void gender_TextChanged(object sender, EventArgs e)
-        {
-            string seleccion = ((DropDownList)sender).SelectedItem.ToString();
-
-
-            switch (seleccion)
-            {
-                case "Genero":
-                    gender.Style.Add("background-image", "url('..\\Resources\\banner femenino.jpeg')");
-                    gender.Style.Add("background-size", "cover"); // Ajusta la imagen al tamaño del DropDownList
-                    gender.Style.Add("background-repeat", "no-repeat"); // No repite la imagen
-                    break;
-                case "Masculino":
-
-                    break;
-                case "Femenino":
-
-                    break;
-                case "Otro":
-
-                    break;
-            }
-        }
-
         protected void btnModificarDatos_Click(object sender, EventArgs e)
         {
             try

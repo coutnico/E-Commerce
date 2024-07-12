@@ -68,9 +68,9 @@ namespace E_Commerce_Negocio
             try
             {
                 if (datos_personales.TelefonoAux == 0)
-                    conexionDB_Obj.EjecutarComando($"UPDATE DATOS_PERSONALES SET Nombres = {datos_personales.Nombres}, Apellido = {datos_personales.Apellidos}, Genero = {datos_personales.Genero}, Telefono = {datos_personales.Telefono}, Telefono_Aux = {datos_personales.TelefonoAux}, Documento = {datos_personales.Documento} WHERE ID_USUARIO = {datos_personales.ID_Usuario}");
+                    conexionDB_Obj.EjecutarComando($"UPDATE DATOS_PERSONALES SET Nombres = '{datos_personales.Nombres}', Apellido = '{datos_personales.Apellidos}', Genero = '{datos_personales.Genero}', Telefono = {datos_personales.Telefono}, Telefono_Aux = {datos_personales.TelefonoAux}, Documento = {datos_personales.Documento} WHERE ID_USUARIO = {datos_personales.ID_Usuario}");
                 else
-                    conexionDB_Obj.EjecutarComando($"UPDATE DATOS_PERSONALES SET Nombres = {datos_personales.Nombres}, Apellido = {datos_personales.Apellidos}, Genero = {datos_personales.Genero}, Telefono = {datos_personales.Telefono}, Documento = {datos_personales.Documento} WHERE ID_USUARIO = {datos_personales.ID_Usuario}");
+                    conexionDB_Obj.EjecutarComando($"UPDATE DATOS_PERSONALES SET Nombres = '{datos_personales.Nombres}', Apellido = '{datos_personales.Apellidos}', Genero = '{datos_personales.Genero}', Telefono = {datos_personales.Telefono}, Documento = {datos_personales.Documento} WHERE ID_USUARIO = {datos_personales.ID_Usuario}");
             }
             catch (Exception)
             {
