@@ -90,6 +90,7 @@
     <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="ChatNegocio.cs" />
+    <Compile Include="ALTERACIONESPUBLI_ADMINNegocio.cs" />
     <Compile Include="Datos_Personales_Negocio.cs" />
     <Compile Include="Publicaciones_Negocio.cs" />
     <Compile Include="Suspensiones_Negocio.cs" />

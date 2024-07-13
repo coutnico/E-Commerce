@@ -1,12 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\E-Commerce\\E-Commerce\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B78B5243-7085-4AC8-8FBA-F0198C263745}|..\\E-Commerce_Negocio\\E-Commerce_Negocio.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce_negocio\\alteracionespubli_adminnegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B78B5243-7085-4AC8-8FBA-F0198C263745}|..\\E-Commerce_Negocio\\E-Commerce_Negocio.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce_negocio\\marca_negocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375E48BB-34B5-45D2-BB9A-7BD1C752A0F5}|..\\E-Commerce_Models\\E-Commerce_Models.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce_models\\alteracionespubli_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce\\interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0BBDEFDF-E59D-4449-B278-BDB9BB50EE84}|tp-web-equipo-19.csproj|solutionrelative:interno\\pendientes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375E48BB-34B5-45D2-BB9A-7BD1C752A0F5}|..\\E-Commerce_Models\\E-Commerce_Models.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tpc\\e-commerce new\\e-commerce_models\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Marca_Negocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\Marca_Negocio.cs",
+              "RelativeDocumentMoniker": "..\\E-Commerce_Negocio\\Marca_Negocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\Marca_Negocio.cs",
+              "RelativeToolTip": "..\\E-Commerce_Negocio\\Marca_Negocio.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAuwJYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T23:21:11.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ALTERACIONESPUBLI_ADMINNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\ALTERACIONESPUBLI_ADMINNegocio.cs",
+              "RelativeDocumentMoniker": "..\\E-Commerce_Negocio\\ALTERACIONESPUBLI_ADMINNegocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Negocio\\ALTERACIONESPUBLI_ADMINNegocio.cs",
+              "RelativeToolTip": "..\\E-Commerce_Negocio\\ALTERACIONESPUBLI_ADMINNegocio.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwCkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T23:20:52.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ALTERACIONESPUBLI_ADMIN.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Models\\ALTERACIONESPUBLI_ADMIN.cs",
+              "RelativeDocumentMoniker": "..\\E-Commerce_Models\\ALTERACIONESPUBLI_ADMIN.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Models\\ALTERACIONESPUBLI_ADMIN.cs",
+              "RelativeToolTip": "..\\E-Commerce_Models\\ALTERACIONESPUBLI_ADMIN.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T23:19:04.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pendientes.txt",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
+              "RelativeDocumentMoniker": "INTERNO\\Pendientes.txt",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce\\INTERNO\\Pendientes.txt",
+              "RelativeToolTip": "INTERNO\\Pendientes.txt",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-13T23:02:19.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Compras.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Models\\Compras.cs",
+              "RelativeDocumentMoniker": "..\\E-Commerce_Models\\Compras.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TPC\\E-Commerce NEW\\E-Commerce_Models\\Compras.cs",
+              "RelativeToolTip": "..\\E-Commerce_Models\\Compras.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-13T22:53:10.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
