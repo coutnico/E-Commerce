@@ -91,6 +91,7 @@
     <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="ChatNegocio.cs" />
     <Compile Include="ALTERACIONESPUBLI_ADMINNegocio.cs" />
+    <Compile Include="ComprasNegocio.cs" />
     <Compile Include="Datos_Personales_Negocio.cs" />
     <Compile Include="Domicilios_Negocio.cs" />
     <Compile Include="Localidad_Negocio.cs" />

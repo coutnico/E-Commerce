@@ -73,11 +73,11 @@ namespace tp_web_equipo_19.Views
 
                     foreach (ArticuloCarrito articulo in Carrito.ArticulosFiltrados)
                     {
-                        cuerpo += $"<br> {articulo.Nombre} CATIDAD: {articulo.Cantidad} PRECIO UNITARIO: ${articulo.Precio}<br>";
+                        cuerpo += $"<br> {articulo.Nombre} CANTIDAD: {articulo.Cantidad} PRECIO UNITARIO: ${articulo.Precio}<br>";
                     }
 
 
-                    cuerpo += $"<br>TOTAL: {Carrito.Total} $<br><br>NOTA: ACTUALMENTE LA PAGINA ES LA QUE SE HACE CARGO DE LA TRANFERENCIA A LOS DIFERENTES USUARIOS, USTEDES SOLAMENTE TIENE QUE ABONAR EL TOTAL Y NOSOTROS HAREMOS EL RESTO. MUCHISIMAS GRACIAS POR SU COMPRA.<br><br>CLOSE MARKET<br>CBU:00012301231415432342<br></p>";
+                    cuerpo += $"<br>TOTAL: {Carrito.Total} $<br><br>NOTA: ACTUALMENTE LA PAGINA ES LA QUE SE HACE CARGO DE LA TRANSFERENCIA A LOS DIFERENTES USUARIOS, USTEDES SOLAMENTE TIENEN QUE ABONAR EL TOTAL Y NOSOTROS HAREMOS EL RESTO. MUCHISIMAS GRACIAS POR SU COMPRA.<br><br>CLOSE MARKET<br>CBU:00012301231415432342<br></p>";
 
 
 

@@ -8,7 +8,7 @@ namespace E_Commerce_Models
 {
     public class Compras
     {
-       public int IdVentas { get; set; }
+       public int IdCompra { get; set; }
        public int IdUsuario { get; set; }
        public int IdPublicacion { get; set; }
        public int QComprada { get; set; }
@@ -20,5 +20,7 @@ namespace E_Commerce_Models
             IdPublicacion = IdPublicacion_aux;
             QComprada = Qcomprada_aux;
         }
+
+        public Compras() { }
     }
 }

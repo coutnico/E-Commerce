@@ -33,6 +33,8 @@ namespace tp_web_equipo_19.Views
             ChatNegocio chatNegocio = new ChatNegocio();
             List<Chat> listaChats;
 
+            int idCompra = Convert.ToInt32(Session["IdCompra"]);
+
             if (!IsPostBack)
             {
 
@@ -43,7 +45,7 @@ namespace tp_web_equipo_19.Views
                 foreach (Chat chats_aux in listaChats)
                 {
                     //***** Colocar IDCompra para filtro a la seleccionada por SESION cuando entren al link de la compra! MODIFICAR, AHORA ESTA HARDCODE
-                    if (chats_aux.IdCompra == 1)
+                    if (chats_aux.IdCompra == idCompra)
                     {
                         listaChatsAMostrar.Add(chats_aux);
                     }
