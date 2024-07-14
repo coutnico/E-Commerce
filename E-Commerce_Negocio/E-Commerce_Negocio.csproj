@@ -92,6 +92,7 @@
     <Compile Include="ChatNegocio.cs" />
     <Compile Include="ALTERACIONESPUBLI_ADMINNegocio.cs" />
     <Compile Include="Datos_Personales_Negocio.cs" />
+    <Compile Include="Domicilios_Negocio.cs" />
     <Compile Include="Publicaciones_Negocio.cs" />
     <Compile Include="Suspensiones_Negocio.cs" />
     <Compile Include="Usuario_Negocio.cs" />
