@@ -140,6 +140,7 @@
     <None Include="Resources\banner femenino.jpeg" />
     <None Include="Resources\banner masculino.jpg" />
     <Content Include="Views\viewEnvioEmail.aspx" />
+    <Content Include="Views\viewManagerDomicilios.aspx" />
     <Content Include="Views\viewRegister.aspx" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.js" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.min.js" />
@@ -338,6 +339,13 @@
     </Compile>
     <Compile Include="Views\viewLogin.aspx.designer.cs">
       <DependentUpon>viewLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewManagerDomicilios.aspx.cs">
+      <DependentUpon>viewManagerDomicilios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewManagerDomicilios.aspx.designer.cs">
+      <DependentUpon>viewManagerDomicilios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\viewManagerUsuarios.aspx.cs">
       <DependentUpon>viewManagerUsuarios.aspx</DependentUpon>
