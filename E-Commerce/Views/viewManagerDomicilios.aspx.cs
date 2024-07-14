@@ -20,10 +20,12 @@ namespace tp_web_equipo_19.Views
         {
             UsuarioLogueado = (Usuarios)Session["usuario"];
 
-
-            foreach (Localidad localidad in localidades.ListarLocalidades())
+            if (!IsPostBack)
             {
-                ddlLocalidad.Items.Add(localidad.Nombre);
+                foreach (Localidad localidad in localidades.ListarLocalidades())
+                {
+                    ddlLocalidad.Items.Add(localidad.Nombre);
+                }
             }
 
         }

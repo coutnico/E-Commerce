@@ -26,7 +26,7 @@
                 <div class="collapse mt-2" id="collapseDomicilio">
                     <div class="card card-body">
                         <div class="row justify-content-center align-items-center">
-                            <asp:Button Text="Agregar Domicilio" runat="server" CssClass="btn w-50 mb-3 text-light fw-bolder" Style="background-color: #212529" ID="btnAgregarDomicilio"  OnClick="btnAgregarDomicilio_Click"/>
+                            <asp:Button Text="Agregar Domicilio" runat="server" CssClass="btn w-50 mb-3 text-light fw-bolder" Style="background-color: #212529" ID="btnAgregarDomicilio" OnClick="btnAgregarDomicilio_Click" />
                             <asp:DropDownList runat="server" ID="dgvDomicilios" CssClass="btn btn-danger fs-5 fw-semibold w-75">
                                 <asp:ListItem Text="Desplegar domicilios" Value="" />
                             </asp:DropDownList>
@@ -67,10 +67,36 @@
                         <asp:Label Text="0" runat="server" CssClass="fs-5 fw-semibold text-light ms-2" ID="lblTotal" />
                     </div>
                     <div class="text-center">
-                        <asp:Button Text="Confirmar compra" CssClass="btn btn-success" Width="300px" Height="50px" runat="server" />
+                        <asp:Button Text="Confirmar compra" ID="btnConfirmarCompra" OnClick="btnConfirmarCompra_Click" CssClass="btn btn-success" Width="300px" Height="50px" runat="server" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+        function ShowCompraExitosa() {
+            Swal.fire({
+                title: "Compra realizada exitosamente",
+                timer: 1000,
+                icon: "success",
+            }).then((result) => {
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    window.location.href = 'viewArticulos.aspx'
+                }
+            });
+
+        }
+
+        function ShowError() {
+            Swal.fire({
+                title: "Datos incompletos",
+                text: "Intentelo de nuevo....",
+                timer: 1000,
+                icon: "error",
+            });
+        }
+
+    </script>
 </asp:Content>
