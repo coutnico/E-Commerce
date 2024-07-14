@@ -15,7 +15,7 @@ namespace E_Commerce_Negocio
         SqlDataReader reader = null;
 
 
-        public List<Domicilio> ListarDatosPersonales()
+        public List<Domicilio> ListarDomicilios()
 
         {
             List<Domicilio> lista = new List<Domicilio>();
@@ -62,7 +62,16 @@ namespace E_Commerce_Negocio
 
             try
             {
-
+                if(domicilio.Observacion != string.Empty)
+                {
+                    string query = $"INSERT INTO DOMICILIOS (ID_Usuario, Calle, Altura, Localidad, Observacion) VALUES({domicilio.ID_Usuario}, '{domicilio.Calle}', {domicilio.Altura}, {domicilio.ID_Localidad}, {domicilio.Observacion})";
+                    conexionDB_obj.EjecutarComando(query); 
+                }
+                else
+                {
+                    string query = $"INSERT INTO DOMICILIOS (ID_Usuario, Calle, Altura, Localidad) VALUES({domicilio.ID_Usuario}, '{domicilio.Calle}', {domicilio.Altura}, {domicilio.ID_Localidad})";
+                    conexionDB_obj.EjecutarComando(query);
+                }
             }
             catch (Exception)
             {

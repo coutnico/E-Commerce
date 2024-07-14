@@ -77,7 +77,7 @@
                     </asp:DropDownList>
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <asp:Button Text="Agregar Domicilio" CssClass="btnSignOut me-1" Width="200px" runat="server" ID="btnAgregarDomicilio" />
+                        <asp:Button Text="Agregar Domicilio" CssClass="btnSignOut me-1" Width="200px" runat="server" ID="btnAgregarDomicilio" OnClick="btnAgregarDomicilio_Click"/>
                         <a href="viewProfile.aspx" class="btnExit me-1" style="text-decoration: none">Volver</a>
                     </div>
                 </div>

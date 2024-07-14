@@ -25,13 +25,21 @@
                 <a class="btn btn-success w-100 fs-4 border-2 border-dark shadow-lg fw-semibold mt-3" data-bs-toggle="collapse" href="#collapseDomicilio" role="button" aria-expanded="false" aria-controls="collapseExample">Elegir el lugar de entrega </a>
                 <div class="collapse mt-2" id="collapseDomicilio">
                     <div class="card card-body">
-                        Domicilio
+                        <div class="row justify-content-center align-items-center">
+                            <asp:Button Text="Agregar Domicilio" runat="server" CssClass="btn w-50 mb-3 text-light fw-bolder" Style="background-color: #212529" ID="btnAgregarDomicilio"  OnClick="btnAgregarDomicilio_Click"/>
+                            <asp:DropDownList runat="server" ID="dgvDomicilios" CssClass="btn btn-danger fs-5 fw-semibold w-75">
+                                <asp:ListItem Text="Desplegar domicilios" Value="" />
+                            </asp:DropDownList>
+                        </div>
                     </div>
                 </div>
                 <a class="btn btn-dark w-100 fs-4 border-2 border-dark shadow-lg fw-semibold mt-2" data-bs-toggle="collapse" href="#collapseMetodoPago" role="button" aria-expanded="false" aria-controls="collapseExample">Elegir metodo de pago</a>
                 <div class="collapse mt-2" id="collapseMetodoPago">
                     <div class="card card-body">
-                        Metodo de pago
+                        <div class="row justify-content-center align-items-center text-center">
+                            <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/512/external-bank-taxes-flatart-icons-flat-flatarticons.png" alt="Alternate Text" style="width: 130px; height: 130px" />
+                            <p class="fw-semibold text-success">Momentaneamente solo contamos con transferencia bancaria</p>
+                        </div>
                     </div>
                 </div>
 

@@ -120,6 +120,7 @@
     <Compile Include="Domicilio.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="Compras.cs" />
+    <Compile Include="Localidad.cs" />
     <Compile Include="Publicaciones.cs" />
     <Compile Include="Suspension.cs" />
     <Compile Include="Usuarios.cs" />
