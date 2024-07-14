@@ -25,7 +25,7 @@ namespace E_Commerce_Negocio
             try
             {
                 
-                string query = "Select Id, IdPublicacion,FechaModificacion, TipoModificacion from ALTERACIONESPUBLI_ADMIN";
+                string query = "Select Id, IdPublicacion,FechaModificacion, TipoModificacion, IdAdministrador from ALTERACIONESPUBLI_ADMIN";
 
                 reader = conexionDB_obj.LeerDatos(query); ;
 
@@ -37,7 +37,8 @@ namespace E_Commerce_Negocio
                     alteracionespubli_admin.Id = Convert.ToInt32(reader["Id"]);
                     alteracionespubli_admin.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                     alteracionespubli_admin.FechaModificacion = Convert.ToDateTime(reader["FechaModificacion"]);
-                    alteracionespubli_admin.Id = Convert.ToInt32(reader["TipoModificacion"]);
+                    alteracionespubli_admin.TipoModificacion = Convert.ToInt32(reader["TipoModificacion"]);
+                    alteracionespubli_admin.IdAdministrador = Convert.ToInt32(reader["IdAdministrador"]);
 
                     lista.Add(alteracionespubli_admin);
 
@@ -60,9 +61,10 @@ namespace E_Commerce_Negocio
             ConexionDB conexionDB_Obj = new ConexionDB();
             try
             {
+                string fecha_YYYMMDD = alteracionespubli_admin.FechaModificacion.ToString("yyyy-MM-dd HH:mm:ss.fff"); // NECESITO FORMATEAR LA FECHA PARA ENVIARLA COMO YYYMMDD a SQL.
 
-                
-                conexionDB_Obj.EjecutarComando("Insert into ALTERACIONESPUBLI_ADMIN (IdPublicacion,FechaModificacion,TipoModificacion) Values (" + alteracionespubli_admin.IdPublicacion + "," + alteracionespubli_admin.FechaModificacion + "," + alteracionespubli_admin.TipoModificacion + ")");
+
+                conexionDB_Obj.EjecutarComando("Insert into ALTERACIONESPUBLI_ADMIN (IdPublicacion,FechaModificacion,TipoModificacion,IdAdministrador) Values (" + alteracionespubli_admin.IdPublicacion + ",'" + fecha_YYYMMDD + "'," + alteracionespubli_admin.TipoModificacion + "," + alteracionespubli_admin.IdAdministrador + ")");
   
             }
             catch (Exception)
@@ -96,8 +98,8 @@ namespace E_Commerce_Negocio
 
             try
             {
-               
-                conexionDB_Obj.EjecutarComando("UPDATE ALTERACIONESPUBLI_ADMIN SET IdPublicacion =" + alteracionespubli_admin_obj.IdPublicacion + "," + alteracionespubli_admin_obj.FechaModificacion + "," + alteracionespubli_admin_obj.TipoModificacion +  " WHERE Id = " + ID_a_modificar);
+                string fecha_YYYMMDD = alteracionespubli_admin_obj.FechaModificacion.ToString("yyyy-MM-dd HH:mm:ss.fff"); // NECESITO FORMATEAR LA FECHA PARA ENVIARLA COMO YYYMMDD a SQL.
+                conexionDB_Obj.EjecutarComando("UPDATE ALTERACIONESPUBLI_ADMIN SET IdPublicacion =" + alteracionespubli_admin_obj.IdPublicacion + ",'" + fecha_YYYMMDD + "'," + alteracionespubli_admin_obj.TipoModificacion + "," + alteracionespubli_admin_obj.IdAdministrador +  " WHERE Id = " + ID_a_modificar);
                 
             }
             catch (Exception)
@@ -113,7 +115,7 @@ namespace E_Commerce_Negocio
             int id_aux = 0;
             try
             {
-                string query = "Select Id, IdPublicacion,FechaModificacion, TipoModificacion from ALTERACIONESPUBLI_ADMIN";
+                string query = "Select Id, IdPublicacion,FechaModificacion, TipoModificacion, IdAdministrador from ALTERACIONESPUBLI_ADMIN";
 
                 reader = conexionDB_obj.LeerDatos(query);
 
@@ -128,6 +130,7 @@ namespace E_Commerce_Negocio
                         alteracionespubli_admin.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                         alteracionespubli_admin.FechaModificacion = Convert.ToDateTime(reader["FechaModificacion"]);
                         alteracionespubli_admin.TipoModificacion = Convert.ToInt32(reader["TipoModificacion"]);
+                        alteracionespubli_admin.IdAdministrador = Convert.ToInt32(reader["IdAdministrador"]);
                     }
                 }
                 return alteracionespubli_admin;

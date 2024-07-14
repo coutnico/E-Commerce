@@ -183,6 +183,9 @@ namespace tp_web_equipo_19.Views
                 Usuarios user_aux = new Usuarios();
                 Usuario_Negocio userauxNegocio = new Usuario_Negocio();
 
+                ALTERACIONESPUBLI_ADMIN alteracionespubli_admin = new ALTERACIONESPUBLI_ADMIN();
+                ALTERACIONESPUBLI_ADMINNegocio alteracionespubli_adminNegocio = new ALTERACIONESPUBLI_ADMINNegocio();   
+
                 user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
                 if (usuario.tipoUsuario == TipoUsuario.NORMAL)
@@ -199,6 +202,13 @@ namespace tp_web_equipo_19.Views
                     cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido ELIMINADA por un ADMINISTRADOR.";
                     emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                     emailService.enviarEmail();
+
+                    alteracionespubli_admin.IdPublicacion = publicaciones.IdPublicacion;
+                    alteracionespubli_admin.FechaModificacion = DateTime.Now;
+                    alteracionespubli_admin.TipoModificacion = 3; //  1: Agregar , 2: Modificar, 3:Eliminar, 4:Pausar, 5:Reestablecer.
+                    alteracionespubli_admin.IdAdministrador = usuario.Id;
+                    alteracionespubli_adminNegocio.agregarAlteracionAdmin(alteracionespubli_admin);     
+
                 }
 
 
@@ -263,8 +273,10 @@ namespace tp_web_equipo_19.Views
 
                 Usuarios user_aux = new Usuarios();
                 Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+                ALTERACIONESPUBLI_ADMIN alteracionespubli_admin = new ALTERACIONESPUBLI_ADMIN();
+                ALTERACIONESPUBLI_ADMINNegocio alteracionespubli_adminNegocio = new ALTERACIONESPUBLI_ADMINNegocio();
 
-                 user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
+                user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
                 if (usuario.tipoUsuario == TipoUsuario.NORMAL) { 
                 asuntoPublicacionNueva = "Has Modificado una Publicacion";
@@ -278,6 +290,12 @@ namespace tp_web_equipo_19.Views
                 cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido MODIFICADA por un ADMINISTRADOR.";
                 emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                 emailService.enviarEmail();
+
+                    alteracionespubli_admin.IdPublicacion = publicaciones.IdPublicacion;
+                    alteracionespubli_admin.FechaModificacion = DateTime.Now;
+                    alteracionespubli_admin.TipoModificacion = 2; //  1: Agregar , 2: Modificar, 3:Eliminar, 4:Pausar, 5:Reestablecer.
+                    alteracionespubli_admin.IdAdministrador = usuario.Id;
+                    alteracionespubli_adminNegocio.agregarAlteracionAdmin(alteracionespubli_admin);
                 }
                 
 
@@ -399,6 +417,8 @@ namespace tp_web_equipo_19.Views
 
             Usuarios user_aux = new Usuarios();
             Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+            ALTERACIONESPUBLI_ADMIN alteracionespubli_admin = new ALTERACIONESPUBLI_ADMIN();
+            ALTERACIONESPUBLI_ADMINNegocio alteracionespubli_adminNegocio = new ALTERACIONESPUBLI_ADMINNegocio();
 
             user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
@@ -416,6 +436,13 @@ namespace tp_web_equipo_19.Views
                 cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido PAUSADA por un ADMINISTRADOR.";
                 emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                 emailService.enviarEmail();
+
+                alteracionespubli_admin.IdPublicacion = publicaciones.IdPublicacion;
+                alteracionespubli_admin.FechaModificacion = DateTime.Now;
+                alteracionespubli_admin.TipoModificacion = 4; //  1: Agregar , 2: Modificar, 3:Eliminar, 4:Pausar, 5: Reestablecer.
+                alteracionespubli_admin.IdAdministrador = usuario.Id;
+                alteracionespubli_adminNegocio.agregarAlteracionAdmin(alteracionespubli_admin);
+
             }
 
 
@@ -443,6 +470,8 @@ namespace tp_web_equipo_19.Views
 
             Usuarios user_aux = new Usuarios();
             Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+            ALTERACIONESPUBLI_ADMIN alteracionespubli_admin = new ALTERACIONESPUBLI_ADMIN();
+            ALTERACIONESPUBLI_ADMINNegocio alteracionespubli_adminNegocio = new ALTERACIONESPUBLI_ADMINNegocio();
 
             user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
@@ -460,6 +489,12 @@ namespace tp_web_equipo_19.Views
                 cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido REESTABLECIDA por un ADMINISTRADOR.";
                 emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                 emailService.enviarEmail();
+
+                alteracionespubli_admin.IdPublicacion = publicaciones.IdPublicacion;
+                alteracionespubli_admin.FechaModificacion = DateTime.Now;
+                alteracionespubli_admin.TipoModificacion = 5; //  1: Agregar , 2: Modificar, 3:Eliminar, 4:Pausar, 5: Reestablecer.
+                alteracionespubli_admin.IdAdministrador = usuario.Id;
+                alteracionespubli_adminNegocio.agregarAlteracionAdmin(alteracionespubli_admin);
             }
 
             if (usuario.tipoUsuario == TipoUsuario.NORMAL)
@@ -485,6 +520,8 @@ namespace tp_web_equipo_19.Views
 
             Usuarios user_aux = new Usuarios();
             Usuario_Negocio userauxNegocio = new Usuario_Negocio();
+            ALTERACIONESPUBLI_ADMIN alteracionespubli_admin = new ALTERACIONESPUBLI_ADMIN();
+            ALTERACIONESPUBLI_ADMINNegocio alteracionespubli_adminNegocio = new ALTERACIONESPUBLI_ADMINNegocio();
 
             user_aux = userauxNegocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario);
 
@@ -502,6 +539,12 @@ namespace tp_web_equipo_19.Views
                 cuerpoPublicacionNueva = " Hola " + user_aux.User + " ! . Te avisamos que tu publicacion de " + publicaciones.articulo.Nombre + " ha sido ELIMINADA por un ADMINISTRADOR.";
                 emailService.armarCorreo(user_aux.Email, asuntoPublicacionNueva, cuerpoPublicacionNueva);
                 emailService.enviarEmail();
+
+                alteracionespubli_admin.IdPublicacion = publicaciones.IdPublicacion;
+                alteracionespubli_admin.FechaModificacion = DateTime.Now;
+                alteracionespubli_admin.TipoModificacion = 3; //  1: Agregar , 2: Modificar, 3:Eliminar, 4:Pausar, 5:Reestablecer.
+                alteracionespubli_admin.IdAdministrador = usuario.Id;
+                alteracionespubli_adminNegocio.agregarAlteracionAdmin(alteracionespubli_admin);
             }
 
 
