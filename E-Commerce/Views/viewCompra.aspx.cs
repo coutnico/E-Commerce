@@ -24,17 +24,16 @@ namespace tp_web_equipo_19.Views
                 Response.Redirect("viewLogin.aspx", false);
 
             }
-            else
-            {
-                foreach (Domicilio domicilio in domicilios.ListarDomicilios())
-                {
-                    if (domicilio.ID_Usuario == UsuarioLogueado.Id)
-                    {
-                        dgvDomicilios.Items.Add(domicilio.Calle + " " + domicilio.Altura.ToString());
-                    }
-                }
 
+            foreach (Domicilio domicilio in domicilios.ListarDomicilios())
+            {
+                if (domicilio.ID_Usuario == UsuarioLogueado.Id)
+                {
+                    dgvDomicilios.Items.Add(domicilio.Calle + " " + domicilio.Altura.ToString());
+                }
             }
+
+
 
 
         }

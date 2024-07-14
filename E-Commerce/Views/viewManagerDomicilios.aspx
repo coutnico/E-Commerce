@@ -93,7 +93,7 @@
                 icon: "success",
             }).then((result) => {
                 if (result.dismiss === Swal.DismissReason.timer) {
-                    window.location.href = 'viewDomicilios.aspx'
+                    window.location.href = 'viewCompra.aspx'
                 }
             });
         }

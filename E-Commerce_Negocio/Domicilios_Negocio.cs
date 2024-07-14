@@ -64,7 +64,7 @@ namespace E_Commerce_Negocio
             {
                 if(domicilio.Observacion != string.Empty)
                 {
-                    string query = $"INSERT INTO DOMICILIOS (ID_Usuario, Calle, Altura, Localidad, Observacion) VALUES({domicilio.ID_Usuario}, '{domicilio.Calle}', {domicilio.Altura}, {domicilio.ID_Localidad}, {domicilio.Observacion})";
+                    string query = $"INSERT INTO DOMICILIOS (ID_Usuario, Calle, Altura, Localidad, Observacion) VALUES({domicilio.ID_Usuario}, '{domicilio.Calle}', {domicilio.Altura}, {domicilio.ID_Localidad}, '{domicilio.Observacion}')";
                     conexionDB_obj.EjecutarComando(query); 
                 }
                 else
