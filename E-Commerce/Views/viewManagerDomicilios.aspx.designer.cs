@@ -33,13 +33,13 @@ namespace tp_web_equipo_19.Views
         protected global::System.Web.UI.WebControls.TextBox txtAltura;
 
         /// <summary>
-        /// txtEntreCalle2 control.
+        /// txtObservacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEntreCalle2;
+        protected global::System.Web.UI.WebControls.TextBox txtObservacion;
 
         /// <summary>
         /// ddlLocalidad control.

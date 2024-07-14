@@ -70,7 +70,7 @@
 
                     <asp:TextBox ID="txtAltura" runat="server" CssClass="form-control rounded-4" required="" type="number" placeholder="Altura" />
 
-                    <asp:TextBox ID="txtEntreCalle2" runat="server" CssClass="form-control rounded-4" required="" type="text" placeholder="Entre Calle 2" />
+                    <asp:TextBox ID="txtObservacion" runat="server" CssClass="form-control rounded-4 py-3" required="" type="text" placeholder="Observacion (opcional)" />
                     
                     <asp:DropDownList ID="ddlLocalidad" runat="server" AutoPostBack="true" CssClass="form-control border border-3 rounded-4 border-white fs-6 fw-semibold text-center w-25" Style="background-color: dimgray; color: white">
                         <asp:ListItem Text="Localidad" Value="" />

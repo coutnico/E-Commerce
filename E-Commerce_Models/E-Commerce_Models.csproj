@@ -117,6 +117,7 @@
     <Compile Include="Chat.cs" />
     <Compile Include="ALTERACIONESPUBLI_ADMIN.cs" />
     <Compile Include="Datos_Personales.cs" />
+    <Compile Include="Domicilio.cs" />
     <Compile Include="EmailService.cs" />
     <Compile Include="Compras.cs" />
     <Compile Include="Publicaciones.cs" />
