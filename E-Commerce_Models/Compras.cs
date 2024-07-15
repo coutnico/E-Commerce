@@ -14,6 +14,11 @@ namespace E_Commerce_Models
        public int QComprada { get; set; }
        public bool Cancelada { get; set; }
 
+      // public int CompraNumeroRegistro { get; set; } // Ya que en una misma compra, puede venir dadas de varias publicaciones.
+
+       public float PrecioUnitarioCompra {  get; set; } 
+
+
         public Compras(int idComprador, int IdPublicacion_aux , int Qcomprada_aux)
         {
             IdUsuario = idComprador;

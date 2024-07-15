@@ -12,12 +12,9 @@ namespace E_Commerce_Negocio
 {
     public class ArticuloNegocio
 {
-    //static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
+
 
     ConexionDB conexionDB_obj = new ConexionDB();
-
-    //SqlConnection conexion = new SqlConnection(conexionstring);
-    //SqlCommand cmd;
     SqlDataReader reader = null;
 
 

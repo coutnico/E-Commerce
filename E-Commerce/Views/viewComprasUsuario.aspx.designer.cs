@@ -15,12 +15,21 @@ namespace tp_web_equipo_19.Views
     {
 
         /// <summary>
-        /// btnChat control.
+        /// cantidad_compras control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnChat;
+        protected global::System.Web.UI.WebControls.Label cantidad_compras;
+
+        /// <summary>
+        /// reapeterComprasUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater reapeterComprasUsuario;
     }
 }
