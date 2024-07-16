@@ -115,6 +115,8 @@ namespace tp_web_equipo_19.Views
 
             comprasNegocio.ModificarCompra(compras,compras.IdCompra);
 
+            Response.Redirect("viewVentasUsuario.aspx", false);
+
         }
     }
 }

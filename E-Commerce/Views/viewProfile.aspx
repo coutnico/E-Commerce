@@ -66,6 +66,7 @@
                         <div>
                             <asp:Button Text="Editar Datos" class="btn bg-primary bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="150px" runat="server" ID="btnEditarDatos" Onclick="btnEditarDatos_Click"/>
                             <asp:Button Text="Mis compras" runat="server" class="btn bg-success bg-opacity-100 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe " Width="150px" ID="btnMisCompras" OnClick="btnMisCompras_Click" />
+                             <asp:Button Text="Mis Ventas" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisVentas" OnClick="btnMisVentas_Click" />
                             <asp:Button Text="Mis Publicaciones" runat="server" class="btn bg-warning bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="190px" ID="btnMisPublicaciones" OnClick="btnMisPublicaciones_Click" />
                         </div>
                         <h4>Sos Usuario </h4>
