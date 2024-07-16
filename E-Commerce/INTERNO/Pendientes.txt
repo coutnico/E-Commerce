@@ -52,21 +52,36 @@
 // 05/07/2024 
 PENDIENTES
 
-- CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET
-- Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no.
-- Terminar el chat entre usuarios. Condicionado por IDCompras. 
+- CAMBIAR FONDO GRADIENTE (FONDO SIN GRADIENTE, PUEDE SER VERDE MUSGO O GRIS) / UN COLOR HEXA O PALETAS DE OLORES EN INTERNET // HECHO
+- Terminar la confirmacion de la  compra (lugar  y metodo de pago) con confirmacion de si pago  o no. // HECHO
+- Terminar el chat entre usuarios. Condicionado por IDCompras.  // HECHO
 - Enviar correos automaticos publicaciones cuando se publican modifican yo eliminan // HECHO
 - Enviar correo cuando modifica elimina una publicacion el administrador (pero debe figurar que fue él).CREAR UNA TABLA DE CUANDO EL ADMINISTRADOR MODIFICA LA PUBLICACION Y QUE REGISTRE HORA Y FECHA, Y MOTIVO // EN PROCESO
 - ABM del administrador en al articulo
 
 
 - Envio de correo electronico cuando se genera una advertencia al usuario
-- Agregar cantidad de suspensiones que tiene cada usuario
-- Cargar datos por default, pero bien cargado con imagenes y demas
+- Agregar cantidad de suspensiones que tiene cada usuario // HECHO
+- Cargar datos por default, pero bien cargado con imagenes y demas // HECHO
 - MIS PUBLICACIONES. AGREGAR TITULO EN MIS PUBLICACIONES y en el de ADMIN. // HECHO
 
---AGREGAR QUE NO DEJE COMPRAR SI SUPERA EL STOCK!
 
--- VER DECIMAL EN COMPRAS (POR LO QUE SE ESCRIBE EN LA BD (SE NECESITA EL CULTURE XXXXXX))
+- CAMBIAR A BIGINT (DATOS USUARIOS. DNI Y DEMAS)
+- FALTA LA GESTION DE LA VENTA. ENVIO DE COMPROBANTE, NUMERO DE REGISTRO DE VENTA Y DEMAS
+- AGREGAR NOTIFICACIONES, DE AVISOS DE CHATS. HORARIOS DE MENSAJERIA, 
+- CALIFICACIONES
+
+
+
+
+
+
+
+
+
+
+
+-NO 
+--AGREGAR QUE NO DEJE COMPRAR SI SUPERA EL STOCK! //
 - HAY QUE CONDICIONAR QUE NO TE DEJE AGREGAR AL CARRITO (O CUANDO VAS A CONFIRMAR EL CARRITO, AL ABRIR EL DISPLAY CARRITO, QUE CHEQUEE CONTRA LA BD) SI YA SUPERA AL STOCK QUE DISPONIBLE.
 -- RECORDAR COMO QUEDO, CADA PUBLICACION TIENE 1 ARTICULO. ESTE ARTICULO, NO SE PUEDE REPETIR EN EL RESTO DE LAS PUBLI
