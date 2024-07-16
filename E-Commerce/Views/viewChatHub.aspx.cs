@@ -15,8 +15,10 @@ using System.Xml.Linq;
 
 namespace tp_web_equipo_19.Views
 {
+
     public partial class viewChatHub : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             /*  // Registra el hub de SignalR
@@ -35,6 +37,8 @@ namespace tp_web_equipo_19.Views
 
             int idCompra = Convert.ToInt32(Session["IdCompra"]);
 
+            lblRemitenteRecibidoLogin.Text = Session["RemitenteChat"].ToString();
+
             if (!IsPostBack)
             {
 
@@ -44,7 +48,7 @@ namespace tp_web_equipo_19.Views
                 List<Chat> listaChatsAMostrar = new List<Chat>();
                 foreach (Chat chats_aux in listaChats)
                 {
-                    //***** Colocar IDCompra para filtro a la seleccionada por SESION cuando entren al link de la compra! MODIFICAR, AHORA ESTA HARDCODE
+                    
                     if (chats_aux.IdCompra == idCompra)
                     {
                         listaChatsAMostrar.Add(chats_aux);
@@ -64,12 +68,9 @@ namespace tp_web_equipo_19.Views
         {
             Chat chat = new Chat();
             ChatNegocio chatNegocio = new ChatNegocio();
-
-            //  int remitente = Convert.ToInt32(((Button)sender).CommandArgument);
-            int remitente = 1; // TEMPORAL!
-
-            chat.IdCompra = 1; //  //***** colocar dinamico cuando este la clase
-            chat.Remitente = remitente; // Debe traer el valor por sesion 1 comprador 2 vendedor
+     
+            chat.IdCompra = Convert.ToInt32(Session["IdCompra"]);
+            chat.Remitente = Convert.ToInt32(Session["RemitenteChat"]); ; // Debe traer el valor por sesion 1 comprador 2 vendedor
             chat.Mensaje = txtMensajeNuevo.Text;
 
             try

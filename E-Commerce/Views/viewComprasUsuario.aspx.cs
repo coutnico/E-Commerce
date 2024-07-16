@@ -68,11 +68,15 @@ namespace tp_web_equipo_19.Views
 
             int idCompra = Convert.ToInt32(((Button)sender).CommandArgument);
 
+            Session.Remove("RemitenteChat");
+            Session.Add("RemitenteChat", 1); // 0=admin 1=comprador 2= vendedor
+
             Session.Remove("IdCompra");
             Session.Add("IdCompra", idCompra);
             Response.Redirect("viewChatHub.aspx",false);
         }
 
+        //funciones auxiliares
         protected Publicaciones busquedaPublicacion(int idPublicacion)
         {
 
@@ -80,8 +84,15 @@ namespace tp_web_equipo_19.Views
             Publicaciones publicaciones = new Publicaciones();
 
             return publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_ID(idPublicacion);
+        }
 
 
+        protected float totalCompra(int QComprada, float precioUnitairo)
+        {
+            float total = 0;
+
+            return total = QComprada * precioUnitairo;
+            
         }
     }
 }

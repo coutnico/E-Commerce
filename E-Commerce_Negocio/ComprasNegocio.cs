@@ -21,7 +21,7 @@ namespace E_Commerce_Negocio
             try
             {
 
-                string query = "SELECT IdCompra, IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra FROM COMPRAS";
+                string query = "SELECT IdCompra, IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra, Estado FROM COMPRAS";
                 reader = conexionDB_obj.LeerDatos(query);  //cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -33,6 +33,7 @@ namespace E_Commerce_Negocio
                     compra.QComprada = Convert.ToInt32(reader["QComprada"]);
                     compra.Cancelada = Convert.ToBoolean(reader["Cancelada"]);
                     compra.PrecioUnitarioCompra = Convert.ToSingle(reader["PrecioUnitarioCompra"]); // Leer PrecioUnitarioCompra
+                    compra.Estado = Convert.ToInt32(reader["Estado"]);
 
                     lista.Add(compra);
 
@@ -55,7 +56,7 @@ namespace E_Commerce_Negocio
         {
             try
             {
-                string query = "INSERT INTO COMPRAS (IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra) VALUES ({compra.IdUsuario}, {compra.IdPublicacion}, {compra.QComprada}, 0, {compra.PrecioUnitarioCompra})";
+                string query = "INSERT INTO COMPRAS (IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra, Estado) VALUES (" + compra.IdUsuario + "," + compra.IdPublicacion + "," + compra.QComprada + "," + compra.Cancelada  + "," + compra.PrecioUnitarioCompra + compra.Estado + ")";
                 conexionDB_obj.EjecutarComando(query);
             }
             catch (Exception ex)
@@ -92,6 +93,7 @@ namespace E_Commerce_Negocio
                     ", IdPublicacion = " + compra_obj.IdPublicacion +
                     ", QComprada = " + compra_obj.QComprada +
                     ", Cancelada = " + (compra_obj.Cancelada ? 1 : 0) +
+                    ", Estado = " + (compra_obj.Estado) +
                     " WHERE IdCompra = " + ID_a_modificar);
 
                 string txt_compra_actualizada = "Compra Actualizada";
@@ -101,6 +103,8 @@ namespace E_Commerce_Negocio
                 throw;
             }
         }
+
+
 
         public void CancelarCompra(int id_cancelar)
         {
@@ -123,7 +127,7 @@ namespace E_Commerce_Negocio
         {
             try
             {
-                string query = "SELECT IdCompra, IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra FROM COMPRAS WHERE IdCompra = " + id_buscado;
+                string query = "SELECT IdCompra, IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra, Estado FROM COMPRAS WHERE IdCompra = " + id_buscado;
                 reader = conexionDB_obj.LeerDatos(query);
 
                     if (reader.Read())
@@ -135,8 +139,9 @@ namespace E_Commerce_Negocio
                         compra.QComprada = Convert.ToInt32(reader["QComprada"]);
                         compra.Cancelada = Convert.ToBoolean(reader["Cancelada"]);
                         compra.PrecioUnitarioCompra = Convert.ToSingle(reader["PrecioUnitarioCompra"]);
+                        compra.Estado = Convert.ToInt32(reader["Estado"]);
 
-                        return compra;
+                    return compra;
                     }
                     else
                     {

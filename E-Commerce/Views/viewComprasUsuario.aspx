@@ -1,27 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="viewComprasUsuario.aspx.cs" Inherits="tp_web_equipo_19.Views.viewComprasUsuario" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-  
-
-
-    
     <div class="d-flex justify-content-between align-items-center">
-    <span style="margin-left:42%;" class="h2" >Mis Compras</span>
-    <button type="button" class="btn btn-success btn-lg" onclick="window.location.href = 'viewUsuarioAgregarPublicacion_1.aspx';">Nueva</button>
-</div>
+        <span style="margin-left: 42%;" class="h2">Mis Compras</span>
+    </div>
 
-    <asp:Label ID="cantidad_compras" runat="server" Text="" visible="false"></asp:Label>
-    
+    <asp:Label ID="cantidad_compras" runat="server" Text="" Visible="false"></asp:Label>
+    <%-- Solo para condicionar if --%>
+
 
     <% if (Convert.ToInt32(cantidad_compras.Text) == 0)
         { %>
-     <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">NO EXISTEN COMPRAS</p>
+    <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">NO EXISTEN COMPRAS</p>
+    <% }
+        else
+        { %>
 
-
-     <% } else
-         { %>
-            
 
     <asp:Repeater ID="reapeterComprasUsuario" runat="server">
         <ItemTemplate>
@@ -39,17 +35,17 @@
                                 <asp:Label ID="lblCategoria" class="align-content-center h8" runat="server" Text=""><%#  busquedaPublicacion(Convert.ToInt32(Eval("IdPublicacion"))).articulo.Categoria %></asp:Label>
                             </div>
 
-                            <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"> Precio Unitario: $ <%#  Eval("PrecioUnitarioCompra") %></p>
-                            <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">Cantidad Comprada Disponible: <%# Eval("QComprada") %></p>
+                            <%--<p class="card-text fs-4 fw-semibold text-shadow text-dark text-end"> Precio Unitario: $ <%#  Eval("PrecioUnitarioCompra") %></p>--%>
+                            <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">Cantidad Comprada: <%# Eval("QComprada") %></p>
+                            <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">Valor total: $ <%# totalCompra(Convert.ToInt32(Eval("QComprada")),Convert.ToInt32(Eval("PrecioUnitarioCompra"))) %></p>
 
-                            <%--    <p class="card-text"><small class="text-body-secondary">Last updated xxx mins ago</small></p>--%>
                         </div>
 
-                          <asp:Button runat="server" ID="btnChat" OnClick="btnChat_Click" CommandArgument='<%# Eval("IdCompra") %>'  CommandName="IdPublicacion" Text="Chat" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
+                        <asp:Button runat="server" ID="btnChat" OnClick="btnChat_Click" CommandArgument='<%#  Eval("IdCompra") %>' CommandName="IdPublicacion" Text="Chat" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
 
 
 
-                      <%--  <div class="text-end">
+                        <%--  <div class="text-end">
                             <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
                         </div>--%>
                     </div>
@@ -59,8 +55,6 @@
         </ItemTemplate>
     </asp:Repeater>
     <% }%>
-
-
 </asp:Content>
 
 

@@ -143,6 +143,7 @@
     <Content Include="Views\viewManagerDomicilios.aspx" />
     <Content Include="Views\viewRegister.aspx" />
     <Content Include="Views\viewComprasUsuario.aspx" />
+    <Content Include="Views\viewVentasUsuario.aspx" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.js" />
     <Content Include="wwwroot\js\signalr\dist\browser\signalr.min.js" />
     <None Include="Resources\ErrorImagen.png" />
@@ -445,6 +446,13 @@
     </Compile>
     <Compile Include="Views\viewComprasUsuario.aspx.designer.cs">
       <DependentUpon>viewComprasUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewVentasUsuario.aspx.cs">
+      <DependentUpon>viewVentasUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\viewVentasUsuario.aspx.designer.cs">
+      <DependentUpon>viewVentasUsuario.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
