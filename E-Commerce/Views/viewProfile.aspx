@@ -43,8 +43,8 @@
         <asp:Button Text="Sign out" OnClick="btnCerrarSesion_Click" class="btnSignOut" Width="125px" runat="server" ID="btnCerrarSesion" />
 
     </div>
-    <div class="container" style="margin-top: 60px">
-        <div class="position-relative top-50 start-50 translate-middle-x rounded-4 border border-5 border-info-subtle shadow-lg " style="width: 400px; height: 500px; background: rgb(128,240,146); background: linear-gradient(90deg, rgba(128,240,146,1) 14%, rgba(78,194,228,1) 44%, rgba(78,194,228,1) 60%, rgba(128,240,146,1) 86%);">
+    <div class="container py-5" >
+        <div class="position-relative top-50 start-50 translate-middle-x rounded-4 border border-3 border-light border-opacity-75 shadow-lg  bg-black bg-opacity-50" style="width: 400px; height: 500px;">
             <div class="row align-items-center justify-content-center" style="height: 90%">
                 <div class="col-md-10 text-center">
                     <img src="https://img.icons8.com/fluency/240/user-male-circle--v1.png" class="mt-3" alt="Login" width="180" height="180" style="margin-left: 2.5rem" />
@@ -57,17 +57,16 @@
                         <% if (tipoUser_profile())
                             {  %>
                         <h6>Sos Administrador, puedes ingresar a los ajustes avanzados mediante el siguiente boton: </h6>
-                        <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatosAdmin" OnClick="btnEditarDatosAdmin_Click" />
-                        <asp:Button Text="Usuarios" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-2 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnABMUsuarios" OnClick="btnABMUsuarios_Click" />
-                        <asp:Button Text="ABM (Admin)" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-2 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnABMAdmin" OnClick="btnABMAdmin_Click" Visible="false" />
+                        <asp:Button Text="Editar Datos" class="btn bg-primary bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="140px" runat="server" ID="btnEditarDatosAdmin" OnClick="btnEditarDatosAdmin_Click" />
+                        <asp:Button Text="Usuarios" class="btn bg-success bg-opacity-100 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe " Width="125px" runat="server" ID="btnABMUsuarios" OnClick="btnABMUsuarios_Click" />
+                        <asp:Button Text="ABM (Admin)" class="btn bg-warning bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnABMAdmin" OnClick="btnABMAdmin_Click" Visible="false" />
                         <% }
                             else
                             {  %>
                         <div>
-                            <asp:Button Text="Editar Datos" class="btn-dark bg-primary fst-italic bg-opacity-25 rounded-3 mt-5 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" runat="server" ID="btnEditarDatos" Onclick="btnEditarDatos_Click"/>
-                            <asp:Button Text="Mis compras" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisCompras" OnClick="btnMisCompras_Click" />
-                            <asp:Button Text="Mis Ventas" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="125px" ID="btnMisVentas" OnClick="btnMisVentas_Click" />
-                            <asp:Button Text="Mis Publicaciones" runat="server" class="btn-dark bg-primary fst-italic bg-opacity-50 mt-2 rounded-3 border border-2 border-white text-light fs-5 fw-semibold fs-Segoe" Width="180px" ID="btnMisPublicaciones" OnClick="btnMisPublicaciones_Click" />
+                            <asp:Button Text="Editar Datos" class="btn bg-primary bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="150px" runat="server" ID="btnEditarDatos" Onclick="btnEditarDatos_Click"/>
+                            <asp:Button Text="Mis compras" runat="server" class="btn bg-success bg-opacity-100 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe " Width="150px" ID="btnMisCompras" OnClick="btnMisCompras_Click" />
+                            <asp:Button Text="Mis Publicaciones" runat="server" class="btn bg-warning bg-opacity-75 border border-1 border-dark border-opacity-75 btn-lg fw-semibold fs-Segoe" Width="190px" ID="btnMisPublicaciones" OnClick="btnMisPublicaciones_Click" />
                         </div>
                         <h4>Sos Usuario </h4>
 

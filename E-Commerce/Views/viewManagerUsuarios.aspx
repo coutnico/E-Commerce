@@ -95,7 +95,10 @@
                                 <asp:ImageButton ImageUrl="https://img.icons8.com/pulsar-gradient/48/change.png" runat="server" Style="height: 30px; width: 30px" />
                             </td>
 
-                            <td>
+                            <td> 
+                                <%# this.CargarCantidadAdvertencias(Convert.ToInt32(Eval("Id")))%>
+
+                                <asp:Label Text="<%# this.CantidadAdvertencias %>" ID="lblCantidad" CssClass="fw-semibold text-light" runat="server" />
                                 <asp:ImageButton ImageUrl="..\Resources\icons8-advertencia.gif" runat="server" ID="btnAdvertencia" OnClick="btnAdvertencia_Click" ClientIDMode="AutoID" CommandArgument='<%#Eval("Id")%>' CommandName="ID_Usuario" />
                             </td>
                             <td>

@@ -32,8 +32,7 @@
 
         .content {
             flex: 1;
-            background: rgb(7,178,11);
-            background: linear-gradient(222deg, rgba(7,178,11,1) 21%, rgba(128,240,146,1) 40%, rgba(255,255,255,1) 50%, rgba(128,240,146,1) 59%, rgba(7,178,11,1) 82%);
+            background-color: #0a8967;
         }
 
         .texto-c {
