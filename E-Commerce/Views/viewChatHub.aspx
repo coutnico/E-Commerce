@@ -53,23 +53,30 @@
     <div class="text-end">
         <asp:Button runat="server" ID="btnEnviarMensaje" OnClick="btnEnviarMensaje_Click" Text="Enviar" CommandArgument='<%# Eval("Remitente") %>' CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
     </div>--%>
+    <asp:Label ID="lblRemitenteRecibidoLogin" runat="server" Text="lblRemitente" Visible="false"></asp:Label> <%--Solo para identificar en if en tex comp vend--%>
+    
 
     <div class="message-group w-50 mx-auto">
         <asp:Repeater ID="reapeterChats" runat="server">
             <ItemTemplate>
+
                 <div class="mb-3">
-                    <%# (Eval("Remitente").ToString() == "1") ? 
-                    "<div class='text-start'>" : 
+                    <%# (Eval("Remitente").ToString() == "1") ?  /*UBICO LADO DERECHO O IZQUIERDO*/
+                    "<div class='text-start'>" :
                     "<div class='text-end'>" %>
+
+
 
                     <div class="border p-2 rounded bg-light">
                         <h6 class="text-muted">
-                            <%# (Eval("Remitente").ToString() == "1") ? "Comprador" : "Vendedor" %>
+                            <%# (Eval("Remitente").ToString() == "1") ? "Comprador" : "Vendedor"  %> 
                         </h6>
                         <p class="m-0">
                             <%# Eval("Mensaje") %>
                         </p>
                     </div>
+
+
 
                 </div>
                 </div>
@@ -82,7 +89,7 @@
     <div class=" d-flex mx-auto">
         <asp:TextBox ID="txtMensajeNuevo" CssClass="form-control message-input w-75 mx-auto" runat="server" TextMode="MultiLine" />
         <div>
-            <asp:Button runat="server" ID="btnEnviarMensaje" OnClick="btnEnviarMensaje_Click" Text="Enviar" CommandArgument='<%# Eval("Remitente") %>' CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100" />
+            <asp:Button runat="server" ID="btnEnviarMensaje" OnClick="btnEnviarMensaje_Click" Text="Enviar" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100" />
         </div>
     </div>
 

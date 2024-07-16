@@ -13,6 +13,7 @@ namespace E_Commerce_Models
        public int IdPublicacion { get; set; }
        public int QComprada { get; set; }
        public bool Cancelada { get; set; }
+       public int Estado { get; set; } // 0: NA  1:Pendiente Aprobacion 2:Aprobada 
 
       // public int CompraNumeroRegistro { get; set; } // Ya que en una misma compra, puede venir dadas de varias publicaciones.
 
