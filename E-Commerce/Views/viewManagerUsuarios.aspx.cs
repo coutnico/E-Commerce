@@ -15,7 +15,12 @@ namespace tp_web_equipo_19.Views
     public partial class viewManagerUsuarios : System.Web.UI.Page
     {
         private Usuario_Negocio usuario_Negocio = new Usuario_Negocio();
-        public List<Usuarios> Lista_Usuarios { get; set; }
+        private Advertencias_Negocio advertencias_Negocio1 = new Advertencias_Negocio();         
+
+        public List<Usuarios> Lista_Usuarios { get; set; } 
+        
+        public int CantidadAdvertencias { get; private set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             Usuarios usuario = (Usuarios)Session["usuario"]; // casteo explicito
@@ -33,6 +38,22 @@ namespace tp_web_equipo_19.Views
                 rpUsuarios.DataBind();
             }
 
+        }
+
+        public object CargarCantidadAdvertencias(int id_usuario)
+        {
+            int aux = 0;
+            foreach (Advertencia advertencia in advertencias_Negocio1.ListarAdvertencias())
+            {
+                if (advertencia.ID_Usuario == id_usuario)
+                {
+                    aux++;
+                }
+            }
+
+            CantidadAdvertencias = aux;
+
+            return null;
         }
 
         protected void btnModificar_Click(object sender, EventArgs e)
