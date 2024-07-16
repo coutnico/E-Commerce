@@ -75,7 +75,8 @@ namespace tp_web_equipo_19.Views
 
 
                     string cuerpo = "<p>¡NOS ALEGRAMOS POR TU COMPRA!!<br>DESCRIPCION DE PRODUCTOS:";
-
+                    string cuerpovendedor = "<p>¡NOS ALEGRAMOS POR TU VENTA!!<br>DESCRIPCION DE PRODUCTOS:";
+                    decimal tot_aux = 0;
                     foreach (ArticuloCarrito articulo in Carrito.ArticulosFiltrados)
                     {
                         Usuarios usuario = new Usuarios();
@@ -92,6 +93,10 @@ namespace tp_web_equipo_19.Views
                         compras.PrecioUnitarioCompra = articulo.Precio;
                         compras.Estado = 1;
                         compras.Cancelada = false;
+
+                        cuerpovendedor += $"<br> {articulo.Nombre} CANTIDAD: {articulo.Cantidad} PRECIO UNITARIO: ${articulo.Precio}<br>";
+                        tot_aux = articulo.Cantidad * articulo.Precio;
+                        cuerpovendedor += $"<br>  TOTAL: ${tot_aux}  <br>";
                         try { comprasNegocio.AgregarCompra(compras); } // Agrego compra
                         catch(Exception ex) { throw; };
                        
@@ -100,7 +105,9 @@ namespace tp_web_equipo_19.Views
                         catch (Exception ex) { throw; };
 
                         usuario = usuario_Negocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario); // ENVIO CORREO A CADA VENDEDOR
-                        emailService.armarCorreo(usuario.Email, "VENDISTE UN PRODUCTO", "Has Vendido un producto"); // HACER BIEN EL CUERPO
+
+
+                        emailService.armarCorreo(usuario.Email, "FELICITACIONES VENDISTE UN PRODUCTO", cuerpovendedor); // 
                         try { emailService.enviarEmail(); }
                         catch (Exception ex) { throw; };
                     }

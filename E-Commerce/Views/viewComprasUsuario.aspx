@@ -13,7 +13,9 @@
 
     <% if (Convert.ToInt32(cantidad_compras.Text) == 0)
         { %>
-    <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">NO EXISTEN COMPRAS</p>
+    <div class="d-flex justify-content-between align-items-center">
+    <span style="margin-left: 38%; margin-top:10%; color:palevioletred;" class="h1">NO EXISTEN COMPRAS</span>
+</div>
     <% }
         else
         { %>

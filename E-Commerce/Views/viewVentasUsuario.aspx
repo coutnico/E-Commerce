@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="viewVentasUsuario.aspx.cs" Inherits="tp_web_equipo_19.Views.viewVentasUsuario" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-    
+
     <div class="d-flex justify-content-between align-items-center">
         <span style="margin-left: 42%;" class="h2">Mis Ventas</span>
     </div>
@@ -13,20 +14,22 @@
 
     <% if (Convert.ToInt32(cantidad_ventas.Text) == 0)
         { %>
-    <p class="card-text fs-4 fw-semibold text-shadow text-dark text-end">NO EXISTEN VENTAS</p>
+    <div class="d-flex justify-content-between align-items-center">
+        <span style="margin-left: 38%; margin-top:10%; color:palevioletred;" class="h1">NO EXISTEN VENTAS</span>
+    </div>
     <% }
         else
-        { %> 
+        { %>
 
 
     <asp:Repeater ID="reapeterVentasUsuario" runat="server">
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
                 <div class="row g-0 ">
-                      <asp:Label ID="lblEstadoVenta" CssClass="h6 fst-italic" runat="server" Text=""> <%# Eval("Estado").ToString() == "1" ? "Pendiente Aprobación" : (Eval("Estado").ToString() == "2" ? "Aprobada" : "Estado Desconocido") %></asp:Label>
-                    
-                     <asp:Button ID="btnConfirmarPago" OnClick="btnConfirmarPago_Click" CommandArgument='<%#  Eval("IdCompra") %>' runat="server" CssClass="alert-success" Text="Confirmar Pago Recibido" Visible='<%# Eval("Estado").ToString() == "1" %>'/>
-                    
+                    <asp:Label ID="lblEstadoVenta" CssClass="h6 fst-italic" runat="server" Text=""> <%# Eval("Estado").ToString() == "1" ? "Pendiente Aprobación" : (Eval("Estado").ToString() == "2" ? "Aprobada" : "Estado Desconocido") %></asp:Label>
+
+                    <asp:Button ID="btnConfirmarPago" OnClick="btnConfirmarPago_Click" CommandArgument='<%#  Eval("IdCompra") %>' runat="server" CssClass="alert-success" Text="Confirmar Pago Recibido" Visible='<%# Eval("Estado").ToString() == "1" %>' />
+
                     <div class="col-md-4">
                         <img class="img-fluid rounded-start" id="imgProductosUsuario" src="<%# busquedaPublicacion(Convert.ToInt32(Eval("IdPublicacion"))).articulo.ImagenURl %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" style="max-width: 100%; height: 200px;" />
                     </div>
@@ -58,8 +61,4 @@
         </ItemTemplate>
     </asp:Repeater>
     <% }%>
-
-
-
-
 </asp:Content>
