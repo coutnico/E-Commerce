@@ -3,6 +3,7 @@ using E_Commerce_Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace E_Commerce_Negocio
 {
@@ -32,7 +33,7 @@ namespace E_Commerce_Negocio
                     compra.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                     compra.QComprada = Convert.ToInt32(reader["QComprada"]);
                     compra.Cancelada = Convert.ToBoolean(reader["Cancelada"]);
-                    compra.PrecioUnitarioCompra = Convert.ToSingle(reader["PrecioUnitarioCompra"]); // Leer PrecioUnitarioCompra
+                    compra.PrecioUnitarioCompra = Convert.ToDecimal(reader["PrecioUnitarioCompra"]); // Leer PrecioUnitarioCompra
                     compra.Estado = Convert.ToInt32(reader["Estado"]);
 
                     lista.Add(compra);
@@ -56,7 +57,7 @@ namespace E_Commerce_Negocio
         {
             try
             {
-                string query = "INSERT INTO COMPRAS (IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra, Estado) VALUES (" + compra.IdUsuario + "," + compra.IdPublicacion + "," + compra.QComprada + "," + compra.Cancelada  + "," + compra.PrecioUnitarioCompra + compra.Estado + ")";
+                string query = "INSERT INTO COMPRAS (IdUsuario, IdPublicacion, QComprada, Cancelada, PrecioUnitarioCompra, Estado) VALUES ( '" + compra.IdUsuario + "','" + compra.IdPublicacion + "','" + compra.QComprada + "','" + compra.Cancelada  + "','" + compra.PrecioUnitarioCompra.ToString(CultureInfo.InvariantCulture) + "','" + compra.Estado + "')";
                 conexionDB_obj.EjecutarComando(query);
             }
             catch (Exception ex)
@@ -93,6 +94,7 @@ namespace E_Commerce_Negocio
                     ", IdPublicacion = " + compra_obj.IdPublicacion +
                     ", QComprada = " + compra_obj.QComprada +
                     ", Cancelada = " + (compra_obj.Cancelada ? 1 : 0) +
+                    ", PrecioUnitarioCompra = " + (compra_obj.PrecioUnitarioCompra.ToString(CultureInfo.InvariantCulture)) +
                     ", Estado = " + (compra_obj.Estado) +
                     " WHERE IdCompra = " + ID_a_modificar);
 
@@ -138,7 +140,7 @@ namespace E_Commerce_Negocio
                         compra.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
                         compra.QComprada = Convert.ToInt32(reader["QComprada"]);
                         compra.Cancelada = Convert.ToBoolean(reader["Cancelada"]);
-                        compra.PrecioUnitarioCompra = Convert.ToSingle(reader["PrecioUnitarioCompra"]);
+                        compra.PrecioUnitarioCompra = Convert.ToDecimal(reader["PrecioUnitarioCompra"]);
                         compra.Estado = Convert.ToInt32(reader["Estado"]);
 
                     return compra;

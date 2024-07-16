@@ -65,15 +65,7 @@ namespace tp_web_equipo_19.Views
 
             string valor = ((ImageButton)sender).CommandArgument;
 
-            //foreach (var articulo in lista_articulos)
-            //{
-            //    if (articulo.ID == Convert.ToInt32(valor))
-            //    {
-            //        Carrito.AgregarArticulo(articulo);
-            //       // Carrito.ListaArticulosFiltrados(); // AGREGADO
-            //        break;
-            //    }
-            //}
+
 
             foreach (var publicaciones in listapublicaciones_nopausadas)
             {

@@ -59,6 +59,11 @@ namespace tp_web_equipo_19.Views
 
         protected void btnConfirmarCompra_Click(object sender, EventArgs e)
         {
+            Publicaciones publicaciones = new Publicaciones();
+            Publicaciones_Negocio publicaciones_Negocio = new Publicaciones_Negocio();
+            Compras compras = new Compras();    
+            ComprasNegocio comprasNegocio = new ComprasNegocio();
+
             try
             {
 
@@ -73,17 +78,42 @@ namespace tp_web_equipo_19.Views
 
                     foreach (ArticuloCarrito articulo in Carrito.ArticulosFiltrados)
                     {
+                        Usuarios usuario = new Usuarios();
+                        Usuario_Negocio usuario_Negocio = new Usuario_Negocio();
+
                         cuerpo += $"<br> {articulo.Nombre} CANTIDAD: {articulo.Cantidad} PRECIO UNITARIO: ${articulo.Precio}<br>";
+
+                        publicaciones = publicaciones_Negocio.Buscar_Publicacion_por_IDArticulo(articulo.ID);
+                        publicaciones.Stock = publicaciones.Stock - articulo.Cantidad;
+
+                        compras.IdPublicacion = publicaciones.IdPublicacion;
+                        compras.IdUsuario = UsuarioLogueado.Id;
+                        compras.QComprada = articulo.Cantidad;
+                        compras.PrecioUnitarioCompra = articulo.Precio;
+                        compras.Estado = 1;
+                        compras.Cancelada = false;
+                        try { comprasNegocio.AgregarCompra(compras); } // Agrego compra
+                        catch(Exception ex) { throw; };
+                       
+
+                        try { publicaciones_Negocio.modificarPublicacion(publicaciones, publicaciones.IdPublicacion); } // reduzco el stock en la publicacion
+                        catch (Exception ex) { throw; };
+
+                        usuario = usuario_Negocio.Buscar_Usuario_por_IDUsuario(publicaciones.IdUsuario); // ENVIO CORREO A CADA VENDEDOR
+                        emailService.armarCorreo(usuario.Email, "VENDISTE UN PRODUCTO", "Has Vendido un producto"); // HACER BIEN EL CUERPO
+                        try { emailService.enviarEmail(); }
+                        catch (Exception ex) { throw; };
                     }
 
 
                     cuerpo += $"<br>TOTAL: {Carrito.Total} $<br><br>NOTA: ACTUALMENTE LA PAGINA ES LA QUE SE HACE CARGO DE LA TRANSFERENCIA A LOS DIFERENTES USUARIOS, USTEDES SOLAMENTE TIENEN QUE ABONAR EL TOTAL Y NOSOTROS HAREMOS EL RESTO. MUCHISIMAS GRACIAS POR SU COMPRA.<br><br>CLOSE MARKET<br>CBU:00012301231415432342<br></p>";
 
-
-
                     emailService.armarCorreo(UsuarioLogueado.Email, "CONFIRMACION DE COMPRA", cuerpo);
 
-                    emailService.enviarEmail();
+                    try { emailService.enviarEmail(); }
+                    catch (Exception ex) { throw; };
+
+
 
                     string script = "ShowCompraExitosa();";
                     Page.ClientScript.RegisterStartupScript(this.GetType(), "showalert", script, true);

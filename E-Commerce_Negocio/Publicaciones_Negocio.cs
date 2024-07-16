@@ -324,6 +324,84 @@ namespace E_Commerce_Negocio
 
         }
 
+        public Publicaciones Buscar_Publicacion_por_IDArticulo(int idarticulo)
+
+        {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+            Marca marca = new Marca();
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            Categoria categoria = new Categoria();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+            Imagen imagen = new Imagen();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            List<Imagen> listaimagenes = new List<Imagen>();
+
+            // FALTA IMAGEN
+            int id_aux = 0;
+
+            try
+            {
+
+                string query = "Select IdPublicacion, IdUsuario, IdArticulo, Stock, Pausada, Baja_Logica  from PUBLICACIONES";
+
+                reader = conexionDB_obj.LeerDatos(query); //reader = cmd.ExecuteReader();
+
+                Publicaciones publicaciones = new Publicaciones();
+                Articulo articulo = new Articulo();
+
+                int IdArticulo_aux = new int();
+                while (reader.Read())
+                {
+
+                    id_aux = Convert.ToInt32(reader["IdArticulo"]);
+                    //publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
+
+                    if (id_aux == idarticulo)
+                    {
+                        publicaciones.IdPublicacion = Convert.ToInt32(reader["IdPublicacion"]);
+                        publicaciones.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
+                        publicaciones.Pausada = Convert.ToBoolean(reader["Pausada"]);
+                        publicaciones.Baja_Logica = Convert.ToBoolean(reader["Baja_Logica"]);
+
+                        //publicaciones.articulo.ID = Convert.ToInt32(reader["IdArticulo"]);
+                        IdArticulo_aux = Convert.ToInt32(reader["IdArticulo"]);
+                        publicaciones.articulo = articuloNegocio.Buscar_Articulo_por_ID(IdArticulo_aux);
+
+                        publicaciones.Stock = Convert.ToInt32(reader["Stock"]);
+                        
+
+                        publicaciones.Pausada_String = publicaciones.Pausada ? "Pausada" : "Activa";
+
+                        marca = marcaNegocio.Buscar_Marca_por_ID(publicaciones.articulo.IDMarca);
+                        categoria = categoriaNegocio.Buscar_Categoria_por_ID(publicaciones.articulo.IDCategoria);
+
+                        publicaciones.articulo.Marca = marca.Descripcion;
+                        publicaciones.articulo.Categoria = categoria.Descripcion;
+
+                        listaimagenes = imagenNegocio.ListarImagen();
+                        foreach (Imagen imagen_aux in listaimagenes)
+                        {
+                            if (publicaciones.articulo.ID == imagen_aux.IdArticulo)
+                            {
+                                publicaciones.articulo.ImagenURl = imagen_aux.URL;// Imagen principal (la primera que encuentre)
+                                break;
+                            };
+                        }
+
+                    }
+                }
+                return publicaciones;
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexionDB_obj.CerrarConexion(); }
+
+
+        }
+
     }
 
 

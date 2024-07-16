@@ -23,12 +23,15 @@
         <ItemTemplate>
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
                 <div class="row g-0 ">
+                      <asp:Label ID="lblEstadoVenta" CssClass="h6 fst-italic" runat="server" Text=""> <%# Eval("Estado").ToString() == "1" ? "Pendiente Aprobación" : (Eval("Estado").ToString() == "2" ? "Aprobada" : "Estado Desconocido") %></asp:Label>
                     <div class="col-md-4">
 
                         <img class="img-fluid rounded-start" id="imgProductosUsuario" src="<%#  busquedaPublicacion(Convert.ToInt32(Eval("IdPublicacion"))).articulo.ImagenURl %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" style="max-width: 100%; height: 200px;" />
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
+
+
                             <asp:Label ID="lblNombre" class="card-title h4" runat="server" Text=""> <%#  busquedaPublicacion(Convert.ToInt32(Eval("IdPublicacion"))).articulo.Nombre %> </asp:Label>
 
                             <div class="ms-auto d-flex align-items-center">
@@ -42,8 +45,6 @@
                         </div>
 
                         <asp:Button runat="server" ID="btnChat" OnClick="btnChat_Click" CommandArgument='<%#  Eval("IdCompra") %>' CommandName="IdPublicacion" Text="Chat" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />
-
-
 
                         <%--  <div class="text-end">
                             <asp:Button runat="server" ID="BtnVerPublicacion" OnClick="BtnVerPublicacion_Click" CommandArgument='<%# Eval("IdPublicacion") %>' CommandName="IdPublicacion" Text="Ver Publicacion" CssClass="btn btn-dark shadow rounded-0 fw-semibold w-100 text-center" />

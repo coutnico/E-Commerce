@@ -101,5 +101,20 @@ namespace tp_web_equipo_19.Views
             return total = QComprada * precioUnitairo;
 
         }
+
+        protected void btnConfirmarPago_Click(object sender, EventArgs e)
+        {
+            Compras compras = new Compras();
+            ComprasNegocio comprasNegocio = new ComprasNegocio();
+
+            int idCompra = Convert.ToInt32(((Button)sender).CommandArgument);
+
+            compras = comprasNegocio.BuscarCompraPorId(idCompra);
+
+            compras.Estado = 2; // 1:Pendiente Aprobacion 2:Aprobado
+
+            comprasNegocio.ModificarCompra(compras,compras.IdCompra);
+
+        }
     }
 }

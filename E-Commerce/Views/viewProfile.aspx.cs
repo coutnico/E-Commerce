@@ -83,5 +83,10 @@ namespace tp_web_equipo_19.Views
         {
             Response.Redirect("viewComprasUsuario.aspx", false);
         }
+
+        protected void btnMisVentas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("viewVentasUsuario.aspx", false);
+        }
     }
 }

@@ -9,7 +9,7 @@
 
     <asp:Label ID="cantidad_ventas" runat="server" Text="" Visible="false"></asp:Label>
     <%-- Solo para condicionar if --%>
-
+    <asp:Label ID="lblPagoAproado" runat="server" Text="" Visible="false"></asp:Label>
 
     <% if (Convert.ToInt32(cantidad_ventas.Text) == 0)
         { %>
@@ -24,6 +24,9 @@
             <div class="card mb-3 mx-auto  " style="max-width: 80%;">
                 <div class="row g-0 ">
                       <asp:Label ID="lblEstadoVenta" CssClass="h6 fst-italic" runat="server" Text=""> <%# Eval("Estado").ToString() == "1" ? "Pendiente Aprobación" : (Eval("Estado").ToString() == "2" ? "Aprobada" : "Estado Desconocido") %></asp:Label>
+                    
+                     <asp:Button ID="btnConfirmarPago" OnClick="btnConfirmarPago_Click" CommandArgument='<%#  Eval("IdCompra") %>' runat="server" CssClass="alert-success" Text="Confirmar Pago Recibido" Visible='<%# Eval("Estado").ToString() == "1" %>'/>
+                    
                     <div class="col-md-4">
                         <img class="img-fluid rounded-start" id="imgProductosUsuario" src="<%# busquedaPublicacion(Convert.ToInt32(Eval("IdPublicacion"))).articulo.ImagenURl %>" onerror="this.src='https://i.ibb.co/SwxTQny/imagen.png'" alt="Imagen productos Usuario" style="max-width: 100%; height: 200px;" />
                     </div>
